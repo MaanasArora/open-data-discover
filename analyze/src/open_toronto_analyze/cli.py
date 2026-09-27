@@ -1,12 +1,9 @@
 """open-toronto-analyze: find joinable columns across downloaded Open Data packages.
 
-Examples::
-
     open-toronto-analyze owners
     open-toronto-analyze list --owner transit --limit 10
-    open-toronto-analyze joins --owner "parks" --owner "transportation" -o joins.csv
-    open-toronto-analyze joins --packages-file packages.txt --threshold 0.3
-    open-toronto-analyze show "neighbourhoods/Neighbourhoods - 4326.csv::Neighbourhood"
+    open-toronto-analyze joins --owner parks --owner transportation
+    open-toronto-analyze show "Neighbourhoods - 4326::AREA_NAME"
 """
 
 from __future__ import annotations
@@ -18,37 +15,46 @@ import sys
 from collections import Counter
 from pathlib import Path
 
-import pandas as pd
 from rich import box
 from rich.console import Console
 from rich.panel import Panel
 from rich.table import Table
 
-from open_toronto_analyze import core
+from . import __version__
+from .columns import ColumnRef, csv_files, profile_columns
+from .joins import find_joins
+from .lookup import find_columns, joins_for, load_joins, sample_values
+from .packages import read_package_list, select_packages
 
-console = Console()
+DEFAULT_ROOT = "../download/data"
+
+out = Console()
 err = Console(stderr=True)
 
 
-def _default_root() -> Path:
-    return Path(os.environ.get("OPEN_TORONTO_DL_ROOT", core.DEFAULT_ROOT))
-
-
-def _select(args) -> core.Selection:
+def selected(args):
+    """Apply the selection filters and report anything skipped."""
     names = list(args.package or [])
-    for f in args.packages_file or []:
-        names += core.read_package_list(f)
-    sel = core.select_packages(args.data, owners=args.owner, packages=names or None, limit=args.limit)
-    if sel.missing:
-        err.print(f"[yellow]Not downloaded:[/yellow] {', '.join(sel.missing)}")
-    if sel.incomplete:
-        shown = ", ".join(sel.incomplete[:10]) + (" ..." if len(sel.incomplete) > 10 else "")
-        err.print(f"[yellow]Skipping {len(sel.incomplete)} incomplete package(s):[/yellow] {shown}")
-    return sel
+    for path in args.packages_file or []:
+        names += read_package_list(path)
+    selection = select_packages(args.data, owners=args.owner, names=names, limit=args.limit)
+    if selection.missing:
+        err.print(f"[yellow]Not in {args.data}:[/yellow] {', '.join(selection.missing)}")
+    if selection.incomplete:
+        shown = selection.incomplete[:10] + (["..."] if len(selection.incomplete) > 10 else [])
+        err.print(f"[yellow]Skipping {len(selection.incomplete)} incomplete package(s):[/yellow] {', '.join(shown)}")
+    return selection
 
 
-def _selection_line(sel: core.Selection) -> str:
-    return f"{len(sel.packages)} of {sel.total_complete} complete package(s) selected"
+def summary(selection) -> str:
+    return f"{len(selection.packages)} of {selection.available} complete package(s) selected"
+
+
+def new_table(*columns) -> Table:
+    table = Table(box=box.SIMPLE_HEAD, header_style="bold", pad_edge=False)
+    for column in columns:
+        table.add_column(column)
+    return table
 
 
 # --------------------------------------------------------------------------- #
@@ -57,66 +63,49 @@ def _selection_line(sel: core.Selection) -> str:
 
 
 def cmd_owners(args) -> int:
-    sel = _select(args)
-    counts = Counter(core.owner_of(p) or "(none)" for p in sel.packages)
-    table = Table(box=box.SIMPLE_HEAD, header_style="bold")
-    table.add_column("Packages", justify="right")
-    table.add_column("Owner (owner_division)")
-    for owner, n in sorted(counts.items(), key=lambda kv: (-kv[1], kv[0])):
-        table.add_row(str(n), owner)
-    console.print(table)
-    console.print(f"[dim]{_selection_line(sel)}[/dim]")
+    selection = selected(args)
+    table = new_table("Packages", "Owner")
+    counts = Counter(p.owner or "(none)" for p in selection.packages)
+    for owner, count in sorted(counts.items(), key=lambda kv: (-kv[1], kv[0])):
+        table.add_row(str(count), owner)
+    out.print(table, f"[dim]{summary(selection)}[/dim]")
     return 0
 
 
 def cmd_list(args) -> int:
-    sel = _select(args)
-    table = Table(box=box.SIMPLE_HEAD, header_style="bold")
-    table.add_column("Package")
-    table.add_column("Owner", style="dim", max_width=36, overflow="ellipsis", no_wrap=True)
-    table.add_column("CSVs", justify="right")
-    for pkg in sel.packages:
-        n_csv = len(core.csv_resources([pkg]))
-        table.add_row(pkg.name, core.owner_of(pkg), str(n_csv) if n_csv else "[dim]0[/dim]")
-    console.print(table)
-    console.print(f"[dim]{_selection_line(sel)}[/dim]")
+    selection = selected(args)
+    table = new_table("Package", "Owner", "CSVs")
+    for package in selection.packages:
+        table.add_row(package.name, f"[dim]{package.owner}[/dim]", str(len(csv_files([package]))))
+    out.print(table, f"[dim]{summary(selection)}[/dim]")
     return 0
 
 
 def cmd_joins(args) -> int:
-    sel = _select(args)
-    resources = core.csv_resources(sel.packages)
-    console.print(f"{_selection_line(sel)}, {len(resources)} CSV file(s)")
-    if not resources:
-        err.print("[red]Nothing to analyze.[/red]")
+    selection = selected(args)
+    files = csv_files(selection.packages)
+    out.print(f"{summary(selection)}, {len(files)} CSV file(s)")
+    if not files:
         return 1
 
     progress = not args.no_progress and sys.stderr.isatty()
-    profiles = core.profile_columns(resources, min_avg_length=args.min_avg_length,
-                                    max_rows=args.max_rows, progress=progress)
-    console.print(f"{len(profiles)} column(s) passed the length filter")
-    joins = core.find_joins(profiles, threshold=args.threshold, min_distinct=args.min_distinct,
-                            min_df=args.min_df, max_df_fraction=args.max_df_fraction,
-                            max_df_floor=args.max_df_floor, progress=progress)
-
-    args.output.parent.mkdir(parents=True, exist_ok=True)
+    profiles = profile_columns(files, min_avg_length=args.min_avg_length, max_rows=args.max_rows, progress=progress)
+    out.print(f"{len(profiles)} column(s) passed the length filter")
+    joins = find_joins(profiles, threshold=args.threshold, min_distinct=args.min_distinct, min_df=args.min_df,
+                       max_df_fraction=args.max_df_fraction, max_df_floor=args.max_df_floor, progress=progress)
     joins.to_csv(args.output, index=False)
-    console.print(f"{len(joins)} joinable pair(s) written to [bold]{args.output}[/bold]")
+    out.print(f"{len(joins)} joinable pair(s) written to [bold]{args.output}[/bold]")
 
-    if len(joins) and args.top:
-        table = Table(box=box.SIMPLE_HEAD, header_style="bold", pad_edge=False)
-        table.add_column("Score", justify="right", style="green")
-        table.add_column("Column")
-        table.add_column("Joins with")
-        table.add_column("Shared", justify="right", style="dim")
-        for row in joins.head(args.top).itertuples(index=False):
-            table.add_row(
-                f"{row.score:.3f}",
-                f"[bold]{row.column_1}[/bold]\n[dim]{row.package_1} · {row.resource_1}[/dim]",
-                f"[bold]{row.column_2}[/bold]\n[dim]{row.package_2} · {row.resource_2}[/dim]",
-                str(row.intersection),
-            )
-        console.print(table)
+    table = new_table("Score", "Column", "Joins with", "Shared")
+    for row in joins.head(args.top).itertuples():
+        table.add_row(
+            f"[green]{row.score:.3f}[/green]",
+            f"[bold]{row.column_1}[/bold]\n[dim]{row.package_1} · {row.resource_1}[/dim]",
+            f"[bold]{row.column_2}[/bold]\n[dim]{row.package_2} · {row.resource_2}[/dim]",
+            str(row.intersection),
+        )
+    if table.row_count:
+        out.print(table)
     return 0
 
 
@@ -124,10 +113,10 @@ def cmd_show(args) -> int:
     if not args.joins.exists():
         err.print(f"[red]{args.joins} not found.[/red] Run `open-toronto-analyze joins` first.")
         return 1
-    joins = pd.read_csv(args.joins, dtype={c: str for c in core.JOIN_COLUMNS[:8]})
-    matches = core.find_columns(joins, args.column)
+    joins = load_joins(args.joins)
+    matches = find_columns(joins, args.column)
     if not matches:
-        err.print(f"[red]No column matching[/red] {args.column!r} [red]in {args.joins}[/red]")
+        err.print(f"No column matches {args.column!r} in {args.joins}.")
         return 1
     if len(matches) > 1:
         err.print(f"{args.column!r} is ambiguous; use one of these ids:")
@@ -136,26 +125,14 @@ def cmd_show(args) -> int:
         return 2
 
     ref = matches[0]
-    n = args.samples
 
-    def samples(package, file, column):
-        return core.sample_values(args.data, package, file, column, n=n, max_rows=args.max_rows)
+    def samples(r: ColumnRef) -> list:
+        return sample_values(args.data, r, n=args.samples, max_rows=args.max_rows)
 
-    values = samples(ref.package, ref.file, ref.column)
-    console.print(Panel(
-        "\n".join(f"· {v}" for v in values) or "[dim]no values[/dim]",
-        title=f"[bold]{ref.column}[/bold]  [dim]{ref.package} · {ref.resource}[/dim]",
-        border_style="cyan",
-        expand=False,
-    ))
-    console.print(f"[dim]{ref.id}[/dim]")
-
-    joinable = core.joinable_for(joins, ref)
-    if joinable.empty:
-        console.print("[dim]No joinable columns found.[/dim]")
-        return 0
-    if args.top:
-        joinable = joinable.head(args.top)
+    out.print(Panel("\n".join(f"· {v}" for v in samples(ref)) or "[dim]no values[/dim]",
+                    title=f"[bold]{ref.column}[/bold]  [dim]{ref.package} · {ref.resource}[/dim]",
+                    border_style="cyan", expand=False))
+    out.print(f"[dim]{ref.id}[/dim]")
 
     table = Table(box=box.HORIZONTALS, show_lines=True, padding=(0, 2), pad_edge=False,
                   header_style="bold", border_style="grey30")
@@ -163,87 +140,75 @@ def cmd_show(args) -> int:
     table.add_column("Column", style="bold")
     table.add_column("Dataset", style="dim", max_width=34, overflow="ellipsis")
     table.add_column("Sample values", max_width=52, overflow="fold")
-    for row in joinable.itertuples(index=False):
-        vals = samples(row.package, row.file, row.column)
-        table.add_row(
-            f"{row.score:.3f}",
-            row.column,
-            f"{row.package} · {row.resource}",
-            " [dim]·[/dim] ".join(vals) if vals else "[dim]—[/dim]",
-        )
-    console.print(table)
+    for row in joins_for(joins, ref).head(args.top or None).itertuples(index=False):
+        other = ColumnRef(row.package, row.resource, row.file, row.column)
+        table.add_row(f"{row.score:.3f}", row.column, f"{row.package} · {row.resource}",
+                      " [dim]·[/dim] ".join(samples(other)) or "[dim]—[/dim]")
+    out.print(table if table.row_count else "[dim]No joinable columns found.[/dim]")
     return 0
 
 
 # --------------------------------------------------------------------------- #
-# Parser
+# Arguments
 # --------------------------------------------------------------------------- #
 
 
 def build_parser() -> argparse.ArgumentParser:
     data = argparse.ArgumentParser(add_help=False)
-    data.add_argument("-d", "--data", type=Path, default=_default_root(),
-                      help=f"open-toronto-dl data folder (default: $OPEN_TORONTO_DL_ROOT or {core.DEFAULT_ROOT})")
+    data.add_argument("-d", "--data", type=Path, default=Path(os.environ.get("OPEN_TORONTO_DL_ROOT", DEFAULT_ROOT)),
+                      help=f"download folder (default: $OPEN_TORONTO_DL_ROOT or {DEFAULT_ROOT})")
 
     filters = argparse.ArgumentParser(add_help=False)
-    g = filters.add_argument_group("package selection (filters combine with AND; repeats with OR)")
-    g.add_argument("-o", "--owner", action="append", metavar="TEXT",
-                   help="owner_division contains TEXT (case-insensitive); repeatable")
-    g.add_argument("-p", "--package", action="append", metavar="NAME",
-                   help="package name, id or portal URL; repeatable")
-    g.add_argument("-P", "--packages-file", action="append", type=Path, metavar="FILE",
-                   help="file with one package per line (# comments); repeatable")
-    g.add_argument("-n", "--limit", type=int, metavar="N", help="at most N packages (by name, after other filters)")
+    group = filters.add_argument_group("package selection (filters combine with AND; repeats with OR)")
+    group.add_argument("-o", "--owner", action="append", metavar="TEXT", help="owner division contains TEXT")
+    group.add_argument("-p", "--package", action="append", metavar="NAME", help="package name, id or portal URL")
+    group.add_argument("-P", "--packages-file", action="append", type=Path, metavar="FILE",
+                       help="file with one package per line")
+    group.add_argument("-n", "--limit", type=int, metavar="N", help="first N packages by name")
 
-    parser = argparse.ArgumentParser(
-        prog="open-toronto-analyze",
-        description="Find joinable columns across packages downloaded with open-toronto-dl.",
-    )
-    parser.add_argument("--version", action="version", version=f"%(prog)s {core.__version__}")
-    parser.add_argument("-v", "--verbose", action="count", default=0, help="-v info, -vv debug")
-    sub = parser.add_subparsers(dest="command", required=True, metavar="COMMAND")
+    parser = argparse.ArgumentParser(prog="open-toronto-analyze", description=__doc__.splitlines()[0])
+    parser.add_argument("--version", action="version", version=f"%(prog)s {__version__}")
+    parser.add_argument("-v", "--verbose", action="store_true", help="log details")
+    commands = parser.add_subparsers(dest="command", required=True, metavar="COMMAND")
 
-    p = sub.add_parser("owners", parents=[data, filters], help="list owners (divisions) and package counts")
-    p.set_defaults(func=cmd_owners)
+    p = commands.add_parser("owners", parents=[data, filters], help="count packages per owner division")
+    p.set_defaults(run=cmd_owners)
 
-    p = sub.add_parser("list", parents=[data, filters], help="list the packages a selection includes")
-    p.set_defaults(func=cmd_list)
+    p = commands.add_parser("list", parents=[data, filters], help="list the selected packages")
+    p.set_defaults(run=cmd_list)
 
-    p = sub.add_parser("joins", parents=[data, filters], help="compute joinable column pairs and write a CSV")
-    p.add_argument("--output", type=Path, default=Path("joins.csv"), help="output CSV (default: joins.csv)")
-    p.add_argument("--top", type=int, default=20, help="print the N best pairs (default: 20, 0 for none)")
-    a = p.add_argument_group("algorithm")
-    a.add_argument("--threshold", type=float, default=0.1, help="minimum score (default: 0.1)")
-    a.add_argument("--min-distinct", type=int, default=8,
-                   help="both columns need at least this many distinct values (default: 8)")
-    a.add_argument("--min-avg-length", type=float, default=8,
-                   help="skip columns whose average value length is <= this (default: 8)")
-    a.add_argument("--min-df", type=int, default=2, help="ignore values in fewer columns when pairing (default: 2)")
-    a.add_argument("--max-df-fraction", type=float, default=0.005,
-                   help="ignore values in more than this fraction of columns when pairing (default: 0.005)")
-    a.add_argument("--max-df-floor", type=int, default=5, help="lower bound for that cutoff (default: 5)")
-    a.add_argument("--max-rows", type=int, help="read at most N rows per CSV")
+    p = commands.add_parser("joins", parents=[data, filters], help="find joinable column pairs, write a CSV")
+    p.add_argument("--output", type=Path, default=Path("joins.csv"), help="default: joins.csv")
+    p.add_argument("--top", type=int, default=20, help="print the N best pairs (default: 20)")
     p.add_argument("--no-progress", action="store_true", help="hide progress bars")
-    p.set_defaults(func=cmd_joins)
+    algo = p.add_argument_group("algorithm")
+    algo.add_argument("--threshold", type=float, default=0.1, help="minimum score (default: 0.1)")
+    algo.add_argument("--min-distinct", type=int, default=8, help="minimum distinct values per column (default: 8)")
+    algo.add_argument("--min-avg-length", type=float, default=8,
+                      help="skip columns with average value length <= this (default: 8)")
+    algo.add_argument("--min-df", type=int, default=2, help="pair on values in at least N columns (default: 2)")
+    algo.add_argument("--max-df-fraction", type=float, default=0.005,
+                      help="...and in at most this fraction of columns (default: 0.005)")
+    algo.add_argument("--max-df-floor", type=int, default=5, help="...but never fewer than N columns (default: 5)")
+    algo.add_argument("--max-rows", type=int, help="read at most N rows per CSV")
+    p.set_defaults(run=cmd_joins)
 
-    p = sub.add_parser("show", parents=[data], help="show the columns joinable with one column")
-    p.add_argument("column", metavar="COLUMN", help="[PACKAGE/]RESOURCE::COLUMN, just COLUMN, or an id")
-    p.add_argument("-j", "--joins", type=Path, default=Path("joins.csv"),
-                   help="join table from `joins` (default: joins.csv)")
+    p = commands.add_parser("show", parents=[data], help="show what one column joins with")
+    p.add_argument("column", metavar="COLUMN", help="[PACKAGE/]RESOURCE::COLUMN, COLUMN, or a column id")
+    p.add_argument("-j", "--joins", type=Path, default=Path("joins.csv"), help="join table (default: joins.csv)")
     p.add_argument("--samples", type=int, default=3, help="sample values per column (default: 3)")
-    p.add_argument("--top", type=int, default=25, help="show the N best matches (default: 25, 0 for all)")
+    p.add_argument("--top", type=int, default=25, help="show the N best matches, 0 for all (default: 25)")
     p.add_argument("--max-rows", type=int, help="read at most N rows per CSV when sampling")
-    p.set_defaults(func=cmd_show)
+    p.set_defaults(run=cmd_show)
 
     return parser
 
 
 def main(argv=None) -> int:
     args = build_parser().parse_args(argv)
-    level = {0: logging.WARNING, 1: logging.INFO}.get(args.verbose, logging.DEBUG)
-    logging.basicConfig(level=level, format="%(levelname)s %(message)s")
+    logging.basicConfig(level=logging.INFO if args.verbose else logging.WARNING, format="%(levelname)s %(message)s")
     try:
-        return args.func(args)
+        return args.run(args)
     except FileNotFoundError as e:
         err.print(f"[red]error:[/red] {e}")
         return 2

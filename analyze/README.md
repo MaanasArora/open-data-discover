@@ -2,7 +2,8 @@
 
 Find joinable columns across City of Toronto Open Data packages downloaded with
 [`open-toronto-dl`](../download). Only complete packages are read; incomplete ones are skipped.
-Ported from `scratch/main.ipynb`.
+Ported from `scratch/main.ipynb`. It reads the download folder directly and does not depend on
+the `download` package.
 
 ## Usage
 
@@ -37,6 +38,16 @@ and `score` (the larger containment), best first.
 COLUMN is `[PACKAGE/]RESOURCE::COLUMN` (resource name or file name), just `COLUMN`, or the full id
 printed by `show`.
 
+## Code layout
+
+| Module | Step |
+| --- | --- |
+| `packages.py` | 1. Find complete packages in the download folder; select by owner / name / limit |
+| `columns.py` | 2. Read CSVs and profile each column's distinct values |
+| `joins.py` | 3-5. Presence matrix, candidate pairs, exact overlaps, scores |
+| `lookup.py` | Query a saved join table (used by `show`) |
+| `cli.py` | The `open-toronto-analyze` command |
+
 ## Algorithm
 
 1. Profile every CSV column whose average value length exceeds `--min-avg-length` (8), skipping `_id`:
@@ -50,8 +61,8 @@ printed by `show`.
 ## Library
 
 ```python
-from open_toronto_analyze import select_packages, csv_resources, profile_columns, find_joins
+from open_toronto_analyze import select_packages, csv_files, profile_columns, find_joins
 
-sel = select_packages("../download/data", owners=["transit"], limit=20)
-joins = find_joins(profile_columns(csv_resources(sel.packages)))
+selection = select_packages("../download/data", owners=["transit"], limit=20)
+joins = find_joins(profile_columns(csv_files(selection.packages)))
 ```
