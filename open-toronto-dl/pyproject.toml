@@ -1,0 +1,20 @@
+[project]
+name = "open-toronto-dl"
+version = "0.1.0"
+description = "Download City of Toronto Open Data (CKAN) packages with file-based completeness tracking"
+readme = "README.md"
+authors = [
+    { name = "Maanas", email = "maanasarora23@gmail.com" }
+]
+requires-python = ">=3.9"
+dependencies = [
+    "httpx>=0.24",
+    "tqdm>=4.0",
+]
+
+[project.scripts]
+open-toronto-dl = "open_toronto_dl.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.8.17,<0.10.0"]
+build-backend = "uv_build"
