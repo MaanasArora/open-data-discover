@@ -1,0 +1,4156 @@
+{
+  "format_version": 2,
+  "created_at": "2026-09-27T15:15:30+00:00",
+  "data_folder": "../download/data",
+  "selection": {
+    "owners": null,
+    "packages": null,
+    "packages_files": [],
+    "limit": null
+  },
+  "parameters": {
+    "min_avg_length": 6,
+    "max_rows": null,
+    "idf": false,
+    "min_distinct": 8,
+    "min_df": 2,
+    "max_df_fraction": 0.005,
+    "max_df_floor": 5
+  },
+  "packages": [
+    {
+      "name": "2024-city-budget-pre-budget-consultation",
+      "id": "66ab9e95-a343-4f07-bc4f-56f82dcdc598",
+      "title": "City Budget Pre-Budget Consultation",
+      "owner": "City Manager's Office",
+      "downloaded_at": "2026-09-27T13:39:48+00:00",
+      "resources": {
+        "d30c6d22-1c1f-42e2-9cc6-d9aa4bffc1dc": "2024-03-11T19:32:29.642482",
+        "28261624-c464-48d9-b3b1-eb7d4236613f": "2024-03-11T19:33:52.673587",
+        "51273c32-9228-4cd3-ba15-0abd21028dec": "2025-07-04T16:53:17.311812"
+      }
+    },
+    {
+      "name": "accelerators-incubators-coworking-spaces",
+      "id": "d89d83ef-f745-4568-9dec-9a584dd2db22",
+      "title": "Accelerators, Incubators & Coworking Spaces",
+      "owner": "Economic Development & Culture",
+      "downloaded_at": "2026-09-27T13:39:48+00:00",
+      "resources": {
+        "5b65b1f2-b2f9-431f-8904-9b7a4969e3d0": "2026-06-05T13:56:11.124449",
+        "16fe18bb-8c1d-42ce-8623-1057a104d047": "2026-06-05T13:56:14.252803"
+      }
+    },
+    {
+      "name": "active-affordable-and-social-housing-units",
+      "id": "d428b7b0-1223-424a-a7f6-305548ee44a9",
+      "title": "Active Affordable and Social Housing Units",
+      "owner": "Housing Secretariat",
+      "downloaded_at": "2026-09-27T13:39:49+00:00",
+      "resources": {
+        "f8d91828-86dd-42bd-bb0b-0a8e963b6a02": null,
+        "d6e4fa88-e7ab-4c13-bce5-8eeab0be3eb9": "2026-03-16T02:04:10.730151"
+      }
+    },
+    {
+      "name": "address-points-municipal-toronto-one-address-repository",
+      "id": "abedd8bc-e3dd-4d45-8e69-79165a76e4fa",
+      "title": "Address Points (Municipal) - Toronto One Address Repository",
+      "owner": "Information & Technology",
+      "downloaded_at": "2026-09-27T13:39:54+00:00",
+      "resources": {
+        "64d4e54b-738f-4cd9-a9e7-8050fac8a52f": "2026-09-25T11:41:17.276970",
+        "7d5590f0-cfd5-4381-87d0-baf7dbf4921c": "2026-09-25T11:41:37.852220"
+      }
+    },
+    {
+      "name": "agency-survey-results-on-covid-19-recovery-and-rebuild",
+      "id": "9d6c5c52-e359-47dc-99e7-870261ca03d9",
+      "title": "Agency Survey Results on COVID-19 Recovery And Rebuild",
+      "owner": "Toronto Office of Recovery and Rebuild",
+      "downloaded_at": "2026-09-27T13:39:54+00:00",
+      "resources": {
+        "a0d6af71-d331-4747-a258-47a8c3c3ea89": "2020-10-14T13:40:18.776062"
+      }
+    },
+    {
+      "name": "air-conditioned-and-cool-spaces-heat-relief-network",
+      "id": "4aab06c4-9689-4e2c-9476-18ffee312640",
+      "title": "Air Conditioned and Cool Spaces (Heat Relief Network)",
+      "owner": "Toronto Public Health",
+      "downloaded_at": "2026-09-27T13:39:56+00:00",
+      "resources": {
+        "e9a267e7-85be-41f2-8fc9-e5c0ed3ab05b": "2026-09-27T11:17:35.046237",
+        "0d721737-ebce-4b90-8a1a-66e8540e4d4e": "2022-03-10T16:16:10.746477",
+        "a91f9ff8-21be-49e2-99c0-296257d372f2": "2026-09-27T11:17:40.142423"
+      }
+    },
+    {
+      "name": "air-conditioned-public-places-cooling-centres",
+      "id": "b5f103a8-f100-4f56-ac34-d178965f28b7",
+      "title": "Air Conditioned Public Places & Cooling Centres",
+      "owner": "Toronto Public Health",
+      "downloaded_at": "2026-09-27T13:39:57+00:00",
+      "resources": {
+        "485b9bf5-6968-4c18-b227-78260c45d386": null,
+        "0ec64c03-e814-456c-a804-1a04c8e605f0": "2026-02-20T20:46:04.740925"
+      }
+    },
+    {
+      "name": "ambulance-station-locations",
+      "id": "bb8e12a7-edf4-456f-ba77-43be57885a45",
+      "title": "Ambulance Station Locations",
+      "owner": "Toronto Paramedic Services",
+      "downloaded_at": "2026-09-27T13:39:58+00:00",
+      "resources": {
+        "5e55700d-dc9e-4053-b530-f9c918ecf1df": "2026-02-20T19:04:20.566924",
+        "36d60406-7c25-4f50-ad5f-38f2f4fe5dc6": "2026-02-20T19:04:24.295348"
+      }
+    },
+    {
+      "name": "apartment-building-evaluation",
+      "id": "4ef82789-e038-44ef-a478-a8f3590c3eb1",
+      "title": "Apartment Building Evaluation",
+      "owner": "Municipal Licensing & Standards",
+      "downloaded_at": "2026-09-27T13:40:31+00:00",
+      "resources": {
+        "244f7a02-da5c-425b-b55f-fbdd133dd732": null,
+        "7fa98ab2-7412-43cd-9270-cb44dd75b573": "2026-09-27T09:34:48.356960",
+        "b987be09-0c62-4d7d-928c-4a1ecaeaf3f3": "2023-07-26T23:01:00.000730",
+        "979fb513-5186-41e9-bb23-7b5cc6b89915": "2026-02-20T17:41:23.374212"
+      }
+    },
+    {
+      "name": "apartment-building-registration",
+      "id": "2b98b3f3-4f3a-42a4-a4e9-b44d3026595a",
+      "title": "Apartment Building Registration",
+      "owner": "Municipal Licensing & Standards",
+      "downloaded_at": "2026-09-27T13:40:32+00:00",
+      "resources": {
+        "3ad76a8c-0518-4df2-b94e-8c747d62f8c1": "2026-07-05T08:30:33.000440",
+        "97b8b7a4-baca-49c7-915d-335322dbcf95": "2026-07-05T09:00:19.147056"
+      }
+    },
+    {
+      "name": "archaeological-potential-interim",
+      "id": "ecb526cf-1e27-4747-ad0c-d8f3aed13a6c",
+      "title": "Archaeological Potential - Interim",
+      "owner": "City Planning",
+      "downloaded_at": "2026-09-27T13:40:33+00:00",
+      "resources": {
+        "b8b22122-f57a-4de1-bd7d-d3af1bba5a5e": "2026-02-20T21:08:08.876312",
+        "111d10de-bf85-4f21-b9fb-10e64a3fefd5": "2022-03-10T16:19:27.986784",
+        "b21da0f6-4ab1-4d9c-8a7c-eb6adfbbb843": "2026-02-20T21:08:14.170584"
+      }
+    },
+    {
+      "name": "area-speed-limit-reductions",
+      "id": "d548afb4-b732-4f57-a5c2-10cd6a0c0012",
+      "title": "Area Speed Limit Reductions",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T13:40:34+00:00",
+      "resources": {
+        "a8aaf1d1-051f-4e0c-86f0-91eef7534fff": "2026-02-24T20:51:49.327448",
+        "34782854-12bc-41e6-bee2-43ba22e61185": "2026-02-24T20:51:52.529261"
+      }
+    },
+    {
+      "name": "association-of-community-centres",
+      "id": "fe641905-9942-4a00-aceb-191149ad4905",
+      "title": "Association of Community Centres",
+      "owner": "Social Development, Finance & Administration",
+      "downloaded_at": "2026-09-27T13:40:35+00:00",
+      "resources": {
+        "68bb24c0-8546-424d-b2b0-83ba9d39220f": "2026-07-16T20:30:57.281419",
+        "ce86a2a5-d79c-4595-a520-fd5c9236bd2e": "2026-07-16T20:30:59.939111"
+      }
+    },
+    {
+      "name": "automated-speed-enforcement-locations",
+      "id": "a154790c-4a8a-4d09-ab6b-535ddb646770",
+      "title": "Automated Speed Enforcement Locations",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T13:40:36+00:00",
+      "resources": {
+        "c19bc58a-d034-4e04-bbc3-0ebdf73a5feb": "2026-02-20T18:32:05.291601",
+        "938cbb19-6b0c-43bf-95c7-d2b5c5999aaf": "2022-04-22T12:35:10.513042",
+        "778ad170-d349-4b5a-9fe5-4b380a1227ca": "2026-02-20T18:32:09.960813"
+      }
+    },
+    {
+      "name": "basement-flooding-study-areas",
+      "id": "5db3bfca-9df0-45fa-811c-de1561b124e6",
+      "title": "Basement Flooding Study Areas",
+      "owner": "Toronto Water",
+      "downloaded_at": "2026-09-27T13:40:38+00:00",
+      "resources": {
+        "a6dafcd3-793d-44fa-9ec5-262a0b841708": "2026-02-20T21:34:53.377518",
+        "94ed909b-2626-40bd-a729-900002146595": "2026-02-20T21:34:57.237149"
+      }
+    },
+    {
+      "name": "bicycle-and-micromobility-cordon-count",
+      "id": "5e15dd51-c1ce-4a37-b627-7e61d4cae747",
+      "title": "Bicycle and Micromobility Cordon Count",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T13:40:40+00:00",
+      "resources": {
+        "98e68241-e74d-4623-bb5d-f7a03b385106": null,
+        "20a9044b-75a9-4a6e-93ef-1e1708a75c94": "2024-08-28T15:48:24",
+        "b25c6537-60dc-431e-8901-3c912de28467": "2024-09-23T15:55:25",
+        "8c2d3393-ec60-4277-a20c-1b353eb02665": "2026-02-20T21:34:41.752586",
+        "8a42127a-4400-4b49-9625-9c18336af238": "2026-02-20T21:34:45.835482"
+      }
+    },
+    {
+      "name": "bicycle-cordon-count-2010-2013-2014",
+      "id": "74197812-1dca-4085-8800-03b612a97cdf",
+      "title": "Bicycle Cordon Count: 2010, 2013, 2014",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T13:40:42+00:00",
+      "resources": {
+        "20735355-e9f0-4443-9d7a-ac9ada2dac7e": null,
+        "f5610e47-0586-4260-bc4d-e0aa363a424b": "2024-08-08T14:39:18",
+        "4f12e1c4-b48c-4c50-9464-dee508779ef0": "2024-09-18T18:22:54",
+        "cd0370e3-fdc7-430b-bc00-bdbc2e954aa4": "2026-02-20T21:34:29.389047",
+        "1465cd8c-82aa-4647-9057-853aebd11f94": "2026-02-20T21:34:34.212139"
+      }
+    },
+    {
+      "name": "bicycle-parking-bike-stations-indoor",
+      "id": "8e780459-17cc-49c4-a5f0-89dc5bfe8e77",
+      "title": "Bicycle Parking - Bike Stations (Indoor)",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T13:40:44+00:00",
+      "resources": {
+        "53caa383-5515-4b01-81aa-cfdced622548": "2026-02-20T19:03:15.790817",
+        "0f4799bf-e8ec-4b60-b0e0-2f63c883a348": "2026-02-20T19:03:19.420315"
+      }
+    },
+    {
+      "name": "bicycle-parking-high-capacity-outdoor",
+      "id": "2c32f356-e0ff-4245-84ba-cc3dd71a5694",
+      "title": "Bicycle Parking - High Capacity (Outdoor)",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T13:40:45+00:00",
+      "resources": {
+        "34c11c63-26b9-4f1c-837d-0d87d196ae5a": "2026-04-16T03:04:56.600498",
+        "993dad23-fa5d-4b72-bb03-dfe1cdb3fd7b": "2022-04-18T10:25:09.308272",
+        "457a6315-65fc-466b-b4c4-36127728f7a8": "2026-04-16T03:05:00.191923"
+      }
+    },
+    {
+      "name": "bicycle-parking-racks",
+      "id": "4ddba232-d235-4455-b710-537c89dec7d5",
+      "title": "Bicycle Parking Racks",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T13:40:47+00:00",
+      "resources": {
+        "3526d6da-040d-4475-8009-5fd07eaabbfa": "2026-02-20T21:29:59.179463",
+        "7856210d-8ecf-4cd6-9ae9-9efd0d1e5837": "2022-04-18T09:00:15.478182",
+        "a6ef4cc6-af39-4d0f-9b72-079415c6a5e9": "2026-02-20T21:30:05.101159"
+      }
+    },
+    {
+      "name": "bicycle-shops",
+      "id": "44cb6aed-7ca3-4dbd-b6a5-389fcd221283",
+      "title": "Bicycle Shops",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T13:40:48+00:00",
+      "resources": {
+        "16d23149-340a-432e-8672-b6afddbe4b9f": "2026-02-20T19:02:53.336024",
+        "2cbd52a1-5ee4-493d-ac07-56dbf71207df": "2022-03-10T16:21:17.070584",
+        "1e1e42fa-18de-4c79-b597-845052b7a735": "2026-02-20T19:02:57.382695"
+      }
+    },
+    {
+      "name": "bicycle-thefts",
+      "id": "c7d34d9b-23d2-44fe-8b3b-cd82c8b38978",
+      "title": "Bicycle Thefts",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T13:40:50+00:00",
+      "resources": {
+        "55136dac-26b1-4028-b9f5-7c2344f94153": "2026-07-20T13:14:50.054148",
+        "fc64d996-867f-45d1-8940-80710f7d9cab": "2022-03-10T16:22:59.408218",
+        "a5bdf7c5-946b-47ed-9b38-105b3d05514d": "2026-07-20T13:14:57.234933"
+      }
+    },
+    {
+      "name": "bikeways",
+      "id": "ac87ebfc-d67a-4a63-9528-5474ff33cb68",
+      "title": "Bikeways",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T13:40:51+00:00",
+      "resources": {
+        "118add1d-33f4-4883-b709-5b6f77d774d2": "2023-08-07T00:04:15.815991",
+        "34b45230-7423-4b4d-946e-5adf9ffea072": "2022-04-06T19:22:58.964410",
+        "90481fcf-92db-46c4-94ca-8b770a11c603": "2023-08-07T00:04:21.759519"
+      }
+    },
+    {
+      "name": "blacklegged-tick-surveillance",
+      "id": "78c88292-5375-4373-a687-788a5ff19077",
+      "title": "Blacklegged Tick Surveillance",
+      "owner": "Toronto Public Health",
+      "downloaded_at": "2026-09-27T13:40:52+00:00",
+      "resources": {
+        "877322e6-879e-4cb3-a597-3a837cf96ab7": null,
+        "593f2db1-e89f-45d4-908c-1fd5214f1d79": "2026-02-20T21:23:19.003638",
+        "94ba7af1-92e2-4492-af38-a61692e95da0": "2026-02-20T21:23:23.237405"
+      }
+    },
+    {
+      "name": "bodysafe",
+      "id": "c4052ff7-a09d-4eaf-84e6-6669519f413d",
+      "title": "BodySafe",
+      "owner": "Toronto Public Health",
+      "downloaded_at": "2026-09-27T13:40:54+00:00",
+      "resources": {
+        "05f7edf5-df38-4ca8-b46d-fcd40b10c0e6": "2026-09-27T07:04:46.118480",
+        "957ffc22-da39-4e69-be2a-20afab551f11": "2026-09-27T07:04:50.836497"
+      }
+    },
+    {
+      "name": "bridge-structure",
+      "id": "4e10dbb5-2d67-4bc4-92d3-af7749707748",
+      "title": "Bridge Structures",
+      "owner": "Engineering & Construction Services",
+      "downloaded_at": "2026-09-27T13:40:55+00:00",
+      "resources": {
+        "5b2c65a5-d7f8-431c-b81b-28a833a5b221": "2026-09-01T09:34:59.933700",
+        "aa9bc161-4ac9-48cd-8738-caab2ce44649": "2026-09-01T09:35:04.648703"
+      }
+    },
+    {
+      "name": "bridges-elevated-roadways-and-culverts-in-toronto",
+      "id": "b63cc627-b689-4d0e-ae31-5b4ee8752f71",
+      "title": "Bridges, Elevated Roadways, and Culverts in Toronto",
+      "owner": "Engineering & Construction Services",
+      "downloaded_at": "2026-09-27T13:40:56+00:00",
+      "resources": {
+        "87d6ce4d-2105-4caa-aa58-05eaf8acec3f": "2024-10-15T18:37:46.974125",
+        "7bb45a84-2e65-4e24-b3fd-415e51471559": "2024-10-15T18:37:52.398360"
+      }
+    },
+    {
+      "name": "building-construction-demolition-violations",
+      "id": "f72468e9-7e67-4048-a4fc-de7ebc7ac70a",
+      "title": "Building Construction/Demolition Violations",
+      "owner": "Toronto Building",
+      "downloaded_at": "2026-09-27T13:40:57+00:00",
+      "resources": {
+        "3843ec8f-9b04-4ccb-bf1b-3934b5590df9": null,
+        "230a24d9-efc8-4562-9458-7d8645895d0f": "2026-09-27T10:28:27.918807"
+      }
+    },
+    {
+      "name": "building-permits-active-permits",
+      "id": "108c2bd1-6945-46f6-af92-02f5658ee7f7",
+      "title": "Building Permits - Active Permits",
+      "owner": "Toronto Building",
+      "downloaded_at": "2026-09-27T13:41:01+00:00",
+      "resources": {
+        "6d0229af-bc54-46de-9c2b-26759b01dd05": null,
+        "dfce3b7b-4f17-4a9d-9155-5e390a5ffa97": "2026-09-27T10:24:25.974935"
+      }
+    },
+    {
+      "name": "building-permits-cleared-permits",
+      "id": "9e42a85b-180f-4dc5-b0d7-d46661a6c0ec",
+      "title": "Building Permits - Cleared Permits",
+      "owner": "Toronto Building",
+      "downloaded_at": "2026-09-27T13:41:13+00:00",
+      "resources": {
+        "a96c0ba4-3026-402b-b09d-5b1268b8f810": null,
+        "b41c3e9e-4d2d-4b09-a789-9569d8da407c": "2026-09-27T11:16:51.996777",
+        "c647bdae-0127-425e-86e6-2d88ff0e2adf": "2025-07-08T16:18:22.175020"
+      }
+    },
+    {
+      "name": "building-permits-green-roofs",
+      "id": "9425a29e-6b01-40f0-94c2-9a7b9efe8696",
+      "title": "Building Permits - Green Roofs",
+      "owner": "Toronto Building",
+      "downloaded_at": "2026-09-27T13:41:14+00:00",
+      "resources": {
+        "936ea65d-2ed3-4243-8cf5-10d1c28194c6": "2026-07-13T09:05:10.000963",
+        "fd09016a-cce5-4ef6-8aaf-5717c93ac80c": "2026-09-21T10:08:32.390593"
+      }
+    },
+    {
+      "name": "building-permits-pool-enclosures",
+      "id": "f2ca7883-f6a6-48ec-b98c-b8efca638afc",
+      "title": "Building Permits - Pool Enclosures",
+      "owner": "Toronto Building",
+      "downloaded_at": "2026-09-27T13:41:16+00:00",
+      "resources": {
+        "7114cd7e-103a-438b-9258-d80e7b0e10d2": "2026-07-13T09:10:13.000611",
+        "d2e15e55-ab7b-4ca5-87e2-c915117e922a": "2026-07-13T12:00:18.276645",
+        "d743edeb-84eb-40b7-9f03-6fb46a964ce7": null,
+        "41dce2ed-d8a5-4fec-a442-9fa625809fff": "2026-09-23T20:14:46.278391"
+      }
+    },
+    {
+      "name": "building-permits-signs",
+      "id": "5a19a44e-5fbe-4b3f-9246-4946de37fff5",
+      "title": "Building Permits - Signs",
+      "owner": "Toronto Building",
+      "downloaded_at": "2026-09-27T13:41:18+00:00",
+      "resources": {
+        "add01ea9-c781-4b0d-971d-69b5f106dc68": "2026-07-13T09:15:43.000512",
+        "b2ec1eff-7fba-47f7-963a-5708bb1b62bc": "2026-07-13T12:00:30.231455",
+        "b7113ef7-f3f9-45ea-8212-387ba5b89977": null,
+        "0f9e94a7-0491-4ad0-b2d2-cc89fabdef63": "2026-09-22T20:44:43.594398"
+      }
+    },
+    {
+      "name": "building-permits-solar-hot-water-heaters",
+      "id": "1e29ce3f-9795-4664-8d42-1911c2796196",
+      "title": "Building Permits - Solar Hot Water Heaters",
+      "owner": "Toronto Building",
+      "downloaded_at": "2026-09-27T13:41:20+00:00",
+      "resources": {
+        "220001bd-0279-477f-bb22-1379077aac6f": "2026-07-13T09:20:06.000453",
+        "054c1de1-f504-41d4-ad06-949ae90f95b0": "2026-07-13T12:00:22.355339",
+        "b6d42209-a5cd-45aa-9225-253746679d7c": null,
+        "e30a2a01-e371-4a23-89db-aa6827a480d4": "2026-08-11T02:34:00.717494"
+      }
+    },
+    {
+      "name": "business-improvement-areas",
+      "id": "9edb9628-1213-42bd-8352-5c4ed28e9e42",
+      "title": "Business Improvement Areas",
+      "owner": "Economic Development & Culture",
+      "downloaded_at": "2026-09-27T13:41:21+00:00",
+      "resources": {
+        "c3b2e417-fb42-44db-96cc-db48fbbca8ef": "2026-09-11T03:06:12.474201",
+        "3e3492dc-9c37-4b0a-b6e1-ca08cf2d2d94": "2022-04-18T10:10:14.339259",
+        "df3a2631-1f2c-4e1d-a264-ee23c45779f7": "2026-09-11T03:06:16.395081"
+      }
+    },
+    {
+      "name": "business-incubation",
+      "id": "a9e67869-cf49-435d-8922-edfbede1d486",
+      "title": "Business Incubation",
+      "owner": "Economic Development & Culture",
+      "downloaded_at": "2026-09-27T13:41:22+00:00",
+      "resources": {
+        "c57c3e1c-20e2-470f-bc82-e39a0264be31": null,
+        "585c1ca2-9195-452e-ad76-8c982b0941aa": "2026-02-20T20:46:33.715810"
+      }
+    },
+    {
+      "name": "cafeto-curb-lane-parklet-cafe-locations",
+      "id": "3b605a2e-f3bf-4b2b-b972-c0829b2788f5",
+      "title": "CaféTO Locations",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T13:41:23+00:00",
+      "resources": {
+        "d5d2b7e1-d0a1-4c1a-aab6-3413ccbbe156": "2026-08-04T18:54:42.580546",
+        "8af2e7c3-b023-4a1f-8fd1-a89da4c841c8": "2026-08-04T18:54:46.828413"
+      }
+    },
+    {
+      "name": "capital-project-pipeline",
+      "id": "9b17b1bc-7227-44da-83ea-fc1ef3359176",
+      "title": "Capital Projects Pipeline",
+      "owner": "Purchasing & Materials Management",
+      "downloaded_at": "2026-09-27T13:41:24+00:00",
+      "resources": {
+        "6855d34a-cc3d-4ece-9c99-77d7f6ad3709": "2026-05-29T18:10:29.532093"
+      }
+    },
+    {
+      "name": "catalogue-quality-scores",
+      "id": "473def30-1c87-45f1-95c4-06b9bf693fec",
+      "title": "Toronto Open Data Quality Scores",
+      "owner": "Information & Technology",
+      "downloaded_at": "2026-09-27T13:41:28+00:00",
+      "resources": {
+        "6d999ad7-d83c-4515-afc7-cae7ea85a1a8": null,
+        "38f2dcca-0d40-470a-a5e9-0d15a6565eef": "2026-09-26T19:34:15.667187",
+        "22f223e7-73f7-4842-935c-80a0ba5c3e5b": null,
+        "513eb9a4-45d1-491c-ba9d-e8a35d69c922": "2026-02-20T21:49:03.817259"
+      }
+    },
+    {
+      "name": "central-intake-calls",
+      "id": "d594d085-8332-4f14-82dc-7d16837db2e8",
+      "title": "Central Intake calls",
+      "owner": "Toronto Shelter & Support Services",
+      "downloaded_at": "2026-09-27T13:41:30+00:00",
+      "resources": {
+        "61191143-8143-4425-bf89-2c1523961227": null,
+        "9da03ed6-cd19-4df7-9b0a-03f81bf4995c": null,
+        "f845ebd8-0bfd-4b26-8551-5f53aed14e36": "2026-09-18T18:26:58.146084",
+        "4ab4647f-e389-4787-9af8-8fe1d4d3b9e3": "2026-09-18T18:27:30.344322"
+      }
+    },
+    {
+      "name": "centralized-waiting-list-activity-for-social-housing",
+      "id": "ab002eff-791f-40a1-bc2a-087935fc71f3",
+      "title": "Centralized Waiting List Activity for Social Housing",
+      "owner": "Housing Secretariat",
+      "downloaded_at": "2026-09-27T13:41:31+00:00",
+      "resources": {
+        "825a9665-49cb-4d01-9e29-cb21dba0c4be": null,
+        "eb79a904-05fb-4605-8b09-7caace155099": "2026-08-10T04:19:48.736357"
+      }
+    },
+    {
+      "name": "chemical-tracking-chemtrac",
+      "id": "ae8eebf8-42fe-426f-b5f8-5baa8ff0bfb8",
+      "title": "Chemical Tracking (ChemTrac)",
+      "owner": "Toronto Public Health",
+      "downloaded_at": "2026-09-27T13:41:42+00:00",
+      "resources": {
+        "94aae288-4184-4635-852a-983a2b0ba99c": null,
+        "33afce06-f0bf-4f8c-ad3f-27c5a79c9f86": "2026-02-20T18:44:23.317961",
+        "eb0480e5-6265-4d5d-b582-f112ebc7cc4f": null,
+        "8550465e-1222-43f6-b9cd-1ddd3ad70b92": null,
+        "82b6b099-4f19-407b-946c-fdad94b65607": null,
+        "5bf7d7d2-d57e-478f-9f03-d8027a1e836a": null,
+        "19498a6d-9768-47c2-be97-9173fb15d927": null,
+        "2beee9d8-e32d-4ad2-b337-4df9df4444d0": null,
+        "c2c7e858-2dbc-4313-b3bf-152b3851d93e": null,
+        "32e5a508-b52f-43b2-84ce-808757d11962": null,
+        "240beb92-003b-4b1c-b6eb-284695bf0170": null,
+        "2c937a48-ace8-4b2a-be43-a7f9c9b5c791": null,
+        "6aca9c31-3b9a-483a-bcca-a1c631d7b25b": "2026-02-20T18:44:44.222769",
+        "e789e297-1bf5-4847-8341-16fe894e9975": "2026-02-20T18:44:37.175438",
+        "39e53e4c-8a29-4fd4-876e-7584a0b9a131": "2026-02-20T18:44:51.181313",
+        "3facf14c-4384-469b-a5d3-79804ba9b0a9": "2026-02-20T18:44:58.995609",
+        "725f4585-93bb-4cc0-94fc-a76b8cd0c3a1": "2026-02-20T18:45:06.513257",
+        "19800c1a-6784-48b3-8b90-922a91871ad6": "2026-02-20T18:45:33.999324",
+        "7e9343d6-4284-414a-b55f-b8b30125df85": "2026-02-20T18:45:13.732124",
+        "4dcdbb55-6c81-4380-a623-7449268d586a": "2026-02-20T18:45:20.630862",
+        "5ed3a534-fa56-4639-a407-25fae15bd9a4": "2026-02-20T18:45:27.431231",
+        "718a66a4-7895-4151-977a-925bdc22ad69": "2026-02-20T18:44:30.171686"
+      }
+    },
+    {
+      "name": "childcaresafe",
+      "id": "fe104145-55ca-4c50-87fd-1436d55074f7",
+      "title": "ChildCareSafe™ Infection Control inspection results",
+      "owner": "Toronto Public Health",
+      "downloaded_at": "2026-09-27T13:41:43+00:00",
+      "resources": {
+        "7079db1f-9c3b-4dd5-bb1d-8422d53ab9b0": "2026-09-27T02:03:48.341043",
+        "a38a1595-9cf8-4436-a73d-c98cd60f6800": "2026-09-27T02:03:52.264052"
+      }
+    },
+    {
+      "name": "city-council-and-committees-meeting-schedule-reports",
+      "id": "3bfab808-105b-45ab-8d92-cf1916594653",
+      "title": "City Council and Committees Meeting Schedule Reports",
+      "owner": "City Clerk's Office",
+      "downloaded_at": "2026-09-27T13:41:48+00:00",
+      "resources": {
+        "08c8aedb-afba-41f5-830e-bbfb305ebbc7": null,
+        "7a4282a5-3eff-482a-94e7-3825d03dc3bc": "2023-06-30T13:27:30.000533",
+        "62993387-481e-40bc-981f-a25d4b3db2e4": "2023-06-30T13:27:21.000484",
+        "4d3dc8eb-87fa-4f8b-9405-b78710a4625b": "2023-06-30T13:27:08.000932",
+        "8e35929a-975e-48f3-8080-812c7649997b": "2023-06-30T13:26:58.000417",
+        "b046ba1b-680e-46ad-8eb5-16cdb08879a2": "2026-02-20T17:27:54.927670",
+        "38106b27-1f94-446e-a6e8-f6549ecf8a92": "2026-02-20T17:27:48.725943",
+        "cc8003e4-4d6f-47e3-9137-d8692697f1e1": "2026-02-20T17:27:42.301299",
+        "5d836f60-00d1-416c-b8bd-f2ae76d87ddb": "2026-02-20T17:27:35.839295",
+        "de912ecb-4f78-4688-bcf0-3da3f2a407dd": "2026-09-17T18:08:13.342495"
+      }
+    },
+    {
+      "name": "city-of-toronto-free-public-wifi",
+      "id": "cbfb8f03-6c97-4944-b23d-98945969f054",
+      "title": "City of Toronto Free Public WiFi",
+      "owner": "Information & Technology",
+      "downloaded_at": "2026-09-27T13:41:49+00:00",
+      "resources": {
+        "a4978058-b426-46dd-baed-b315ed840569": "2026-08-03T19:06:06.941504",
+        "ffb5124c-35c5-4453-a049-bde56b059036": "2026-08-03T19:06:10.638911"
+      }
+    },
+    {
+      "name": "city-operated-electric-vehicle-charging-station-map",
+      "id": "9929701f-9114-44d5-b4b8-fb0e6e9e195f",
+      "title": "The City Operated Electric Vehicle Charging Station Map",
+      "owner": "Environment & Climate",
+      "downloaded_at": "2026-09-27T13:41:50+00:00",
+      "resources": {
+        "686956f5-b9ef-4572-92cb-c012deaaf2aa": "2026-02-20T21:34:18.174026",
+        "8bed6914-303c-4b83-8cf5-f884d3e9ce98": "2026-02-20T21:34:21.988509"
+      }
+    },
+    {
+      "name": "city-subject-thesaurus",
+      "id": "2db04843-9c1b-425b-8e4a-da0fab02ea20",
+      "title": "City Subject Thesaurus",
+      "owner": "City Clerk's Office",
+      "downloaded_at": "2026-09-27T13:41:50+00:00",
+      "resources": {
+        "e76347b3-7de2-4ecc-ac53-07cf012ee7c6": "2021-04-28T14:42:13.857481"
+      }
+    },
+    {
+      "name": "city-vehicle-availability",
+      "id": "0f1aae7d-edf0-4030-9e10-8d18d1562645",
+      "title": "City Vehicle Availability",
+      "owner": "Fleet Services",
+      "downloaded_at": "2026-09-27T13:41:51+00:00",
+      "resources": {
+        "d5c6132d-d33a-4402-8cc8-dad611362d53": null,
+        "792bba92-a34a-4735-a854-d4268890f0f7": "2026-08-08T06:24:01.927232"
+      }
+    },
+    {
+      "name": "city-wards",
+      "id": "5e7a8234-f805-43ac-820f-03d7c360b588",
+      "title": "City Wards",
+      "owner": "City Clerk's Office",
+      "downloaded_at": "2026-09-27T13:41:53+00:00",
+      "resources": {
+        "12a877e3-82ce-4334-ae1d-1c1f0ea3823f": "2026-02-20T19:02:41.251272",
+        "7e2c6527-53c9-4e65-96a3-25718dd8bf15": "2022-04-18T10:00:12.844372",
+        "393ef8d8-b34f-4389-ba71-bf18d6750a92": "2026-02-20T19:02:46.312847"
+      }
+    },
+    {
+      "name": "clothing-drop-box-locations",
+      "id": "58efb906-0ba2-4e83-9a2e-a64f03a3d58e",
+      "title": "Clothing Drop-Box Locations",
+      "owner": "Municipal Licensing & Standards",
+      "downloaded_at": "2026-09-27T14:37:51+00:00",
+      "resources": {
+        "b3d908dc-e12f-4aae-90c1-bd2cb1b52b26": "2026-09-03T06:20:23.054486",
+        "bb8722e8-ec17-4811-a593-06b742e92bc5": "2022-04-22T10:45:13.830313",
+        "4dbf8208-b2bc-4b05-81b2-d315b2317d22": "2026-09-03T06:20:26.538181"
+      }
+    },
+    {
+      "name": "community-council-boundaries",
+      "id": "5709d6ff-75a3-493d-864d-ca1b49711074",
+      "title": "Community Council Boundaries",
+      "owner": "City Clerk's Office",
+      "downloaded_at": "2026-09-27T14:38:48+00:00",
+      "resources": {
+        "a8748b86-3b8d-4bca-8b11-882a453ca236": "2026-02-20T21:23:07.335366",
+        "d482a585-6882-4ff9-aa7b-d45c48bb30cf": "2022-04-18T10:05:11.125799",
+        "93a7ee77-f131-4660-bd59-4c4987eb0cac": "2026-02-20T21:23:11.908134"
+      }
+    },
+    {
+      "name": "community-grants-allocations",
+      "id": "6f20e59a-1dd9-4a1d-ae9b-ba56a126c7f5",
+      "title": "Community Grants Allocations",
+      "owner": "Social Development, Finance & Administration",
+      "downloaded_at": "2026-09-27T14:38:49+00:00",
+      "resources": {
+        "105a5036-529e-48df-ac7d-50663b81932e": "2026-04-15T21:28:51.194911",
+        "06bee723-835b-4695-9afe-2ac8914594c8": "2026-07-01T07:42:48.495477"
+      }
+    },
+    {
+      "name": "contributing-areas",
+      "id": "5ee0bfee-8c2d-4b46-9f34-552a6db714ff",
+      "title": "Contributing Areas",
+      "owner": "City Planning",
+      "downloaded_at": "2026-09-27T14:38:51+00:00",
+      "resources": {
+        "987f5a16-c1c8-4517-aeb9-ef3b0bca2076": "2026-06-08T18:50:47.046425",
+        "2a2bd463-2397-4ac8-b9e2-d4fabca7bcf7": "2026-06-08T18:50:51.445497"
+      }
+    },
+    {
+      "name": "corporate-real-estate-management-portfolio-washrooms",
+      "id": "e68ed98f-e8cd-4f43-a159-90847c4b5e48",
+      "title": "Corporate Real Estate Management Portfolio Washrooms",
+      "owner": "Corporate Real Estate Management",
+      "downloaded_at": "2026-09-27T14:38:52+00:00",
+      "resources": {
+        "155dd0ed-eb26-4cad-99fd-09eab355d6be": null,
+        "104565ec-5020-47b4-b9e5-5dc2e78a7052": "2026-06-22T18:40:06.670065",
+        "c2a6c0ce-172b-45dd-a5f1-78eedd28024f": "2026-06-22T18:40:09.668322"
+      }
+    },
+    {
+      "name": "council-and-standing-committee-meeting-statistics",
+      "id": "6e0644df-5ae3-492b-b0c1-94ea86de9bfe",
+      "title": "Council and Standing Committee Meeting Statistics",
+      "owner": "City Clerk's Office",
+      "downloaded_at": "2026-09-27T14:38:54+00:00",
+      "resources": {
+        "b63b44b2-5911-41e6-81a3-6ed5aa1efa3f": null,
+        "947a2b82-4062-4f82-a29c-ae55665d95e7": null,
+        "56100fdb-def5-45a6-846e-79fc20218dbe": "2026-02-20T19:04:00.351233",
+        "56117ce0-61da-4333-910d-9f212d75ba3d": "2026-02-20T19:03:55.877241"
+      }
+    },
+    {
+      "name": "council-business-travel-expenses",
+      "id": "971ed89f-282e-4dce-a7d0-2304f1e07495",
+      "title": "Council Business Travel Expenses",
+      "owner": "City Clerk's Office",
+      "downloaded_at": "2026-09-27T14:38:55+00:00",
+      "resources": {
+        "d434eebc-f1ca-4ac5-a16a-4ef8cd66200a": null,
+        "b743de0f-4d2c-4bd2-9a43-a77d5c6b6fa9": "2024-10-15T17:50:07.887823"
+      }
+    },
+    {
+      "name": "councillors-constituency-services-office-expense-reporting",
+      "id": "be83769d-185b-48dd-91c4-0c4bd9d025f2",
+      "title": "Councillors' Constituency Services & Office Expense Reporting",
+      "owner": "City Clerk's Office",
+      "downloaded_at": "2026-09-27T14:38:56+00:00",
+      "resources": {
+        "2073a1b9-afa2-4b52-8919-b26cdff12c98": null,
+        "8febffb1-018b-419d-a009-8358614d7da9": "2026-02-20T20:54:22.639346"
+      }
+    },
+    {
+      "name": "covid-19-cases-in-toronto",
+      "id": "64b54586-6180-4485-83eb-81e8fae3b8fe",
+      "title": "COVID-19 Cases in Toronto",
+      "owner": "Toronto Public Health",
+      "downloaded_at": "2026-09-27T14:39:00+00:00",
+      "resources": {
+        "e5bf35bc-e681-43da-b2ce-0242d00922ad": "2022-03-09T12:42:07",
+        "fff4ee65-3527-43be-9a8a-cb9401377dbc": "2026-02-20T20:44:36.167858"
+      }
+    },
+    {
+      "name": "covid-19-immunization-clinics",
+      "id": "d3f21fec-a80d-4f29-b298-1d0660a0e55d",
+      "title": "COVID-19 Immunization Clinics",
+      "owner": "Toronto Public Health",
+      "downloaded_at": "2026-09-27T14:39:01+00:00",
+      "resources": {
+        "969ffba2-354c-48e0-9ad3-f16a5608116d": "2026-02-20T21:30:30.345571",
+        "9d47cc2c-c57b-4fb5-8e45-56a9dad7b252": "2026-02-20T21:30:34.565336"
+      }
+    },
+    {
+      "name": "covid-19-testing-sites",
+      "id": "cd616ce6-f7bb-424f-9412-da4eb87e342e",
+      "title": "COVID-19 Testing Sites",
+      "owner": "Toronto Public Health",
+      "downloaded_at": "2026-09-27T14:39:03+00:00",
+      "resources": {
+        "7a590e13-aace-4a60-9297-292010fb5e32": "2026-02-20T21:30:17.171881",
+        "972ceb2a-2c87-4344-bb69-6efef3ab0820": "2022-04-22T13:45:12.436995",
+        "15c94d48-84f0-42d9-baee-330db4e0886b": "2026-02-20T21:30:22.041911"
+      }
+    },
+    {
+      "name": "cultural-festivals-funding-program-recipients",
+      "id": "e889389b-3f16-4e35-800c-fe06fc3349c6",
+      "title": "Cultural Festivals Funding Program recipients",
+      "owner": "Economic Development & Culture",
+      "downloaded_at": "2026-09-27T14:39:04+00:00",
+      "resources": {
+        "1d505757-ae8d-42e2-9385-7e8454d97dba": null,
+        "bc4e4490-87c8-4dc7-89cf-755b98a4cd6b": "2026-02-20T19:02:28.399419"
+      }
+    },
+    {
+      "name": "cultural-hotspot-points-of-interest",
+      "id": "c7be2ee7-d317-4a28-8cbe-bff1ce116b46",
+      "title": "Cultural Hotspot - Points of Interest",
+      "owner": "Economic Development & Culture",
+      "downloaded_at": "2026-09-27T14:39:05+00:00",
+      "resources": {
+        "757d840a-352a-4522-b695-8dfb6f06dc50": "2026-02-20T20:55:41.539094",
+        "0b067438-bb64-4fc4-ba49-304f8342d508": "2022-03-10T17:14:55.914830",
+        "4d16d132-fe2d-4f79-8269-9ef942d599a8": "2026-02-20T20:55:46.237290"
+      }
+    },
+    {
+      "name": "current-and-future-climate",
+      "id": "f71afa9f-b114-4ac0-b2fb-cebe6cec8cc6",
+      "title": "Current and Future Climate",
+      "owner": "Environment & Climate",
+      "downloaded_at": "2026-09-27T14:39:06+00:00",
+      "resources": {
+        "04373db4-7d6b-4f59-96cb-bd04cc9b99d9": null,
+        "2d84ae36-ff66-491b-8063-4773967b8fb4": "2026-02-20T21:35:14.737369"
+      }
+    },
+    {
+      "name": "cycling-network",
+      "id": "abbe5ee3-e249-4f86-a219-f0022eaddcc9",
+      "title": "Cycling Network",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T14:39:08+00:00",
+      "resources": {
+        "264ec41d-7a88-4953-9675-0bfc7a527496": "2026-09-14T19:14:35.207302",
+        "ff0ab46b-74bb-4138-9305-80c36a5daa25": "2026-09-14T19:14:39.527070"
+      }
+    },
+    {
+      "name": "daily-shelter-overnight-service-occupancy-capacity",
+      "id": "21c83b32-d5a8-4106-a54f-010dbe49f6f2",
+      "title": "Daily Shelter & Overnight Service Occupancy & Capacity",
+      "owner": "Toronto Shelter & Support Services",
+      "downloaded_at": "2026-09-27T14:39:16+00:00",
+      "resources": {
+        "42714176-4f05-44e6-b157-2b57f29b856a": "2023-06-05T13:02:37.000582",
+        "5dc4fbfc-0951-45e8-ae30-962af9dcaf7c": null,
+        "fc409fd7-0348-49d7-bba9-70ac1a8c727c": null,
+        "62786156-b463-4c04-b286-c23f32c726ab": null,
+        "1cc46acb-c6d3-4537-93ef-3ebad039275c": null,
+        "da8854b8-e570-4de2-b051-a906b62fe7f8": "2022-01-01T13:31:28",
+        "ffd20867-6e3c-4074-8427-d63810edf231": "2026-09-27T13:36:48.362767",
+        "55d58477-50f5-490c-8da8-5953e3b26ca4": "2026-02-20T17:33:00.196279",
+        "df7d621d-a7a0-4854-81b9-8a6dc29d73a6": "2026-02-20T17:33:18.026466",
+        "79723018-8dc7-4cd4-8fb4-8652376ea531": "2026-02-20T17:32:42.438123",
+        "6687de07-9c50-4c2a-838e-48ee125001c0": "2026-02-20T17:32:24.581101",
+        "77a0d39e-82fb-465e-a803-d6a73e98283b": "2026-04-16T13:38:31.825949"
+      }
+    },
+    {
+      "name": "death-registry-statistics",
+      "id": "cba07a90-984b-42d2-9131-701c8c2a9788",
+      "title": "Death Registry Statistics",
+      "owner": "City Clerk's Office",
+      "downloaded_at": "2026-09-27T14:39:17+00:00",
+      "resources": {
+        "b00e485a-8214-43cb-aaf9-55b9dc64b747": "2026-07-01T10:00:07.000421",
+        "cc418325-b3d0-4afd-ae64-ccb9b71c549c": "2026-07-01T12:00:32.862251",
+        "973a0fe2-6fa6-4b4c-be49-02d1cb7b2701": null,
+        "0a760d7d-1b00-4406-b23f-f58f086bb759": "2026-09-01T07:53:54.573500"
+      }
+    },
+    {
+      "name": "deaths-of-people-experiencing-homelessness",
+      "id": "8546b6d9-41ec-48df-895f-09e86784ef26",
+      "title": "Deaths of People Experiencing Homelessness",
+      "owner": "Toronto Public Health",
+      "downloaded_at": "2026-09-27T14:39:21+00:00",
+      "resources": {
+        "0c81b52f-a77b-41ad-926c-9eeb6798cbf2": null,
+        "e8fcea15-355a-4dd1-adbe-fec768fb7cd3": null,
+        "5bb6525a-5d0a-49be-9c0c-c16f05fff535": null,
+        "d3ffb4dc-4794-4dcb-a2bf-450fcf92fdd0": null,
+        "6cbadff9-e04f-4628-978f-a91f7f8d4733": "2026-03-10T19:29:09.408344",
+        "51baa762-d67f-4f84-81b0-768d032c1b5b": "2026-03-10T19:29:45.894412",
+        "f171a9f1-60df-4a60-9efd-f49e0096a89c": "2026-03-10T19:30:24.691815",
+        "9d8ec6cd-a17f-4079-a2ee-271a1a7f3b44": "2026-03-10T19:31:01.519073"
+      }
+    },
+    {
+      "name": "deaths-of-people-experiencing-homelessness-archival",
+      "id": "a7ae08f3-c512-4a88-bb3c-ab40eca50c5e",
+      "title": "Deaths of People Experiencing Homelessness (Archival)",
+      "owner": "Toronto Public Health",
+      "downloaded_at": "2026-09-27T14:39:25+00:00",
+      "resources": {
+        "8b2e5ec9-7cee-49cc-a67e-bba38e5077be": null,
+        "dc4ec2fa-d655-46ca-af32-f216d26e9804": "2026-02-20T20:43:30.769355",
+        "f056edc0-7741-4e66-b78a-163753359f64": null,
+        "ceafdcdf-5f41-4ba5-9b69-f4c8e581ab6e": "2026-02-20T20:43:35.356555",
+        "a21028cd-cda8-4bf3-bba8-de9c6834b887": null,
+        "04a75c51-e1ad-4ac3-82bf-e894b16bb9e5": "2026-02-20T20:43:40.070569"
+      }
+    },
+    {
+      "name": "deaths-of-shelter-residents",
+      "id": "2d1005a3-7a54-485d-b798-019a3bd391c8",
+      "title": "Deaths of Shelter Residents",
+      "owner": "Toronto Shelter & Support Services",
+      "downloaded_at": "2026-09-27T14:39:26+00:00",
+      "resources": {
+        "eaff3d0e-0d3f-414d-8bf8-a5608a233a66": null,
+        "7d02d5a7-9496-4d03-b5bb-6657c7a8c26e": null,
+        "faade531-3e97-438f-ab5c-5ba19ce49ac9": "2026-08-24T17:23:36.525799",
+        "07cb5cbb-d1c1-4021-ad1f-fd3e87cef401": "2026-08-24T17:24:08.215093"
+      }
+    },
+    {
+      "name": "demolition-and-replacement-of-rental-housing-units",
+      "id": "ad64ef01-9ec5-4d24-8f54-a9d0318e4b8a",
+      "title": "Demolition and Replacement of Rental Housing Units",
+      "owner": "City Planning",
+      "downloaded_at": "2026-09-27T14:39:28+00:00",
+      "resources": {
+        "3ad8e86d-f166-4279-85e8-69b752248c16": null,
+        "ce36bef0-d3be-4c1d-a638-722ce2b4c13d": "2026-08-03T02:33:46.073173"
+      }
+    },
+    {
+      "name": "development-applications",
+      "id": "0aa7e480-9b48-4919-98e0-6af7615b7809",
+      "title": "Development Applications",
+      "owner": "Development Review",
+      "downloaded_at": "2026-09-27T14:39:29+00:00",
+      "resources": {
+        "8907d8ed-c515-4ce9-b674-9f8c6eefcf0d": null,
+        "77f8a66a-bd43-40e6-b6c9-12a2b03a5032": "2026-09-27T07:25:37.596574"
+      }
+    },
+    {
+      "name": "development-pipeline",
+      "id": "a7a327c5-4e25-4881-816d-c8b145e02832",
+      "title": "Development Pipeline",
+      "owner": "City Planning",
+      "downloaded_at": "2026-09-27T14:39:30+00:00",
+      "resources": {
+        "7aad5dbd-a769-4bd5-b5d2-f9bb605b6bf9": null,
+        "dc28845a-299f-4562-b605-27b6fefc17e0": "2026-05-21T07:25:04.350239"
+      }
+    },
+    {
+      "name": "dinesafe",
+      "id": "b6b4f3fb-2e2c-47e7-931d-b87d22806948",
+      "title": "Dinesafe™",
+      "owner": "Toronto Public Health",
+      "downloaded_at": "2026-09-27T14:39:31+00:00",
+      "resources": {
+        "af0f5b8a-4b73-4a50-8781-65e949792b40": "2026-09-27T08:17:24.572325",
+        "b7bc9da4-5beb-4df8-bc3d-f634bc64782f": "2026-07-08T21:00:32.773986"
+      }
+    },
+    {
+      "name": "dogs-issued-dangerous-dog-orders",
+      "id": "f93cf6b8-a35f-4f86-996d-1302d858eed2",
+      "title": "Registry of Dogs Subject to and Issued a Dangerous Dog Order",
+      "owner": "Municipal Licensing & Standards",
+      "downloaded_at": "2026-09-27T14:39:32+00:00",
+      "resources": {
+        "b9b41450-70d2-4d83-8807-bac4a794eca5": null,
+        "85c20666-84f6-4ade-9e39-4c13867a60ef": "2026-09-21T10:16:36.419225"
+      }
+    },
+    {
+      "name": "doors-open-toronto-2016",
+      "id": "ce8cad9c-3399-4ccb-b887-73168fe81b90",
+      "title": "Doors Open Toronto 2016",
+      "owner": "Economic Development & Culture",
+      "downloaded_at": "2026-09-27T14:39:33+00:00",
+      "resources": {
+        "b9f877d9-274f-4ae7-8081-1bf6de69cffc": null,
+        "8b24f1ec-ca9b-438e-b936-e1c540acd2c8": "2026-02-20T20:54:37.174431"
+      }
+    },
+    {
+      "name": "doors-open-toronto-2017",
+      "id": "e2c48175-3259-42f7-8583-c1c400fbb62e",
+      "title": "Doors Open Toronto 2017",
+      "owner": "Economic Development & Culture",
+      "downloaded_at": "2026-09-27T14:39:34+00:00",
+      "resources": {
+        "d09e913e-db91-4c2e-b09f-059b7d44ce19": null,
+        "aadea89e-5cda-4586-bd4c-ac94365b281e": "2026-02-20T20:54:32.126091"
+      }
+    },
+    {
+      "name": "doors-open-toronto-2018",
+      "id": "ffa8dcc8-cd58-4744-9433-1492cac56d24",
+      "title": "Doors Open Toronto 2018",
+      "owner": "Economic Development & Culture",
+      "downloaded_at": "2026-09-27T14:39:35+00:00",
+      "resources": {
+        "1f1753e5-c6aa-4904-b26e-a8f0573f80aa": null,
+        "5396effc-2782-47db-8a26-d2f2af777d4e": "2026-02-20T20:54:27.525996"
+      }
+    },
+    {
+      "name": "downsview-secondary-plan",
+      "id": "6aa7f894-3ea7-47b4-ad04-c6d453ff8bdb",
+      "title": "Update Downsview",
+      "owner": "City Planning",
+      "downloaded_at": "2026-09-27T14:39:39+00:00",
+      "resources": {
+        "a9b4d82f-356c-4c29-835e-6b340bf43553": "2026-02-20T19:01:11.705782",
+        "01d63caa-4119-4813-aa90-ca1a9d66d227": "2026-02-20T19:01:17.235704",
+        "102f16fc-803e-417f-9382-dfa0aa9dac9d": "2026-02-20T19:01:52.052932",
+        "4680475b-5568-400a-8cd6-1f83fb04af4d": "2026-02-20T19:01:57.401016",
+        "0ec42b32-e62b-430a-991a-3fcd42a9ef4b": "2026-02-20T19:01:25.388603",
+        "6bb8bd07-a073-4ec7-b725-96f92db23d0d": "2026-02-20T19:01:30.739205",
+        "91cff2ca-216a-463f-9f57-ded8db0ccb45": "2026-02-20T19:01:38.577553",
+        "412626d0-2edf-47ac-8b8a-26fed86ed6ce": "2026-02-20T19:01:43.838512"
+      }
+    },
+    {
+      "name": "earlyon-child-and-family-centres",
+      "id": "610e4814-7b85-4bbe-8cc2-e435dd4c539c",
+      "title": "EarlyON Child and Family Centres",
+      "owner": "Children's Services",
+      "downloaded_at": "2026-09-27T14:39:41+00:00",
+      "resources": {
+        "990daa6a-013e-486b-9cb9-5f3d52475f18": "2026-09-26T21:00:22.382369",
+        "93ecf131-fb1d-4177-9ee1-5595d2f0e46e": "2026-09-26T21:00:27.142157",
+        "d3177390-1118-4935-952c-c21c0bb7f6dd": "2026-09-18T18:08:12.124046"
+      }
+    },
+    {
+      "name": "elected-officials-contact-information",
+      "id": "27aa4651-4548-4e57-bf00-53a346931251",
+      "title": "Elected Officials' Contact Information",
+      "owner": "City Clerk's Office",
+      "downloaded_at": "2026-09-27T14:39:43+00:00",
+      "resources": {
+        "16d6b1b3-b474-47f4-8c09-8bf5b3aa0e68": null,
+        "dea217a2-f7c1-4e62-aec1-48fffaad1170": "2026-02-20T18:59:34.378671",
+        "ef3023ae-aa71-4c0a-99b4-93d1038dcb1b": null,
+        "89e7d4ae-367b-450c-8680-8c7f80f78175": "2026-02-20T18:59:38.956007"
+      }
+    },
+    {
+      "name": "elections-subdivisions",
+      "id": "1f5df7fa-8606-4085-b75e-6d658a227558",
+      "title": "Elections Subdivisions",
+      "owner": "City Clerk's Office",
+      "downloaded_at": "2026-09-27T14:39:48+00:00",
+      "resources": {
+        "abc2127b-cbc2-456a-b879-2263b8949ac5": "2026-02-20T19:18:24.241215",
+        "dff2fff5-0661-4a95-b9f5-dd23db1f091b": "2026-02-20T19:18:31.112365",
+        "0e13b1ea-be68-4c25-a964-5ca1fa47ea86": "2026-02-20T19:18:05.607484",
+        "394f2ef8-51ca-4c9b-a723-2ef6d86aa4e2": "2026-02-20T19:18:11.844173",
+        "0855833f-5cc2-404e-9d60-89dc44d72771": "2026-02-20T19:17:46.736024",
+        "7145ab80-1623-4e99-be71-f140ca6e127f": "2026-02-20T19:17:52.824060",
+        "88434ebd-f485-4524-8efd-9b830121512a": "2026-02-20T19:17:28.680767",
+        "75626661-93f2-4151-9052-44272a358274": "2026-02-20T19:17:35.121044",
+        "27c26974-08f2-4641-b198-a5938dec0f8b": "2026-02-20T19:17:09.677300",
+        "ea363ab5-0127-4ed3-87c2-15eb4a5ac46e": "2026-02-20T19:17:17.076875"
+      }
+    },
+    {
+      "name": "elections-voting-locations",
+      "id": "31dac8b2-2e15-4945-abef-ce98d248bb8e",
+      "title": "Elections Voting Locations",
+      "owner": "City Clerk's Office",
+      "downloaded_at": "2026-09-27T14:39:53+00:00",
+      "resources": {
+        "a1071c78-7b25-41e0-897f-607c2fb8980c": "2026-02-20T19:16:49.793098",
+        "aa639366-cfa1-49e3-985f-b7e2e60341b7": "2026-02-20T19:16:56.303220",
+        "8bdbffc7-523c-4704-96d1-164fee4decf5": "2026-02-20T19:16:32.352179",
+        "24d5d55b-c7d6-4f6c-a4e0-62cb935925e3": "2026-02-20T19:16:39.083397",
+        "b9b6d61a-0363-4bfb-9f13-d2cab2bc023d": "2026-02-20T19:16:13.675440",
+        "6d23171d-9fe3-42ab-a181-f4375ee0b33f": "2026-02-20T19:16:20.784822",
+        "d7dfc00d-a54a-4a2f-97e9-2d62a56c6257": "2026-02-20T19:15:55.319796",
+        "83c7318e-3717-45d2-80cc-daf8d2734921": "2026-02-20T19:16:02.977244",
+        "ad6b10e3-a54d-41dc-ac39-e6a2ae844cb4": "2026-02-20T19:15:38.233437",
+        "eafc0d1d-de6c-4639-834b-198283d6b39c": "2026-02-20T19:15:45.495225"
+      }
+    },
+    {
+      "name": "environmentally-significant-areas",
+      "id": "ef5a083a-5c2a-4207-9131-dfc917917069",
+      "title": "Environmentally Significant Areas",
+      "owner": "City Planning",
+      "downloaded_at": "2026-09-27T14:39:54+00:00",
+      "resources": {
+        "67f2a1a8-29a5-4ac5-b25a-69f9ccfaaeb0": "2026-03-16T19:16:29.763039",
+        "55b4fd90-6e6f-4a9f-bfb0-cbb8ea85b32f": "2022-03-10T17:27:01.082641",
+        "d1a9db7b-5cf6-45c4-9f24-d4c4f9d7b9f0": "2026-03-16T19:16:34.552846"
+      }
+    },
+    {
+      "name": "field-information-reports",
+      "id": "ee50f3dc-244f-4fe3-a153-a53d72ed4f84",
+      "title": "Field Information Reports",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T14:40:48+00:00",
+      "resources": {
+        "0851fdfe-49b0-49d8-87d9-1db13529b19e": null,
+        "290b4546-2b05-4871-bac5-0236729cecf9": "2026-02-20T20:49:16.476415",
+        "0162fa8a-6e12-4e7f-83fc-6c20cfb97fae": null,
+        "50020106-3bb2-422e-8133-a26e77667026": "2026-02-20T20:50:16.141663",
+        "d91aefe7-44e3-4ddf-96e2-9603e6aa1639": null,
+        "6a9e6789-1ed4-4fc3-bfc6-3291c8ca831d": "2026-02-20T20:51:15.869406",
+        "66d9f084-06b9-4c0e-be3a-04434f53af9e": null,
+        "c654582c-79e0-4a2a-ae8d-75b9b47350ab": "2026-02-20T20:52:10.782860",
+        "e2bbbb07-5a66-453c-8e80-1c5b9dc4e569": null,
+        "68c8a1fb-2925-4a23-9027-398d751bcb0e": "2026-02-20T20:53:00.748214",
+        "e7dd3a3c-58b5-430a-b345-8c8ad0dab49c": null,
+        "3158ff74-1795-49eb-a1da-f1997c623f71": "2026-02-20T20:53:49.433415"
+      }
+    },
+    {
+      "name": "fire-hydrants",
+      "id": "fbfcf7fa-1026-4b29-bff6-0765ca3f8a54",
+      "title": "Fire Hydrants",
+      "owner": "Toronto Water",
+      "downloaded_at": "2026-09-27T14:40:49+00:00",
+      "resources": {
+        "4575b5ca-59a1-41f5-93b4-e735577fbe53": "2026-07-01T08:24:51.187929",
+        "7ef63497-4267-4d6f-8a81-cb74e960e37c": "2022-03-10T18:21:21.287167",
+        "9cd515ca-5ada-40a7-9133-a116fef32b95": "2026-07-01T08:24:57.931352"
+      }
+    },
+    {
+      "name": "fire-incidents",
+      "id": "64a26694-01dc-4ec3-aa87-ad8509604f50",
+      "title": "Fire Incidents",
+      "owner": "Fire Services",
+      "downloaded_at": "2026-09-27T14:40:51+00:00",
+      "resources": {
+        "fa5c7de5-10f8-41cf-883a-9b30a67c7b56": "2025-03-03T10:26:55.000940",
+        "1e824947-d73b-4f48-9bac-7f7f3731a6b9": "2026-02-20T18:33:43.953741"
+      }
+    },
+    {
+      "name": "fire-services-emergency-incident-basic-detail",
+      "id": "d6ec31d0-da5c-4223-9610-75c9294574b7",
+      "title": "Fire Services Emergency Incident Basic Detail",
+      "owner": "Fire Services",
+      "downloaded_at": "2026-09-27T14:41:17+00:00",
+      "resources": {
+        "3f499c4a-258d-434b-9ec6-ebd5f980c1d0": null,
+        "f7d9d097-b67a-4616-80e2-b7411f70e444": null,
+        "b0a1d576-7c2f-4469-a71e-bd9d44f69b78": "2026-02-20T22:08:52.692199",
+        "a6c90290-949f-49f0-ba97-f86212f9cf14": "2026-02-20T22:09:10.745952",
+        "2d5d9e31-0e8c-4e77-a552-a559203c65d5": "2026-02-20T22:17:40.287567",
+        "ecf8c377-76cf-4087-8422-ccdc776d6574": "2026-02-20T22:17:55.039210",
+        "90a20d0b-a896-4d8d-8f65-07dd04ac0df6": "2026-02-20T22:20:00.052804",
+        "625dba44-5955-427a-a781-a7f6c508e75f": "2026-02-20T22:20:17.168043",
+        "699832cd-17b1-4ec3-ae9c-35eaf86e2387": "2026-02-20T22:14:55.600489",
+        "43ca4189-10e7-4496-861d-7248ac62da13": "2026-02-20T22:15:23.305280",
+        "036a677d-7cc1-4d1f-b91b-169125d79497": "2026-02-20T22:11:09.407932",
+        "6c7a90e6-a5c1-4032-8d58-3d8bf48e9ee8": "2026-02-20T22:11:26.324487",
+        "c627f4a2-4f25-45f6-905c-cd9585adf20f": "2026-02-20T22:06:47.433761",
+        "deaee24e-5015-482d-89ec-4f35fe21be81": "2026-02-20T22:07:02.017854",
+        "c72839c3-6460-4a83-8137-c44d71cbac7d": "2022-10-07T15:20:40.325536",
+        "78588bee-d825-4f24-8b02-84f830a5e223": "2022-10-07T15:20:50.456079",
+        "260dad35-5af0-4ceb-8b7b-7f34bb17b3fe": "2026-02-20T22:02:41.513096",
+        "3518a18e-26cd-4a0a-b554-b56d6ee23ea1": "2026-02-20T22:02:55.797746",
+        "68bda920-4f44-4454-b0e4-b5928d5e3105": "2026-02-20T22:00:17.484467",
+        "d272c7b8-65f3-4098-ac6e-f68f8adc8903": "2026-02-20T22:00:35.586765",
+        "f673fd5d-fc89-4597-9036-94ec7a26dc71": "2026-02-20T22:04:48.621602",
+        "1e86c314-f0bb-4918-b6ea-c39cb7541fe7": "2026-02-20T22:05:03.663614",
+        "b543eafd-11b4-4eda-8fa2-8e022a1fadba": "2026-02-20T21:58:17.871908",
+        "43731115-7782-4c8b-9aa2-0c22a19ad010": "2026-02-20T21:58:31.949685",
+        "8be92356-188c-4dc5-86de-928b8ead0475": "2026-02-20T21:56:09.634850",
+        "4eba4829-237b-45e1-b83f-e51b602d344e": "2026-02-20T21:56:24.321264",
+        "389d5ed0-2b67-49b5-b948-b6a38a511be8": "2024-06-10T14:17:28.858713",
+        "94969937-bbbf-4f44-8cd2-69159a3dd109": "2024-06-10T14:17:50.701803",
+        "f1fbf1cc-240e-4c83-8783-fef6f528e1d2": "2026-02-20T21:53:23.409374",
+        "4d0b3d47-eddd-4d5c-9108-8b754635e4aa": "2026-02-20T21:53:44.644659"
+      }
+    },
+    {
+      "name": "fire-station-locations",
+      "id": "a6ce5495-8e2b-421a-ab11-964569416f31",
+      "title": "Fire Facility Locations",
+      "owner": "Fire Services",
+      "downloaded_at": "2026-09-27T14:41:18+00:00",
+      "resources": {
+        "4e710088-f1a2-4bd3-a99b-37fe5d34aba1": "2026-02-20T20:55:28.705246",
+        "700db9a3-f7ee-4486-ac9e-ce1b0c19317d": "2022-03-10T18:24:37.461348",
+        "4166aa90-a28e-4ff1-8a3b-bbf9c7b15244": "2026-02-20T20:55:33.141574"
+      }
+    },
+    {
+      "name": "former-municipality-boundaries",
+      "id": "833937f6-e190-49a2-9835-80137cf88c41",
+      "title": "Former Municipality Boundaries",
+      "owner": "Information & Technology",
+      "downloaded_at": "2026-09-27T14:41:20+00:00",
+      "resources": {
+        "cd901994-5e21-4273-8f3a-1292f0a2fa09": "2026-02-20T19:04:43.288564",
+        "c0a55616-bf6a-49d8-9082-771119b93bab": "2022-04-18T10:15:10.470743",
+        "ef92a80e-0323-41f9-878b-cb387b1c442d": "2026-02-20T19:04:47.507399"
+      }
+    },
+    {
+      "name": "green-spaces",
+      "id": "9a284a84-b9ff-484b-9e30-82f22c1780b9",
+      "title": "Green Spaces",
+      "owner": "Parks, Forestry & Recreation",
+      "downloaded_at": "2026-09-27T14:41:21+00:00",
+      "resources": {
+        "4467b829-625b-47ab-bcf9-898d726f3703": "2026-09-22T22:00:04.249127",
+        "afe78d36-1297-40fc-ab03-bac6bcc256ff": "2026-09-22T22:00:09.444955"
+      }
+    },
+    {
+      "name": "green-streets",
+      "id": "5e7d5dc3-9178-4610-b228-f14a9d092b3f",
+      "title": "Green Streets",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T14:41:22+00:00",
+      "resources": {
+        "b6bb60a6-bbe0-48f3-a717-a84cdc271f2d": "2026-07-01T05:15:20.090703",
+        "b196c1b6-c07c-4147-b36d-590ef4b87357": "2026-07-01T05:15:23.306721"
+      }
+    },
+    {
+      "name": "hate-crimes-open-data",
+      "id": "475f27d8-28d6-4858-8ffc-22b092062ff1",
+      "title": "Hate Crimes",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T14:41:23+00:00",
+      "resources": {
+        "b8066585-a284-4661-8b62-d01955a1f6cd": null,
+        "42f10129-b3d0-42e2-9ca8-18d4587342a7": "2026-07-20T14:59:12.010775"
+      }
+    },
+    {
+      "name": "imagination-manufacturing-innovation-and-technology-imit-program-recipients",
+      "id": "030dff58-8212-4b80-b79e-0701b59af918",
+      "title": "Imagination, Manufacturing, Innovation and Technology (IMIT) Program Recipients",
+      "owner": "Economic Development & Culture",
+      "downloaded_at": "2026-09-27T14:41:24+00:00",
+      "resources": {
+        "c81ca90d-25e1-4a7f-8b24-d5781ea3613f": null,
+        "2366d98f-56c6-44b0-8bea-6e060804182e": "2026-04-01T04:14:13.862166"
+      }
+    },
+    {
+      "name": "immunization-coverage-for-students",
+      "id": "660cd719-f106-436c-b882-f96e5f476aab",
+      "title": "Immunization Coverage for students",
+      "owner": "Toronto Public Health",
+      "downloaded_at": "2026-09-27T14:41:29+00:00",
+      "resources": {
+        "6682e384-2736-4f06-b2c8-27d8aec27405": "2026-02-20T19:00:22.389658",
+        "083642bd-a0c6-43d7-9c5f-9b33d4c10669": "2025-06-24T17:20:59.378752",
+        "525dad5e-5ecb-46dc-89b8-890cf9d5463b": "2026-02-20T19:00:28.441802",
+        "e3f771ff-9b2d-46b9-b262-ac1b19dd6d42": "2026-02-20T19:00:34.515705",
+        "4da25985-9142-4d01-a3e6-d98172d495fa": "2025-07-31T16:15:46.851491",
+        "9849354b-a517-4d93-a2fc-9ad62dd0355c": "2025-07-31T16:16:05.994184",
+        "e81b4e2d-3b9c-48a8-a22a-099d0243ef59": "2026-02-20T18:59:55.413832",
+        "f3910d89-bf99-48be-9233-7e9afc91c7eb": "2026-02-20T19:00:08.951259",
+        "90c1042e-a628-4a9a-82c1-3a1a85b391be": "2026-02-20T19:00:15.065184",
+        "85becb88-5596-4d99-905d-334f21cc8fb5": "2026-02-20T19:00:02.442545"
+      }
+    },
+    {
+      "name": "indoor-ice-rinks",
+      "id": "96e9989d-eca5-4e0b-824b-9789a39aea58",
+      "title": "Indoor Ice Rinks",
+      "owner": "Parks, Forestry & Recreation",
+      "downloaded_at": "2026-09-27T14:41:31+00:00",
+      "resources": {
+        "de2baa08-6cbe-409c-8d4c-8a913831e4a1": "2024-10-15T18:30:22.549028",
+        "1df37a47-6278-4afe-bdfa-105329c2482b": "2024-10-15T18:30:27.989371",
+        "ccdf7ec2-8c9d-431d-bedf-7440df039179": "2026-02-20T21:06:12.676455",
+        "a1387215-7f72-497f-8035-6ac3cc9d43b0": "2026-02-20T21:06:17.677490"
+      }
+    },
+    {
+      "name": "input-from-roundtables-public-and-stakeholders-on-recovery-and-rebuild",
+      "id": "f35f95b4-45e2-43bd-9685-5809f8c5987a",
+      "title": "Input from Roundtables, Public and Stakeholders on Recovery and Rebuild",
+      "owner": "Toronto Office of Recovery and Rebuild",
+      "downloaded_at": "2026-09-27T14:41:31+00:00",
+      "resources": {
+        "58c8af88-c10b-4913-87d1-dbf62278dd87": "2020-10-14T13:42:21.075820"
+      }
+    },
+    {
+      "name": "intersection-file-city-of-toronto",
+      "id": "2c83f641-7808-49ba-b80f-7011851d4e27",
+      "title": "Intersection File - City of Toronto",
+      "owner": "Information & Technology",
+      "downloaded_at": "2026-09-27T14:41:32+00:00",
+      "resources": {
+        "eb42b978-02ad-4528-a033-8bebb9360c57": "2026-09-24T09:07:37.941312",
+        "04239613-290d-4859-9df9-5e901f4a3a05": "2026-09-24T09:07:42.435605"
+      }
+    },
+    {
+      "name": "intimate-partner-and-family-violence",
+      "id": "a74c7437-0612-46ee-ac36-76efdec468f9",
+      "title": "Intimate Partner and Family Violence",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T14:41:33+00:00",
+      "resources": {
+        "c704ca22-982a-4b11-bf97-2bdd695a66ca": "2026-02-20T18:58:36.546520"
+      }
+    },
+    {
+      "name": "king-st-transit-pilot-2015-king-street-traffic-counts",
+      "id": "239e58f8-4fde-4847-8ebe-d5632eca1904",
+      "title": "King St. Transit Pilot - 2015 King Street Traffic Counts",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T14:41:34+00:00",
+      "resources": {
+        "406c3fe0-a26c-4a08-b631-27c19eb2a72f": null,
+        "d3f58874-4da2-4eba-8a7c-9e296b2656ef": "2026-02-20T20:46:28.958445"
+      }
+    },
+    {
+      "name": "king-st-transit-pilot-bluetooth-travel-time-summary",
+      "id": "04f568ee-b269-46ca-9789-b0cec48df6ce",
+      "title": "King St. Transit Pilot - Bluetooth Travel Time Summary",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T14:41:35+00:00",
+      "resources": {
+        "3c883bbf-fd3d-4e10-9665-8ef1a45e9173": null,
+        "b3d3680c-abf5-4af1-b702-93d2c1deb129": "2026-02-20T20:46:23.562021"
+      }
+    },
+    {
+      "name": "king-st-transit-pilot-traffic-pedestrian-volumes-summary",
+      "id": "c6a251fb-e5dc-4d9e-803a-8941501d94a3",
+      "title": "King St. Transit Pilot - Traffic & Pedestrian Volumes Summary",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T14:41:36+00:00",
+      "resources": {
+        "6be48c42-490d-4cac-bbc7-2b0efcc51d29": null,
+        "967c3976-7d57-4863-b187-ac5b62cac152": "2026-02-20T20:46:18.852701"
+      }
+    },
+    {
+      "name": "king-street-pilot-disaggregate-headway-and-travel-time",
+      "id": "e74ba0ba-07c8-4a18-bac9-57bd2b9698c1",
+      "title": "King Street Pilot - Disaggregate headway and travel time",
+      "owner": "Toronto Transit Commission",
+      "downloaded_at": "2026-09-27T14:41:36+00:00",
+      "resources": {
+        "dcfd14a9-8702-46e1-ad9c-5deb90d8b994": "2019-07-23T17:37:35.544777"
+      }
+    },
+    {
+      "name": "library-branch-general-information",
+      "id": "f5aa9b07-da35-45e6-b31f-d6790eb9bd9b",
+      "title": "Library Branch General Information",
+      "owner": "Toronto Public Library",
+      "downloaded_at": "2026-09-27T14:41:38+00:00",
+      "resources": {
+        "1c9e7b16-c8fc-4925-9639-1253b6e02422": "2026-02-20T20:55:06.460634",
+        "7420a950-e62b-41da-826c-32d31c46e8f8": null,
+        "e69b6ebb-8688-4533-8fd9-b63bff1cacdd": "2026-09-22T19:02:05.518091",
+        "976597b0-948f-4daa-a83d-0b288f0170dc": "2026-09-22T19:02:09.886497"
+      }
+    },
+    {
+      "name": "library-branch-programs-and-events-feed",
+      "id": "fb343332-03cd-40b9-a1c8-c03a4a85ca1e",
+      "title": "Library Branch Programs and Events Feed",
+      "owner": "Toronto Public Library",
+      "downloaded_at": "2026-09-27T14:41:39+00:00",
+      "resources": {
+        "c73bbe54-3a48-4ada-8eef-a1a2864021e4": null,
+        "64b78724-6bba-45ac-b760-7faa046834bf": "2026-09-24T20:04:53.799832"
+      }
+    },
+    {
+      "name": "library-branch-space-rentals",
+      "id": "f5d62d63-f78b-4337-b547-cea77e09e528",
+      "title": "Library Branch Space Rentals",
+      "owner": "Toronto Public Library",
+      "downloaded_at": "2026-09-27T14:41:40+00:00",
+      "resources": {
+        "c33e098d-bc51-4d2f-bb92-993db2f834a4": null,
+        "0ae60ab8-8a64-4550-a9f5-c069668718fd": "2026-02-20T21:35:06.058452"
+      }
+    },
+    {
+      "name": "library-card-registrations",
+      "id": "21385cdf-25dc-48f5-84f9-442f5115f2ec",
+      "title": "Library Card Registrations",
+      "owner": "Toronto Public Library",
+      "downloaded_at": "2026-09-27T14:41:41+00:00",
+      "resources": {
+        "4b7601eb-e753-4dce-92be-e90ae1ae24cd": null,
+        "e6930f18-ce6d-46ba-a7e2-39724cc5fb7f": "2026-06-24T16:53:32.228382"
+      }
+    },
+    {
+      "name": "library-circulation",
+      "id": "80f89d58-fc77-41b4-8d7d-c8f056168a6a",
+      "title": "Library Circulation",
+      "owner": "Toronto Public Library",
+      "downloaded_at": "2026-09-27T14:41:42+00:00",
+      "resources": {
+        "18e9b8ba-b4b1-4a2d-8e56-0fffab64c525": null,
+        "d27bb12b-2575-442f-a410-a720e1de09bf": "2026-06-24T16:53:02.798166"
+      }
+    },
+    {
+      "name": "library-circulation-by-cardholder-type",
+      "id": "fa12529a-8a3a-43b7-b8b5-7134595361ba",
+      "title": "Library Circulation by Cardholder Type",
+      "owner": "Toronto Public Library",
+      "downloaded_at": "2026-09-27T14:41:43+00:00",
+      "resources": {
+        "48b6cd51-c850-4a10-a2f2-2bf3d2774313": null,
+        "9ab0fb6d-672a-4e13-9911-581b078ece66": "2026-06-24T16:52:33.960391"
+      }
+    },
+    {
+      "name": "library-visits",
+      "id": "a4cdef6c-cf1e-43a8-909c-2112158f4e85",
+      "title": "Library Visits",
+      "owner": "Toronto Public Library",
+      "downloaded_at": "2026-09-27T14:41:44+00:00",
+      "resources": {
+        "e1a183c8-266f-4643-af92-c618c0764f13": null,
+        "9800b615-d7da-46cf-bb41-d26521e09853": "2026-06-24T16:52:03.263948"
+      }
+    },
+    {
+      "name": "library-workstation-usage",
+      "id": "c5e2fdc6-9190-4205-bc04-0c3ce265d005",
+      "title": "Library Workstation Usage",
+      "owner": "Toronto Public Library",
+      "downloaded_at": "2026-09-27T14:41:47+00:00",
+      "resources": {
+        "12b8294c-ff75-4852-9b1c-94f1b1b355b5": null,
+        "be9a87ab-536c-45d3-90c0-663b15143db0": "2024-12-12T18:00:38.703619",
+        "0d44a68a-7ac1-4ddf-ae9a-c98ac64897b6": null,
+        "e6fe89d1-0dab-4f6f-ba1f-a3f6f06dc804": "2026-02-20T20:55:18.525537",
+        "5389fbea-a340-407e-89a1-52edf9e31e76": "2026-02-20T20:55:14.756261"
+      }
+    },
+    {
+      "name": "licensed-child-care-centres",
+      "id": "059d37c6-d88b-42fb-b230-ec6a5ec74c24",
+      "title": "Licensed Child Care Centres",
+      "owner": "Children's Services",
+      "downloaded_at": "2026-09-27T14:41:48+00:00",
+      "resources": {
+        "74eb5418-42c8-49d3-a62f-69941f0161f3": "2026-09-25T17:03:55.824636",
+        "80625b41-5833-4750-85ca-659764ebfbad": "2026-09-25T17:03:59.645179"
+      }
+    },
+    {
+      "name": "licensed-dog-and-cat-names",
+      "id": "37b2915c-f291-4b0e-bdd4-d6ccb070119a",
+      "title": "Licensed Dog and Cat Names",
+      "owner": "Municipal Licensing & Standards",
+      "downloaded_at": "2026-09-27T14:41:49+00:00",
+      "resources": {
+        "26137a09-1f8f-4dff-9ec0-70f1dfe34677": null,
+        "cad71142-964a-4b2d-a86c-d34b5d2a5369": "2026-09-01T15:17:06.119069"
+      }
+    },
+    {
+      "name": "licensed-dogs-and-cats",
+      "id": "ce295a71-4c58-40e9-8cad-087f4b3d1321",
+      "title": "Licensed Dogs and Cats",
+      "owner": "Municipal Licensing & Standards",
+      "downloaded_at": "2026-09-27T14:41:50+00:00",
+      "resources": {
+        "4a773296-7225-442d-9929-074549b2ccc0": null,
+        "1a273925-a7b3-4311-a8ed-6f67168a1393": "2026-09-26T15:19:32.708629"
+      }
+    },
+    {
+      "name": "light-duty-city-vehicle-utilization-data",
+      "id": "f3bd402d-ba02-47bc-8570-d4c92447eca3",
+      "title": "Light duty city vehicle utilization data",
+      "owner": "Fleet Services",
+      "downloaded_at": "2026-09-27T14:41:51+00:00",
+      "resources": {
+        "ca5c6494-60da-4884-99b2-caf363059193": null,
+        "96666dbc-8ffa-45e3-a043-ae066d8ef3bc": "2026-09-14T08:09:39.197996"
+      }
+    },
+    {
+      "name": "litter-bin-collection-frequency",
+      "id": "e0256b00-e2c7-4167-bba3-86383216c8ef",
+      "title": "Litter Bin Collection Frequency",
+      "owner": "Solid Waste Management Services",
+      "downloaded_at": "2026-09-27T14:41:53+00:00",
+      "resources": {
+        "69f853e7-1886-4ee2-a0f4-325d785ac6cc": null,
+        "96bceac9-c1c5-4cbf-92b7-b26108e87e8d": "2026-02-20T21:33:14.976677",
+        "3e845efe-0251-4383-a757-92ebd4a3d19d": "2026-02-20T21:33:18.970827"
+      }
+    },
+    {
+      "name": "local-appeals-body-appeals",
+      "id": "494193ca-5ebc-495e-89af-2757ceeed008",
+      "title": "Local Appeals Body Appeals",
+      "owner": "Court Services",
+      "downloaded_at": "2026-09-27T14:41:54+00:00",
+      "resources": {
+        "8ea54900-e314-4d17-a671-8b6158ba516a": null,
+        "25d2d55a-603b-446a-9c7b-734e9c191668": "2026-09-24T09:34:46.203166"
+      }
+    },
+    {
+      "name": "long-term-care-locations-city-operated",
+      "id": "308a036a-ceb5-488a-859f-4d7dc2fd592d",
+      "title": "Long-Term Care Locations, City Operated",
+      "owner": "Seniors Services & Long-Term Care",
+      "downloaded_at": "2026-09-27T14:41:55+00:00",
+      "resources": {
+        "6a687c5a-afa9-43d6-ae06-a00136bda654": "2026-04-02T20:49:52.958207",
+        "860d006d-1b3d-46bc-83cf-ebf1efaa8b51": "2026-04-02T20:49:56.469793"
+      }
+    },
+    {
+      "name": "major-crime-indicators",
+      "id": "6909ea60-ef0e-465f-b5d0-43106b6b9130",
+      "title": "Community Safety Indicators",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T14:41:58+00:00",
+      "resources": {
+        "8084057c-b2da-486c-b517-38f4e314b820": "2025-10-08T18:25:57.448063",
+        "174089c6-5a1a-42a5-8937-f9f25c72700a": "2026-07-20T19:16:39.489647"
+      }
+    },
+    {
+      "name": "marriage-licence-statistics",
+      "id": "e28bc818-43d5-43f7-b5d9-bdfb4eda5feb",
+      "title": "Marriage Licence Statistics",
+      "owner": "City Clerk's Office",
+      "downloaded_at": "2026-09-27T14:42:00+00:00",
+      "resources": {
+        "4d985c1d-9c7e-4f74-9864-73214f45eb4a": "2026-07-01T10:10:09.000707",
+        "01dff98a-b56b-4237-bb5d-f56319f0ced6": "2026-07-01T12:00:39.773790",
+        "d7099c91-5268-410c-9664-f3bdcb832f44": null,
+        "61cb68b6-2085-4d7f-a044-7da8ea935b18": "2026-09-01T07:25:56.702072"
+      }
+    },
+    {
+      "name": "mbncanada-performance-measures",
+      "id": "0ff0cb64-9373-44d3-985c-f8d24bf270ab",
+      "title": "MBNCanada Performance Measures",
+      "owner": "City Manager's Office",
+      "downloaded_at": "2026-09-27T14:42:05+00:00",
+      "resources": {
+        "ffa7f43e-0be2-431c-ad84-fc234ff772f2": null,
+        "2846ef0d-dfce-4d7b-9673-491904220fc4": "2026-02-20T20:54:41.835988",
+        "570f61cd-0e5b-4bb1-a1c2-0a760e70c687": null,
+        "89b9d2dc-81e8-4ae2-8eca-e64d506747ff": "2026-02-20T20:54:46.608471",
+        "b0fc4f7a-59be-465c-8392-44c1b85f1375": null,
+        "b417b2de-1487-4ad5-8e92-26809aea7f3c": "2026-02-20T20:54:51.035470",
+        "a1582fda-afa8-47f8-82a9-73e1a99217c1": null,
+        "75ed7c7d-1882-466c-a6f0-05b715fcad2f": "2026-02-20T20:54:55.724230",
+        "44717534-9a77-41c6-939f-be2865aea897": null,
+        "61a6045b-6e18-47ac-a581-0db4206c2ffc": "2026-02-20T20:55:00.718485"
+      }
+    },
+    {
+      "name": "members-of-toronto-city-council-meeting-attendance",
+      "id": "9426c94d-abdb-45fe-9a81-79be40d204d2",
+      "title": "Members of Toronto City Council - Meeting Attendance",
+      "owner": "City Clerk's Office",
+      "downloaded_at": "2026-09-27T14:42:10+00:00",
+      "resources": {
+        "4f8317bd-566b-4e15-b3b7-59a4a398a856": "2023-01-19T15:30:37.000836",
+        "b1989a8e-d69c-4b7e-85a7-c1edc2f887e9": "2023-06-30T15:59:20.000336",
+        "89df4d22-2515-46ad-b86c-f89635605fce": "2023-06-30T15:59:42.000252",
+        "2450b531-79d6-492c-8230-c45613bdfb80": "2023-06-30T15:59:30.000151",
+        "17a0d4ad-95b9-4e06-a075-0ec9f3992fbd": "2023-06-30T15:58:44.000911",
+        "28c4b513-4210-4ea4-9454-839d57e55d98": "2026-02-20T17:27:22.200231",
+        "34d61725-e383-4633-ab5e-c7b6d639fad9": "2026-02-20T17:27:14.541783",
+        "76c23b41-d5e5-44b6-b5fd-e40c6409b1e3": "2026-02-20T17:27:03.429578",
+        "05449b17-32bf-4329-8558-5167a960ea56": "2026-02-20T17:26:52.872963",
+        "073189ce-951e-4a18-a466-705abf3802d1": "2026-09-19T18:08:22.699915"
+      }
+    },
+    {
+      "name": "members-of-toronto-city-council-voting-record",
+      "id": "7f5232d6-0d2a-4f95-864a-417cbf341cc4",
+      "title": "Members of Toronto City Council - Voting Record",
+      "owner": "City Clerk's Office",
+      "downloaded_at": "2026-09-27T14:42:23+00:00",
+      "resources": {
+        "55ead013-2331-4686-9895-9e8145b94189": "2023-01-19T15:32:52.000458",
+        "84ce76c3-94ed-486c-818b-596fd78d1fea": "2023-06-30T16:02:28.000001",
+        "4e7ac62c-c607-4184-9531-315d9d389798": "2023-06-30T16:07:59.000753",
+        "59f37a01-77fd-48db-a997-3cb94802642c": "2023-06-30T16:12:40.000293",
+        "309de157-a53b-4d3c-ba45-9425d81c6df4": "2023-06-30T16:02:27.000036",
+        "01655cbd-dc66-4339-9f27-891e64413cbf": "2026-02-20T18:28:51.763088",
+        "6c7dd98b-08d0-4f68-bee7-a0ba77a7da92": "2026-02-20T18:28:36.328529",
+        "373390e9-af88-4b58-a6a4-6863e3606a4b": "2026-02-20T18:27:12.163799",
+        "11d89d61-24c3-4241-8194-04b22098745e": "2026-02-20T18:27:41.453781",
+        "c4feb78c-c867-42a9-b803-7c6d859df969": "2026-09-25T18:09:39.220717"
+      }
+    },
+    {
+      "name": "mental-health-apprehensions",
+      "id": "f49d6bef-1560-47b2-b4ad-c5fd3bb8f491",
+      "title": "Mental Health Act Apprehensions",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T14:42:25+00:00",
+      "resources": {
+        "51defc26-a141-4f5c-bb6b-11c4cb153c39": null,
+        "3b19464b-42b1-4687-a9f4-647aa9f7d1ab": "2026-07-20T13:47:41.368250"
+      }
+    },
+    {
+      "name": "mobile-watch-your-speed-program-detailed-speed-counts",
+      "id": "f2a223c5-2060-49f7-bb08-f66985769fc5",
+      "title": "Mobile Watch Your Speed Program – Detailed Speed Counts",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T14:47:03+00:00",
+      "resources": {
+        "958cbf2e-d438-4adf-92a3-9f91be974eac": "2026-07-15T21:00:31",
+        "036e5366-dcab-4069-aad2-26df8cf6845d": "2026-07-15T21:05:02",
+        "0446625a-87df-45a6-b65c-5a6c4a2936a6": "2026-07-15T20:48:35",
+        "8614bbef-3d2b-425c-8d52-304938078ffd": "2026-09-17T17:47:36"
+      }
+    },
+    {
+      "name": "mobile-watch-your-speed-program-speed-summary",
+      "id": "058236d2-d26e-4622-9665-941b9e7a5229",
+      "title": "Mobile Watch Your Speed Program – Speed Summary",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T14:47:05+00:00",
+      "resources": {
+        "2e1bc5fe-2e37-4ee1-a88a-f37af7a51dc9": "2026-07-05T10:17:52.000035",
+        "969583a4-4e9e-44e8-be79-a1b6f1dbd74e": "2026-07-05T12:00:18.885687",
+        "8843dbdf-21e4-487c-a744-908091beb9e5": null,
+        "ce21b56d-e0c0-4c98-b1b4-e22a2ec76a2f": "2026-09-01T12:50:08.524866"
+      }
+    },
+    {
+      "name": "motor-vehicle-collisions-involving-killed-or-seriously-injured-persons",
+      "id": "73a8e475-9683-42e1-ac06-b8690dcba062",
+      "title": "Motor Vehicle Collisions Involving Killed or Seriously Injured Persons",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T14:47:07+00:00",
+      "resources": {
+        "b95f5270-4eb0-40c2-917d-37fb494328a1": "2026-09-27T13:06:28.814731",
+        "0b1c95f8-b298-4a82-b6d9-7da350116a28": "2026-09-27T13:06:34.384875",
+        "9c9a9b60-95c1-4541-ad44-15c4a643aff9": null
+      }
+    },
+    {
+      "name": "multi-tenant-house-licences",
+      "id": "a3a1d939-f792-4ac5-8b7c-a25648a7a98b",
+      "title": "Multi-Tenant (Rooming) House Licences",
+      "owner": "Municipal Licensing & Standards",
+      "downloaded_at": "2026-09-27T14:47:08+00:00",
+      "resources": {
+        "8452b57a-424c-4440-8030-7eed8306f438": null,
+        "4ce14245-a803-42c4-bf5b-cc670345037c": "2026-09-26T15:14:44.816235"
+      }
+    },
+    {
+      "name": "municipal-licensing-and-standards-business-licences-and-permits",
+      "id": "57b2285f-4f80-45fb-ae3e-41a02c3a137f",
+      "title": "Municipal Licensing and Standards - Business Licences and Permits",
+      "owner": "Municipal Licensing & Standards",
+      "downloaded_at": "2026-09-27T14:47:09+00:00",
+      "resources": {
+        "169e90ba-3ae0-43dd-8b2f-919e87002f50": "2022-12-01T05:49:06",
+        "54bddc5e-92d9-4102-89c1-43e82f8f4d2d": "2026-09-26T06:11:12.668220"
+      }
+    },
+    {
+      "name": "municipal-licensing-and-standards-investigation-activity",
+      "id": "5da2e2e8-659e-4850-ae43-47b7f7ad6b62",
+      "title": "Municipal Licensing and Standards - Investigation Activity",
+      "owner": "Municipal Licensing & Standards",
+      "downloaded_at": "2026-09-27T14:47:12+00:00",
+      "resources": {
+        "47b74562-e799-4f0d-bdd4-e2ce17af5240": null,
+        "977671c0-b3c8-4dee-8305-2a688a5756ad": null,
+        "fbaaf87a-558d-4437-95b3-7d8a6c6db7eb": null,
+        "199c8123-ff7b-40bc-a415-7177e50359ea": "2026-09-20T20:26:15.359710",
+        "e951bde8-19ae-48aa-af5f-efb2cc52813a": "2026-09-20T20:28:52.827271",
+        "05994276-0021-47e1-afa0-ca874733b98f": "2026-09-26T20:28:53.342557"
+      }
+    },
+    {
+      "name": "municipal-licensing-and-standards-toronto-animal-shelter-activity",
+      "id": "5c2ed97c-d2fa-4da9-95f1-033af897beb4",
+      "title": "Municipal Licensing and Standards - Toronto Animal Shelter Activity",
+      "owner": "Municipal Licensing & Standards",
+      "downloaded_at": "2026-09-27T14:47:14+00:00",
+      "resources": {
+        "f26fc0db-6746-41b6-a9bc-8aee8eebcb13": "2026-09-01T05:10:28.797713",
+        "c03c530d-04b3-4f7f-a256-56c025d0cf79": "2026-07-01T05:10:46.899218",
+        "de5d7700-909c-4012-b025-066a4d62a353": null,
+        "b301a168-8f57-480b-a973-06e49d53b46c": null
+      }
+    },
+    {
+      "name": "museums-and-cultural-centres",
+      "id": "29d28f67-6b5f-4d9c-803f-eb4ae890d825",
+      "title": "Museums and Cultural Centres",
+      "owner": "Economic Development & Culture",
+      "downloaded_at": "2026-09-27T14:47:15+00:00",
+      "resources": {
+        "fbea9557-bd6f-4604-ac06-844b6bcd0550": null,
+        "2c578ad4-c534-40ec-82f1-d0c9c9ae7bad": "2026-07-09T19:38:11.098065"
+      }
+    },
+    {
+      "name": "music-venues-spaces-studios-stores",
+      "id": "c52cdef8-7b21-40f9-9404-a8c1b20f4a7e",
+      "title": "Music Venues, Spaces, Studios & Stores",
+      "owner": "Economic Development & Culture",
+      "downloaded_at": "2026-09-27T14:47:16+00:00",
+      "resources": {
+        "989fb6a9-3b22-4ecb-8fdb-04f4d9b268fd": "2026-07-16T17:52:21.105679",
+        "7f8675da-a350-4b7b-8f47-8b2efa9b7e97": "2026-07-16T17:52:24.507538"
+      }
+    },
+    {
+      "name": "musician-directory",
+      "id": "23373aa9-5205-4813-aa45-5179b6012a5d",
+      "title": "Musician Directory",
+      "owner": "Economic Development & Culture",
+      "downloaded_at": "2026-09-27T14:47:17+00:00",
+      "resources": {
+        "4afa3d65-43e4-429e-b4c7-bb64e5fe9125": null,
+        "f177fb44-76bf-468a-ae6d-f057d29d0495": "2026-07-16T17:52:55.518590"
+      }
+    },
+    {
+      "name": "neighbourhood-crime-rates",
+      "id": "21db0f45-1828-4fa3-94de-db92f454314c",
+      "title": "Neighbourhood Crime Rates",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T14:47:18+00:00",
+      "resources": {
+        "3c3925de-3a85-476a-85ca-b3cdff91b47f": "2026-02-20T18:06:33.413848",
+        "14827afc-ab07-4331-b383-a3756d4c61ea": "2026-02-20T18:06:37.634766"
+      }
+    },
+    {
+      "name": "neighbourhood-improvement-areas",
+      "id": "3b471f62-dc01-4a96-bb76-f794e4c6b860",
+      "title": "Neighbourhood Improvement Areas",
+      "owner": "Social Development, Finance & Administration",
+      "downloaded_at": "2026-09-27T14:47:19+00:00",
+      "resources": {
+        "c18efdc4-99d7-415b-8031-d288094f03da": "2026-02-20T19:03:46.509033",
+        "2d2cc9e8-659a-485b-aab1-aba4c1028a72": "2026-02-20T19:03:50.764129"
+      }
+    },
+    {
+      "name": "neighbourhood-profiles",
+      "id": "6e19a90f-971c-46b3-852c-0c48c436d1fc",
+      "title": "Neighbourhood Profiles",
+      "owner": "Social Development, Finance & Administration",
+      "downloaded_at": "2026-09-27T14:47:23+00:00",
+      "resources": {
+        "7f8eee5e-85fb-415c-aef3-c3bd4998445f": null,
+        "f07fe8f0-fa24-4d68-8cb4-326e280b0b05": "2026-05-27T18:49:51.334659",
+        "9a9e9cf1-6c73-426c-aa7d-d1261cb459ca": null,
+        "9d2474eb-46ed-4970-9a38-b635703ed5c6": "2026-02-20T20:45:40.665109",
+        "5bbad0da-0d68-42ca-884b-d6551756c81a": null,
+        "dece8848-9529-4c36-8344-2d47fa152e79": "2026-02-20T20:45:48.496047",
+        "90787000-b8a7-4b21-aa59-5aed64973355": null,
+        "3e7072b4-76f4-4ac6-92d4-0e58b1560986": "2026-05-27T18:48:20.051617"
+      }
+    },
+    {
+      "name": "neighbourhoods",
+      "id": "fc443770-ef0a-4025-9c2c-2cb558bfab00",
+      "title": "Neighbourhoods",
+      "owner": "Social Development, Finance & Administration",
+      "downloaded_at": "2026-09-27T14:47:25+00:00",
+      "resources": {
+        "7f7dc9c5-42bb-446e-ad79-dd4dd792c9db": "2026-02-20T19:15:10.069437",
+        "f050cd75-697d-400b-8b36-2474847f7bc2": "2026-02-20T19:15:14.956769",
+        "070019b4-6375-4c04-a4c0-602a3a5d930f": "2026-02-20T19:15:24.505349",
+        "ae095ad9-fb6f-4403-97fe-68703ed65663": "2026-02-20T19:15:29.083258"
+      }
+    },
+    {
+      "name": "noise-exemption-permits",
+      "id": "2451e907-9c0d-4841-9053-32e1ac75bd0a",
+      "title": "Noise Exemption Permits",
+      "owner": "Municipal Licensing & Standards",
+      "downloaded_at": "2026-09-27T14:47:28+00:00",
+      "resources": {
+        "6037d5d7-4eec-4f4a-8650-405c9f1340be": "2025-07-27T23:02:59.975486",
+        "fd1db20d-0872-4327-9a30-866d28c39319": null,
+        "73ef65c1-7b59-4a11-a12c-376f9f802e26": null,
+        "72041c23-7d74-42b1-8b82-ead659ebf840": "2026-09-22T23:04:32.977891",
+        "87940d19-9cb9-49c8-a480-af572e04364d": "2026-04-15T23:03:58.601338"
+      }
+    },
+    {
+      "name": "non-regulated-lead-sample",
+      "id": "8171f7ab-364e-46a7-8a62-08f073ca6d96",
+      "title": "Non Regulated Lead Sample",
+      "owner": "Toronto Water",
+      "downloaded_at": "2026-09-27T14:47:29+00:00",
+      "resources": {
+        "8c561f06-deec-46a1-8c4b-6efaebc53b9f": null,
+        "4b141457-e2a5-43e9-b5a4-25629419521d": "2026-09-26T06:19:40.763180"
+      }
+    },
+    {
+      "name": "off-leash-areas",
+      "id": "b1f70415-bb5b-448b-abf9-51eab49dded8",
+      "title": "Off Leash Areas",
+      "owner": "Parks, Forestry & Recreation",
+      "downloaded_at": "2026-09-27T14:47:30+00:00",
+      "resources": {
+        "7306095c-7d88-4dcb-84d3-129981d1abb1": "2026-02-20T21:32:21.194149",
+        "8b338da5-ab5a-4882-bd67-c119b8f65e7f": "2026-02-20T21:32:25.388131"
+      }
+    },
+    {
+      "name": "off-street-parking-surface-lots-accessible-stalls",
+      "id": "73b4af39-7d65-40ea-b1f1-a0854c3cb57f",
+      "title": "Off-Street Parking – Surface Lots – Accessible Stalls",
+      "owner": "Toronto Parking Authority",
+      "downloaded_at": "2026-09-27T14:47:31+00:00",
+      "resources": {
+        "007a7883-2b83-42ad-84b8-2ba11b98cb48": "2026-07-01T02:04:22.510742",
+        "8c82338c-58f8-442a-841d-3f8941cbd5f5": "2026-07-01T02:04:29.608930"
+      }
+    },
+    {
+      "name": "on-street-permit-parking-area-maps",
+      "id": "74382239-6e6b-4683-b2e7-b0ce86263b2b",
+      "title": "On-Street Permit Parking Area Maps",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T14:47:32+00:00",
+      "resources": {
+        "68109632-ad0f-4439-889e-941793c39606": "2026-04-16T04:10:37.717163",
+        "9ff4b17f-dcd2-419b-bd2a-7e53bee33536": "2022-04-18T10:40:10.141578",
+        "399b682b-863e-4044-af6b-cabd0c665487": "2026-04-16T04:10:41.532711"
+      }
+    },
+    {
+      "name": "open-data-gallery-projects",
+      "id": "ac395b37-9c96-4d69-bf1d-28cbbb6eb388",
+      "title": "Open Data Gallery Projects",
+      "owner": "Information & Technology",
+      "downloaded_at": "2026-09-27T14:47:33+00:00",
+      "resources": {
+        "6d2e2761-a3a1-4889-a090-20551cfe65fd": "2026-09-10T15:47:08.532975"
+      }
+    },
+    {
+      "name": "open-data-web-analytics",
+      "id": "2905386d-d333-4cca-95d3-c7676e776d7b",
+      "title": "Open Data Portal Usage",
+      "owner": "Information & Technology",
+      "downloaded_at": "2026-09-27T14:48:09+00:00",
+      "resources": {
+        "3f5d6284-0e9f-43d3-979e-01cefcc92f72": null,
+        "b308378d-2ec9-40ea-9182-f94cb63d73f3": null,
+        "23dede29-4b85-4095-977e-eb0e09bebbd3": "2026-09-11T13:30:20.169722",
+        "a8b77d10-17e1-4c6e-914f-99c9c011da28": "2026-09-11T13:30:32.594067",
+        "31a0b9a1-c23b-4c79-8e65-eb267ab3aa2f": "2026-09-27T03:29:44.184330",
+        "da6333eb-86e0-4a48-b515-984ed540d234": null
+      }
+    },
+    {
+      "name": "outdoor-artificial-ice-rinks",
+      "id": "e51b5d31-a53c-4fc5-a204-36c43243dd3b",
+      "title": "Outdoor Artificial Ice Rinks",
+      "owner": "Parks, Forestry & Recreation",
+      "downloaded_at": "2026-09-27T14:48:52+00:00",
+      "resources": {
+        "71195ba0-8d07-4b0d-927c-175b14835b85": "2024-10-15T18:28:51.646819",
+        "55a2ff89-1e91-4f5e-996d-00e96d6a1fad": "2024-10-15T18:28:56.602761",
+        "2eb364c8-3a89-41df-a17b-67b3e8862ea6": "2026-05-27T19:42:51.861869",
+        "77c08a76-7b94-4571-b6c0-1a9180cb0fb4": "2026-05-27T19:42:57.740749"
+      }
+    },
+    {
+      "name": "park-and-recreation-facility-projects",
+      "id": "d4581bd6-c058-4a75-b888-6f6fe4e668df",
+      "title": "Park and Recreation Facility Projects",
+      "owner": "Parks, Forestry & Recreation",
+      "downloaded_at": "2026-09-27T14:48:53+00:00",
+      "resources": {
+        "64079ce5-5a19-4527-be8d-52ec9c9d0614": "2026-09-26T00:07:45.813904",
+        "9ea7a79e-9e0a-4916-8589-7bc6a4a08bdb": "2026-09-26T00:07:49.581141"
+      }
+    },
+    {
+      "name": "park-and-recreation-facility-study-areas",
+      "id": "4b376464-4d47-400c-a137-ef856d79774e",
+      "title": "Park and Recreation Facility Study Areas",
+      "owner": "Parks, Forestry & Recreation",
+      "downloaded_at": "2026-09-27T14:48:54+00:00",
+      "resources": {
+        "080c0368-0333-4220-8ed9-7c13b6baa596": "2026-02-20T21:34:07.146981",
+        "2574a0d9-cbd9-432a-a723-d4d74f2e79c2": "2026-02-20T21:34:11.228230"
+      }
+    },
+    {
+      "name": "parking-occupancy",
+      "id": "6126cc9a-3c15-4cf8-baa5-c8a17d3ecae2",
+      "title": "Parking Occupancy",
+      "owner": "Toronto Parking Authority",
+      "downloaded_at": "2026-09-27T14:48:55+00:00",
+      "resources": {
+        "2d1bf001-eebf-4f02-a7d3-a51f8acd884e": null,
+        "23a0c882-26b0-428e-a6b7-3a3a259c796b": "2026-04-23T13:54:26.510510"
+      }
+    },
+    {
+      "name": "parks-and-recreation-facilities",
+      "id": "cbea3a67-9168-4c6d-8186-16ac1a795b5b",
+      "title": "Parks and Recreation Facilities",
+      "owner": "Parks, Forestry & Recreation",
+      "downloaded_at": "2026-09-27T14:48:56+00:00",
+      "resources": {
+        "61691590-4c3f-42d3-94c5-443ad3856f64": "2026-09-01T20:26:55.159059",
+        "a71c9c11-c364-4172-a2e1-301c47a3350c": "2026-09-01T20:27:00.357878"
+      }
+    },
+    {
+      "name": "parks-drinking-fountains",
+      "id": "f614d4d3-594a-4f78-8473-faaa17269c67",
+      "title": "Parks Drinking Water Sources",
+      "owner": "Parks, Forestry & Recreation",
+      "downloaded_at": "2026-09-27T14:48:58+00:00",
+      "resources": {
+        "82c050f8-e1bc-4ad6-a59d-e925b52b65f5": "2023-05-17T12:59:43.665583",
+        "c259b6a1-1c5e-4526-93fd-c49b9836cdcb": "2023-05-17T12:59:46.833199",
+        "68c4058e-14ed-47e1-b00b-58caaa1fc8d9": "2026-09-25T18:53:55.270025",
+        "a2fb7dc7-f705-45df-a9af-7946e579c1a8": "2026-09-25T18:53:59.471769"
+      }
+    },
+    {
+      "name": "patrol-zones",
+      "id": "a8180d03-d7f2-4069-935c-ea84c7c9b881",
+      "title": "Patrol Zones",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T14:48:59+00:00",
+      "resources": {
+        "1882a1be-6898-45ea-83ca-56e30318c4d8": "2026-02-20T21:06:51.316439",
+        "7bdf6898-6aac-4ec7-8af9-69b2bbd050cc": "2022-03-10T19:34:19.858136",
+        "65c3aed4-4f4a-4849-aaeb-ed401e379b29": "2026-02-20T21:06:55.443676"
+      }
+    },
+    {
+      "name": "pcard-expenditures",
+      "id": "ebc3f9c2-2f80-4405-bf4f-5fb309581485",
+      "title": "PCard Expenditures",
+      "owner": "Accounting Services",
+      "downloaded_at": "2026-09-27T14:49:02+00:00",
+      "resources": {
+        "24b9c441-e6e6-4f81-aea0-315f613c1e6e": "2026-08-27T03:55:44.827743"
+      }
+    },
+    {
+      "name": "pedestrian-network",
+      "id": "4b5c7a84-dea1-4137-875d-71d7f662c83f",
+      "title": "Pedestrian Network",
+      "owner": "Information & Technology",
+      "downloaded_at": "2026-09-27T14:49:04+00:00",
+      "resources": {
+        "33865740-bdf4-4876-a498-c198ce0f1484": "2026-02-20T20:56:45.657260",
+        "d7398c13-68cd-4c7e-95c3-8a50ecfae1b7": "2022-04-05T11:05:37.351053",
+        "4fb0563f-4ea4-40f4-87ad-9386b7aad2eb": "2026-02-20T20:56:51.306010"
+      }
+    },
+    {
+      "name": "permanent-bicycle-counters",
+      "id": "ff7e7369-cbba-4545-9e26-e5a5ef6a123c",
+      "title": "Permanent Bicycle Counters",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T14:50:02+00:00",
+      "resources": {
+        "3de6bec4-221c-4f9e-aebc-780b6841e55c": null,
+        "b6fdab07-bf2f-4c30-8b68-d4cde7674941": null,
+        "d7569ac4-d102-474c-8b2f-7c6c2c539ff2": null,
+        "833b5586-d5e1-4015-98df-4200f2ad9986": null,
+        "b8551e43-632c-4361-8d3f-962f3a694813": null,
+        "6e2cb99f-979d-4e5d-aef8-7013645e2be5": "2025-07-02T12:56:11.194910",
+        "64d37590-ebe8-4ba8-9abb-74eb11453fae": "2026-09-17T16:47:51.515888",
+        "49675bd6-a17c-4de7-af66-c0e8338d7d13": "2026-02-20T18:49:50.875860",
+        "473fd887-9741-49ca-9816-bbe589ecf3a6": "2026-09-17T17:01:12.670808",
+        "217a6e7f-c980-46ab-ba06-6d10b5499194": "2026-09-17T16:46:34.987476",
+        "1da069cb-ee75-4698-96ec-fdf70ff3e964": "2026-02-20T18:53:10.749299",
+        "ea594605-f31a-4af8-a1de-8a0644bd3f9f": null,
+        "941dcb08-fe16-4bd5-8803-8eba5c345c26": "2026-09-17T16:59:37.740449"
+      }
+    },
+    {
+      "name": "persons-in-crisis-calls-for-service-attended",
+      "id": "247b293c-4ec6-492e-ac44-10adfd370ebd",
+      "title": "Persons in Crisis Calls for Service Attended",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T14:50:10+00:00",
+      "resources": {
+        "de0658c2-e349-4cdd-a30b-2ac82c57fc49": null,
+        "85aed06c-6485-4483-90bb-082846d229d9": "2026-07-20T14:27:30.139381"
+      }
+    },
+    {
+      "name": "places-of-interest-and-toronto-attractions",
+      "id": "965247c0-c72e-49b4-bb1a-879cf98e1a32",
+      "title": "Places of Interest and Toronto Attractions",
+      "owner": "Economic Development & Culture",
+      "downloaded_at": "2026-09-27T14:50:12+00:00",
+      "resources": {
+        "7337adce-e574-4db6-92bd-31c956381eac": "2026-02-20T19:04:31.571588",
+        "3b6c6f35-61ba-4768-8c7c-4d8f2e6776cb": "2026-02-20T19:04:35.965043"
+      }
+    },
+    {
+      "name": "places-of-worship",
+      "id": "8e22e693-3394-4dfa-8dc0-eb436db38603",
+      "title": "Places of Worship",
+      "owner": "Social Development, Finance & Administration",
+      "downloaded_at": "2026-09-27T14:50:13+00:00",
+      "resources": {
+        "d8b4528b-b480-4852-b027-05ea0cc8ea3d": "2026-02-20T19:14:45.445470",
+        "be42bc32-8700-4c83-86a4-086fa32549c9": "2022-03-10T19:40:22.318846",
+        "d3783ef4-e0c0-4251-8f78-c0139f5b7408": "2026-02-20T19:14:50.193066"
+      }
+    },
+    {
+      "name": "police-annual-statistical-report-administrative",
+      "id": "42acd805-8656-483c-86ba-aefb58bdea44",
+      "title": "Police Annual Statistical Report - Administrative",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T14:50:14+00:00",
+      "resources": {
+        "f16067ec-7002-40fe-9ade-f797370e8ba7": null,
+        "86a2b905-5157-46d5-b29d-78d344b09bca": "2026-07-29T12:34:35.910430"
+      }
+    },
+    {
+      "name": "police-annual-statistical-report-arrested-and-charged-persons",
+      "id": "3b46698b-2c7d-42f0-b3f5-3aa5eaded4b1",
+      "title": "Police Annual Statistical Report - Arrested and Charged Persons",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T14:50:15+00:00",
+      "resources": {
+        "7a036feb-a610-4698-a104-6921e60c4ef0": "2026-07-29T13:37:56.314533"
+      }
+    },
+    {
+      "name": "police-annual-statistical-report-calls-for-service-attended",
+      "id": "bfffadee-e6e5-4404-8455-e67e9ea11ba7",
+      "title": "Police Annual Statistical Report - Calls for Service Attended",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T14:50:15+00:00",
+      "resources": {
+        "e51f702e-64ce-48d5-809a-c07acf5409c3": "2026-07-29T12:49:15.553273"
+      }
+    },
+    {
+      "name": "police-annual-statistical-report-complaint-dispositions",
+      "id": "630aa07a-223a-453f-b5d0-d94f1c4a9302",
+      "title": "Police Annual Statistical Report - Complaint Dispositions",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T14:50:16+00:00",
+      "resources": {
+        "f2611cc6-09dd-4588-ac21-53d1b6f26cce": null,
+        "e8598526-ae81-48de-8931-016895f70e21": "2026-07-29T17:10:13.849351"
+      }
+    },
+    {
+      "name": "police-annual-statistical-report-dispatched-calls-by-division",
+      "id": "88ce5762-1981-40de-a487-0003abb71222",
+      "title": "Dispatched Calls by Division",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T14:50:17+00:00",
+      "resources": {
+        "25cf6172-1afb-4ef4-aca5-c8f2b0fd16d6": null,
+        "92cfe208-38a4-4a5c-b88d-7eea95cf7e40": "2026-02-20T21:36:07.407016"
+      }
+    },
+    {
+      "name": "police-annual-statistical-report-firearms-top-5-calibres",
+      "id": "55cfb2e5-2ca9-44db-83db-86d9bd8c5be6",
+      "title": "Police Annual Statistical Report - Firearms Top 5 Calibres",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T14:50:18+00:00",
+      "resources": {
+        "0a5f9ec5-368e-486e-843f-a340df5cd0a6": null,
+        "59435b5b-f356-4fcc-b881-984c8fc04fd2": "2026-07-29T13:41:39.222168"
+      }
+    },
+    {
+      "name": "police-annual-statistical-report-gross-expenditures-by-division",
+      "id": "bda840b6-4ae1-43db-b544-0c518ddf9df3",
+      "title": "Police Annual Statistical Report - Gross Expenditures by Division",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T14:50:19+00:00",
+      "resources": {
+        "a0fa1b20-a8a6-45da-8c50-a5f75a686eaa": null,
+        "f982701f-3382-465b-b418-1818a27f5014": "2026-02-20T21:36:15.855708"
+      }
+    },
+    {
+      "name": "police-annual-statistical-report-gross-operating-budget",
+      "id": "011b2438-35c8-4e70-a40e-21d879eb7a8e",
+      "title": "Police Annual Statistical Report - Gross Operating Budget",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T14:50:20+00:00",
+      "resources": {
+        "93c21b21-38f2-41ef-bc80-c6dc80feb118": null,
+        "81125251-79ed-4c0e-bb55-5cc8920b31d9": "2026-07-29T15:57:39.813916"
+      }
+    },
+    {
+      "name": "police-annual-statistical-report-homicide",
+      "id": "7d72bbbe-8adc-4b36-8ad1-5359f1c7a9cc",
+      "title": "Homicides",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T14:50:22+00:00",
+      "resources": {
+        "e00a84d9-2229-4f8e-b2a2-c7cde3ccd37d": "2023-05-03T17:42:00.655344",
+        "62cae87b-fbb5-46dd-80bf-feb8984f3093": "2022-03-10T19:40:36.499645",
+        "4938121f-6aa3-430b-a57d-000c88ea7590": "2023-05-03T17:42:04.146624",
+        "f7076075-31c8-4dca-a3ce-967b887e511f": "2026-07-20T12:57:08.837277",
+        "4a1defe0-7f2a-41e6-a3b8-cea21a126fee": "2026-07-20T12:57:14.153008"
+      }
+    },
+    {
+      "name": "police-annual-statistical-report-investigated-alleged-misconduct",
+      "id": "9cf4d5b9-56dc-429b-b8e2-730aa66bcdb2",
+      "title": "Police Annual Statistical Report - Investigated Alleged Misconduct",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T14:50:24+00:00",
+      "resources": {
+        "86509cde-be45-4f22-9158-48ad4b88aa32": null,
+        "0a867847-485e-417f-b96c-8512087655dd": "2026-07-29T17:03:40.505028"
+      }
+    },
+    {
+      "name": "police-annual-statistical-report-miscellaneous-calls-for-service",
+      "id": "af57383b-f898-4e61-b6f3-7bea9516ed45",
+      "title": "Police Annual Statistical Report - Miscellaneous Calls for Service",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T14:50:24+00:00",
+      "resources": {
+        "62c52d01-d3b0-48cc-9deb-c6699e3586ab": null,
+        "c06fda1c-746d-4268-8a35-37bafcd2c890": "2026-07-29T12:42:38.612610"
+      }
+    },
+    {
+      "name": "police-annual-statistical-report-miscellaneous-data",
+      "id": "1f9c11de-3ee5-4e24-8650-4d1103458328",
+      "title": "Police Annual Statistical Report - Miscellaneous Data",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T14:50:25+00:00",
+      "resources": {
+        "05aa48fb-c82c-434d-b43b-3d1a9c5ffc8e": null,
+        "7457b070-73e7-4621-94b2-f77a886d799d": "2026-07-29T15:41:44.778862"
+      }
+    },
+    {
+      "name": "police-annual-statistical-report-miscellaneous-firearms",
+      "id": "32842636-8a4a-45ae-ae26-351c25e7ef81",
+      "title": "Police Annual Statistical Report - Miscellaneous Firearms",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T14:50:26+00:00",
+      "resources": {
+        "7548209e-4166-47df-9998-67050d61e409": null,
+        "1389e7a6-3de8-4e54-a19d-cb1bbd0a757d": "2026-02-20T21:31:39.657235"
+      }
+    },
+    {
+      "name": "police-annual-statistical-report-personnel-by-command",
+      "id": "e811f0fc-ca82-43d8-a918-8dcd83091c24",
+      "title": "Police Annual Statistical Report - Personnel by Command",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T14:50:27+00:00",
+      "resources": {
+        "87cb1925-2dda-423c-a047-8989d908841f": null,
+        "dc0825b2-40bc-4d9c-b184-b347c2344e8e": "2026-07-29T15:51:58.499256"
+      }
+    },
+    {
+      "name": "police-annual-statistical-report-personnel-by-rank",
+      "id": "7a49eead-1152-4218-999b-cb8143f443fb",
+      "title": "Police Annual Statistical Report - Personnel by Rank",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T14:50:28+00:00",
+      "resources": {
+        "4274fa5a-3ff8-4959-b20f-19839815794c": null,
+        "d6f5f6fc-bffb-4008-b52b-68e79cf0cd08": "2026-07-29T15:46:48.852238"
+      }
+    },
+    {
+      "name": "police-annual-statistical-report-personnel-by-rank-by-division",
+      "id": "f1bf9a67-ba2e-4d68-a1e3-efc7af4519a2",
+      "title": "Police Annual Statistical Report - Personnel by Rank by Division",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T14:50:29+00:00",
+      "resources": {
+        "c4743579-c837-47fb-821b-cf7ccae5ffef": null,
+        "d857523d-9bc7-4450-8ae7-4044b21bb6ec": "2026-02-20T21:31:30.739817"
+      }
+    },
+    {
+      "name": "police-annual-statistical-report-regulated-interactions",
+      "id": "a50c4071-ae0f-4fa0-afeb-e1b74bb630e5",
+      "title": "Police Annual Statistical Report - Regulated Interactions",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T14:50:30+00:00",
+      "resources": {
+        "ac19decd-0d73-471b-9690-7ae0eb96bf84": null,
+        "8f7f68a4-5df3-4d15-b51f-d434c35cdf18": "2026-07-29T15:31:01.101071"
+      }
+    },
+    {
+      "name": "police-annual-statistical-report-regulated-interactions-demographics",
+      "id": "92d6d17c-4c61-45ed-a85e-b34ee71a3d3a",
+      "title": "Police Annual Statistical Report - Regulated Interactions Demographics",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T14:50:31+00:00",
+      "resources": {
+        "7f6a2e9e-6b90-456e-abc6-1ccf74aa503a": null,
+        "aec2f2c5-7c79-4014-a056-d2f329942ceb": "2026-02-20T20:46:14.094727"
+      }
+    },
+    {
+      "name": "police-annual-statistical-report-reported-crimes",
+      "id": "b57e23b8-fd0d-4655-8cb5-0930b98ff59c",
+      "title": "Police Annual Statistical Report - Reported Crimes",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T14:50:33+00:00",
+      "resources": {
+        "5d04d510-88cb-4b48-8311-94b3e155e100": null,
+        "40cdf222-1f15-44b0-bf13-d825a9ae7df6": "2026-07-29T15:04:49.069412"
+      }
+    },
+    {
+      "name": "police-annual-statistical-report-search-of-persons",
+      "id": "e458885f-c245-4a19-a655-af1a49dc7dd2",
+      "title": "Police Annual Statistical Report - Search of Persons",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T14:50:33+00:00",
+      "resources": {
+        "7de2b14f-b02f-47fb-b46f-1cb09b505b00": null,
+        "0259b7fb-6375-4e73-babc-53eeb61d7bd1": "2026-09-18T17:29:10.458115"
+      }
+    },
+    {
+      "name": "police-annual-statistical-report-shooting-occurrences",
+      "id": "f29feb49-ceb1-44bf-a2b6-5fc6a0e6147a",
+      "title": "Police Annual Statistical Report - Shooting Occurrences",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T14:50:34+00:00",
+      "resources": {
+        "b4fd5f2f-fe0d-4229-af47-d87d91fc14ce": null,
+        "95d3e61b-6fce-49b8-9617-9cc845a8fb8d": "2026-02-20T20:45:25.148870"
+      }
+    },
+    {
+      "name": "police-annual-statistical-report-tickets-issued",
+      "id": "2dc66a14-7ea0-494c-8ea3-2680332cc7cb",
+      "title": "Police Annual Statistical Report - Tickets Issued",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T14:50:35+00:00",
+      "resources": {
+        "272b09d7-5fab-458d-a078-5583844ec07f": "2026-07-29T13:43:37.464143"
+      }
+    },
+    {
+      "name": "police-annual-statistical-report-top-20-offences-of-firearms-seizures",
+      "id": "c72036cf-8f59-4072-b9b8-0123f7e35754",
+      "title": "Police Annual Statistical Report - Top 20 Offences of Firearms Seizures",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T14:50:36+00:00",
+      "resources": {
+        "21db0975-d569-4800-ae10-2fcccacb68aa": null,
+        "78a510be-f101-4291-9157-b0041939fb2d": "2026-07-29T17:46:26.983860"
+      }
+    },
+    {
+      "name": "police-annual-statistical-report-total-public-complaints",
+      "id": "cdfeab3c-3df0-4a0a-a2b9-2b92334362d8",
+      "title": "Police Annual Statistical Report - Total Public Complaints",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T14:50:37+00:00",
+      "resources": {
+        "e3ba1827-b099-417f-89a3-bb309d580ea7": null,
+        "0083b259-bf81-4022-b497-2e87b6d70d76": "2026-07-29T16:07:38.827691"
+      }
+    },
+    {
+      "name": "police-annual-statistical-report-traffic-collisions",
+      "id": "ec53f7b2-769b-4914-91fe-a37ee27a90b3",
+      "title": "Traffic Collisions",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T14:50:42+00:00",
+      "resources": {
+        "cb890861-ed20-4862-bb75-b1f9ec1e58dd": "2026-07-20T19:43:31.558675",
+        "3fed26a8-62fa-4c7c-8e76-9bacb6401d16": "2026-07-20T19:43:55.568408"
+      }
+    },
+    {
+      "name": "police-annual-statistical-report-victims-of-crime",
+      "id": "4a0191f9-a3f1-4bf9-b097-f2e85c0f8a83",
+      "title": "Police Annual Statistical Report - Victims of Crimes",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T14:50:43+00:00",
+      "resources": {
+        "894ff15e-0a89-443e-bd72-570a42e62aa0": null,
+        "e5336d28-f695-49d1-beef-43799f54a8d3": "2026-07-29T15:36:34.854922"
+      }
+    },
+    {
+      "name": "police-boundaries",
+      "id": "6ff875e3-7c26-4abe-8fb2-afe7b2519ba2",
+      "title": "Police Boundaries",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T14:50:44+00:00",
+      "resources": {
+        "5e2284ba-9ddd-4cc2-a11d-6b211763cf8d": "2026-02-20T18:31:07.024838",
+        "bea30881-e73f-450b-8341-5527208dc7f0": "2026-02-20T18:31:11.627504"
+      }
+    },
+    {
+      "name": "police-facility-locations",
+      "id": "9aeefa17-27e8-4dd9-b74d-80f7f9eb85ac",
+      "title": "Police Facility Locations",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T14:50:45+00:00",
+      "resources": {
+        "fb898474-10e8-4121-b440-d41b86a4c26b": "2026-02-20T19:14:32.974450",
+        "20a093db-aa31-4b24-a584-7f2589ba31d1": "2022-03-10T20:06:05.517102",
+        "1c95b317-86dd-4ae0-90e8-5feed2d9d05f": "2026-02-20T19:14:37.179702"
+      }
+    },
+    {
+      "name": "police-race-and-identity-based-data-collection-arrests-strip-searches",
+      "id": "edd732be-045d-47cd-9fc4-fb8df0e6f79e",
+      "title": "Police Race and Identity Based Data - Arrests and Strip Searches",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T14:50:46+00:00",
+      "resources": {
+        "4d20662e-f3c3-44fe-b7de-f9412bbdeab2": null,
+        "1121c479-6acf-4ebf-9de9-ad63ed738993": "2026-02-20T21:35:25.526501"
+      }
+    },
+    {
+      "name": "police-race-and-identity-based-data-use-of-force",
+      "id": "860b0499-9901-4c00-b86a-a81399b0486a",
+      "title": "Police Race and Identity Based Data - Use of Force",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T14:50:53+00:00",
+      "resources": {
+        "1b36ddbe-f374-49c7-a60a-218decb2af98": null,
+        "46c97352-70f2-474a-827d-385e51a1865a": null,
+        "bb5def11-39d0-4227-957e-bb226ce899e8": null,
+        "23c490a1-441e-4355-a7de-965eded317b4": null,
+        "1b26e720-2380-414e-9d05-3eac688eb5fd": null,
+        "96fa02a8-46e8-42b2-b8ec-973be34e33ff": null,
+        "fceff197-b35f-4796-a2e2-8d3f1e1facc9": null,
+        "54c26a63-bf59-4424-9c57-a397b2812bac": "2026-02-20T21:35:30.914455",
+        "3d222739-554d-4f7b-a678-b82701e80ca3": "2026-02-20T21:35:35.856673",
+        "f814409c-3daa-490a-9b4f-ac52bfa0d000": "2026-02-20T21:35:41.003248",
+        "14bff9a5-3230-4d13-9747-e66bc9fde6bc": "2026-02-20T21:35:46.057491",
+        "6cc42918-7b15-4554-afb7-e618d75b1ea9": "2026-02-20T21:35:51.066120",
+        "002b4bf7-0700-40b9-aa2e-6132e563cf33": "2026-02-20T21:35:56.086526",
+        "ad5abf15-dc35-46b8-a59e-c76b178ac998": "2026-02-20T21:36:01.954451"
+      }
+    },
+    {
+      "name": "pollinateto-primary-project-garden-locations",
+      "id": "0e86a635-ba19-4470-aba5-300a460bad94",
+      "title": "PollinateTO Primary Project Garden Locations",
+      "owner": "Environment & Climate",
+      "downloaded_at": "2026-09-27T14:50:54+00:00",
+      "resources": {
+        "7e972c90-13db-4e20-b44b-e46c620e823d": "2026-06-08T13:54:31.413831",
+        "ad8b5a1d-7026-4a7f-90eb-6680d48c915f": "2026-06-08T13:54:36.826745"
+      }
+    },
+    {
+      "name": "polls-conducted-by-the-city",
+      "id": "7bce9bf4-be5c-4261-af01-abfbc3510309",
+      "title": "Polls conducted by the City",
+      "owner": "City Clerk's Office",
+      "downloaded_at": "2026-09-27T14:50:56+00:00",
+      "resources": {
+        "ea46083d-ac4f-41d1-a16f-3edb0e0f605c": "2026-07-13T14:35:10.000544",
+        "13c405e8-f884-4950-baf8-07e0f7b0e299": "2026-07-13T15:00:12.338142",
+        "e38c8449-3c45-41c8-ae11-a3e1402c04f0": null,
+        "78552d14-0d09-47c2-8dc3-06e73d20f565": "2026-09-26T11:23:51.275245"
+      }
+    },
+    {
+      "name": "preliminary-zoning-reviews",
+      "id": "1a1bab79-8daf-4c60-9c7a-10cc74507664",
+      "title": "Preliminary Zoning Reviews",
+      "owner": "Toronto Building",
+      "downloaded_at": "2026-09-27T14:50:58+00:00",
+      "resources": {
+        "908dd877-4668-4734-be44-d2bc9612bab9": null,
+        "884f6db8-0fea-4ccf-bdc4-2970a22ea3a9": "2026-09-27T10:17:55.664707"
+      }
+    },
+    {
+      "name": "presto-card-access",
+      "id": "242afe6f-954e-484a-a0b0-b12666c4f450",
+      "title": "Presto Card Access",
+      "owner": "Social Development, Finance & Administration",
+      "downloaded_at": "2026-09-27T14:50:59+00:00",
+      "resources": {
+        "7e96b541-9304-4cdf-8001-c1044a644cbd": "2026-02-20T19:02:08.860345",
+        "022be050-a3e1-46fb-9b86-22f33dda1a5d": "2026-02-20T19:02:12.319723"
+      }
+    },
+    {
+      "name": "private-transportation-companies-summary-and-trip-data",
+      "id": "fbac8e59-4883-4252-b73c-4a5caf19126d",
+      "title": "Private Transportation Companies - Summary and Trip Data",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T14:51:01+00:00",
+      "resources": {
+        "8c434d44-73d1-4409-b8cf-e556c9ee41d3": null,
+        "782ff076-31f8-4ad2-b020-81716be2a00b": null,
+        "c2f8c4c8-c120-480b-8713-89186488f5f5": "2026-08-01T04:35:59.670168",
+        "749dec62-c305-4266-aaef-7cdf008f10e3": "2026-03-30T12:43:37.759154"
+      }
+    },
+    {
+      "name": "private-transportation-companies-vehicle-operating-data",
+      "id": "082c6a32-dcf2-43da-b4ab-8a2b9ec2e35b",
+      "title": "Private Transportation Companies – Vehicle Operating Data",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T14:51:02+00:00",
+      "resources": {
+        "53edf43b-71ce-419a-a2c3-85fd9ddcb00f": null,
+        "ed5ed874-3a55-434f-b0a0-3dbbc29e637c": "2026-03-30T12:43:06.563348"
+      }
+    },
+    {
+      "name": "proclamations",
+      "id": "1fd9a4a2-0396-4d40-877e-4063cb447376",
+      "title": "Proclamations",
+      "owner": "City Clerk's Office",
+      "downloaded_at": "2026-09-27T14:51:06+00:00",
+      "resources": {
+        "a61f1d05-80ca-4fee-9c6e-a4378bdec30f": null,
+        "822c9d1d-f907-4d97-8875-7128dddb7170": null,
+        "b0f47511-3e89-47f9-8cd3-b4cdb2810971": null,
+        "11c37270-2229-4ca0-ae14-548381cafcf4": null,
+        "45c66217-7a38-40cd-bfef-86b68e26887e": "2026-02-20T19:03:28.546140",
+        "e472937f-5b1d-4634-9474-7d2daa24cf84": "2026-02-20T19:03:23.712564",
+        "10f055d8-beb3-4cad-83f7-e9ea344b4756": "2026-02-20T19:03:33.521830",
+        "37aeca35-d477-419a-8e90-963a253d1fb3": "2026-02-20T19:03:38.287390"
+      }
+    },
+    {
+      "name": "properties-requiring-a-cultural-heritage-evaluation-report-under-opa-720",
+      "id": "dbeb8873-ba70-44af-8687-d2a192044e30",
+      "title": "Properties Requiring a Cultural Heritage Evaluation Report Under OPA 720",
+      "owner": "City Planning",
+      "downloaded_at": "2026-09-27T14:51:07+00:00",
+      "resources": {
+        "1bea3df0-4d39-4efa-83c0-449c2aa3b3ac": "2026-09-01T03:34:46.275907",
+        "475bd382-01c1-4e44-9119-08dc1232a790": "2026-09-01T03:34:49.745656"
+      }
+    },
+    {
+      "name": "property-boundaries",
+      "id": "1acaa8b0-f235-4df6-8305-02025ccdeb07",
+      "title": "Property Boundaries",
+      "owner": "Information & Technology",
+      "downloaded_at": "2026-09-27T14:51:12+00:00",
+      "resources": {
+        "23d1f792-018f-4069-ac5d-443e932e1b78": "2026-09-25T04:00:49.670383",
+        "7767ca13-9af0-418a-a1f9-b9fa53e5f770": "2026-09-25T04:00:59.980487"
+      }
+    },
+    {
+      "name": "public-art",
+      "id": "bfdc6aa8-7ea6-4225-a3f7-e13d1d2b4018",
+      "title": "Public Art",
+      "owner": "Economic Development & Culture",
+      "downloaded_at": "2026-09-27T14:51:13+00:00",
+      "resources": {
+        "2cb2c65a-1565-4382-8fe3-3a235aec7655": "2026-05-13T13:41:28.629171",
+        "e1034411-36ac-40cd-b5ed-580fee7be528": "2022-03-30T20:20:21.840127",
+        "cb293e64-1924-43a0-9755-725d5f8538b4": "2026-05-13T13:41:32.601213"
+      }
+    },
+    {
+      "name": "public-engagement-review-survey",
+      "id": "67729376-d03d-4e2d-a517-7bcf42879e31",
+      "title": "Public Engagement Review Survey",
+      "owner": "City Manager's Office",
+      "downloaded_at": "2026-09-27T14:51:14+00:00",
+      "resources": {
+        "56eb2716-3d06-42f8-8718-e7fb283a52ec": "2023-08-04T19:02:23.503007"
+      }
+    },
+    {
+      "name": "public-notices",
+      "id": "8eac8b58-7b94-4a4f-b2e8-b829d92d6204",
+      "title": "Public Notices",
+      "owner": "City Clerk's Office",
+      "downloaded_at": "2026-09-27T14:51:15+00:00",
+      "resources": {
+        "af3e00ca-e353-4fd0-af9c-67f64247a477": "2026-09-26T08:52:39.837632"
+      }
+    },
+    {
+      "name": "rain-gauge-locations-and-precipitation",
+      "id": "f2933501-0373-4734-b50c-4e4f39646180",
+      "title": "Rain Gauge Locations and Precipitation",
+      "owner": "Toronto Water",
+      "downloaded_at": "2026-09-27T14:51:51+00:00",
+      "resources": {
+        "c6c768a1-07bd-465e-bdec-0473cee05966": "2020-10-26T21:08:58.326169",
+        "a761bc84-d84c-4a21-84c3-8c400a80bb79": "2022-03-10T20:38:14.555179",
+        "13f71911-c3db-4c84-8b56-cc386e81fb36": "2022-03-10T20:33:22.076527",
+        "b788f3d7-7020-411c-bdf4-bd2434a45fd5": "2020-10-26T21:08:04.186888",
+        "66890cdd-ac48-4bd2-be86-bdf7639d54de": "2020-10-26T21:07:44.067931",
+        "81e3caec-c9c2-4520-837d-49817e0c50eb": "2022-03-10T20:19:32.592565",
+        "3c89855f-dc53-48e2-a2c0-3756fad380c7": "2022-03-10T20:14:08.873631",
+        "2094685c-9ed4-4970-8b52-b640048d0dc0": "2023-01-02T14:55:23.305712",
+        "2132aa90-2fac-484a-9608-758c4ec10900": "2024-01-01T14:55:52.230985",
+        "4f729fc1-8cfd-4366-96b2-7d073b4d930d": "2025-01-01T14:58:55.122994",
+        "5c157b36-4a48-4eda-a639-3064e0f2297e": "2026-01-01T15:00:27.700255",
+        "f26b06dc-a5a5-41ea-a0ff-5841260fdd9e": "2026-09-26T14:59:12.944019"
+      }
+    },
+    {
+      "name": "real-estate-asset-inventory",
+      "id": "a1561e68-446a-4141-9c4e-7fb376db6a20",
+      "title": "Real Estate Asset Inventory",
+      "owner": "Corporate Real Estate Management",
+      "downloaded_at": "2026-09-27T14:51:52+00:00",
+      "resources": {
+        "5af250fd-a0d1-4c4f-ae7b-eed72bb1d965": "2026-09-07T19:06:14.001965",
+        "c99924d4-9018-4dfb-915d-27e0e7ab19e3": "2026-09-07T19:06:17.605794",
+        "278d29e2-5807-4253-86e2-2a3f3d6d1c1c": "2026-09-07T19:07:46.183444",
+        "7c7242e7-00c4-46b8-8885-712b7fe7f610": "2026-09-07T19:07:50.691550"
+      }
+    },
+    {
+      "name": "red-light-cameras",
+      "id": "9fcff3e1-3737-43cf-b410-05acd615e27b",
+      "title": "Red Light Cameras",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T14:51:54+00:00",
+      "resources": {
+        "5b44dd7e-fa54-4e6b-a637-6bfbff90eeb4": "2026-09-26T05:04:00.668539",
+        "a5076ab7-9587-4614-a68e-73163b6b746a": "2022-04-18T10:50:09.958453",
+        "8260d0cc-92f8-4191-8b31-5c34f397be94": "2026-09-26T05:04:05.687575"
+      }
+    },
+    {
+      "name": "registered-programs-and-drop-in-courses-offering",
+      "id": "1a5be46a-4039-48cd-a2d2-8e702abf9516",
+      "title": "Registered Programs and Drop In Courses Offering",
+      "owner": "Parks, Forestry & Recreation",
+      "downloaded_at": "2026-09-27T14:51:56+00:00",
+      "resources": {
+        "f4db24c4-1270-40e3-9c2d-44d7daf4f872": "2026-09-24T21:37:08.172298",
+        "90f7fffe-658b-4a79-bce3-a91c1b5886de": "2026-09-24T21:38:25.223952",
+        "eef9f05c-8488-429b-862c-0f2e2e0d92a4": "2026-09-24T21:37:47.907327",
+        "81483cf9-1f52-4a4d-a28b-1cf7e277b79f": "2026-09-24T21:38:58.867019"
+      }
+    },
+    {
+      "name": "registry-of-declared-interest",
+      "id": "3538e48c-a65c-4114-82ef-42eab1f8729a",
+      "title": "Registry of Declared Interest",
+      "owner": "City Clerk's Office",
+      "downloaded_at": "2026-09-27T14:52:01+00:00",
+      "resources": {
+        "aa9a2f32-78b6-413b-bbc6-93842d7c13df": "2023-01-19T15:26:21.000402",
+        "7ed0532c-c786-4c21-8d4a-d9c4d9f7c463": "2023-06-30T13:26:19.000899",
+        "9f156487-d67d-49dc-a509-f945b73a9169": "2023-06-30T13:26:09.000813",
+        "9a5fe549-bb9f-4c9a-85be-6683990b4b2d": "2023-06-30T13:25:34.000815",
+        "8b8532c0-b3e1-4e31-8c61-b1dff7760c56": "2026-02-20T17:28:15.583895",
+        "519b166b-d574-4b82-abe6-b99306fea28f": "2026-02-20T17:28:11.148478",
+        "fb8e651a-38a1-4d72-8a85-691c07d00f84": "2026-02-20T17:28:06.565177",
+        "e0f632a1-8884-4ed8-819d-3892800880ae": "2023-06-30T13:25:24.000551",
+        "1a06e8dd-d5a5-42ea-a1b4-bd90c29ebd57": "2026-02-20T17:28:20.144828",
+        "62a423fd-aaa5-401f-a893-2cca295d4802": "2026-09-26T18:08:05.681078"
+      }
+    },
+    {
+      "name": "renewable-energy-installations",
+      "id": "6db96adf-d8a8-465b-a7e8-29be98907cc9",
+      "title": "Renewable Energy Installations",
+      "owner": "Facilities Management",
+      "downloaded_at": "2026-09-27T14:52:02+00:00",
+      "resources": {
+        "de539a35-7340-430b-8c75-0135161b82f1": "2026-02-20T19:14:21.926480",
+        "1848598b-b050-4da1-a05f-e660b0391be2": "2022-03-10T20:43:23.460943",
+        "2148a0b8-5cbf-459b-a199-9195339d5f4d": "2026-02-20T19:14:26.285636"
+      }
+    },
+    {
+      "name": "residential-fire-inspection-results",
+      "id": "aa9c965b-6cf4-4650-a97c-16d2169eaec4",
+      "title": "Residential Fire Inspection Results",
+      "owner": "Fire Services",
+      "downloaded_at": "2026-09-27T14:52:09+00:00",
+      "resources": {
+        "979ad13d-ab3f-41ad-9254-8cbfd12ad480": null,
+        "5044cc16-7545-41d5-aa10-604c30340ef3": "2026-09-27T12:30:13.954223",
+        "a75711fe-cfe5-4270-89c1-c280c9af6b83": "2026-09-27T12:30:21.828525"
+      }
+    },
+    {
+      "name": "residential-front-yard-parking",
+      "id": "4a651caf-e139-41bb-b8cc-8f5e304ef3cf",
+      "title": "Residential Front Yard Parking",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T14:52:10+00:00",
+      "resources": {
+        "2be372bf-f20b-47b8-8d23-239def80cd6d": "2026-07-13T00:00:25.000811",
+        "0687e391-9a10-4e5b-9441-88741522d7a8": "2026-07-13T03:00:20.683675",
+        "07225fdb-6f0f-428b-a4a8-b5c05abfca69": null,
+        "389c9384-693b-4d84-b981-f11828c51838": "2026-09-22T11:25:47.490165"
+      }
+    },
+    {
+      "name": "residential-health-hazards",
+      "id": "3270d20e-ef2f-4ff6-90b8-a9fcffd2afd4",
+      "title": "Highrise Residential Health Hazards",
+      "owner": "Toronto Public Health",
+      "downloaded_at": "2026-09-27T14:52:12+00:00",
+      "resources": {
+        "0a64ab3d-285f-4764-85fa-5a20e9c24dd9": "2026-05-20T20:46:27.524932",
+        "8b04986e-7bce-400c-813b-4ca66af7b84e": "2026-05-20T20:46:29.978492",
+        "e6989d5e-ccb7-469f-b7b2-9882503a79c9": "2026-09-23T10:08:37.524725",
+        "67e377c1-3dc0-40df-a4bc-4acdb9fbe6e1": "2026-09-23T22:31:33.010586"
+      }
+    },
+    {
+      "name": "retirement-homes",
+      "id": "b8a6ce54-c65d-4ba8-a59a-251496300c6f",
+      "title": "Retirement Homes",
+      "owner": "Social Development, Finance & Administration",
+      "downloaded_at": "2026-09-27T14:52:14+00:00",
+      "resources": {
+        "ed3bdb3a-7f5f-477d-a299-a47cfe367d7a": "2026-02-20T19:14:10.160839",
+        "1e6614b1-8399-44fa-baab-f747c93f2f43": "2022-03-10T20:43:57.380618",
+        "f7006231-0aae-453a-be8a-1a3fb14ad679": "2026-02-20T19:14:14.602057"
+      }
+    },
+    {
+      "name": "road-reconstruction-program",
+      "id": "0de9b414-6966-4a96-997b-1e261de9239f",
+      "title": "Road Reconstruction Program",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T14:52:15+00:00",
+      "resources": {
+        "6e2b5517-c630-4558-ad0b-0cbcbebdbf7c": "2026-09-24T15:00:26.816164",
+        "031f647b-142c-491e-99d3-b69182fb5e10": "2026-09-24T15:00:31.533302"
+      }
+    },
+    {
+      "name": "road-restrictions",
+      "id": "2265bfca-e845-4613-b341-70ee2ac73fbe",
+      "title": "Road Restrictions",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T14:52:17+00:00",
+      "resources": {
+        "58d5be90-b8cd-46a9-8671-4deeffd833d4": null
+      }
+    },
+    {
+      "name": "road-resurfacing-program",
+      "id": "a0ca21b7-9ee0-4ffa-8bde-d538037ad8ba",
+      "title": "Road Resurfacing Program",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T14:52:18+00:00",
+      "resources": {
+        "d1d143fd-0c88-48b6-973f-6b4d84ee3c89": "2026-09-24T14:54:39.405822",
+        "5c64dde4-13e2-4e19-8927-3178db682648": "2026-09-24T14:54:43.248234"
+      }
+    },
+    {
+      "name": "safety-zone-watch-your-speed-program-monthly-summary",
+      "id": "e0a82533-93d5-4f63-81f5-128f8b665200",
+      "title": "Safety Zone Watch Your Speed Program – Monthly Summary",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T14:52:20+00:00",
+      "resources": {
+        "c567e7f6-3686-439e-b740-dbd91725de2d": "2026-07-05T10:02:38.000843",
+        "d098752f-8fa5-4c83-8ea3-6f9d29afdea9": "2026-07-05T12:00:50.069186",
+        "1357ce89-ccdc-4370-88c4-5a537530f314": null,
+        "28a22b05-76b2-4baa-bbb0-f34a1e4d1e03": "2026-09-02T05:22:42.041943"
+      }
+    },
+    {
+      "name": "school-locations-all-types",
+      "id": "1a714b5c-64c0-4cdf-9739-0086f80fb3ee",
+      "title": "School Locations - All Types",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T14:52:21+00:00",
+      "resources": {
+        "f2c12e37-f533-4ecd-ac93-3166022fadec": "2026-05-27T19:39:16.389997",
+        "baf43de2-498b-4ff3-8444-58c88d0afc66": "2022-04-03T00:00:49.881690",
+        "023746cd-3f88-44e2-9686-4f51c6a24ba6": "2026-05-27T19:39:20.355481"
+      }
+    },
+    {
+      "name": "school-safety-zone-watch-your-speed-program-detailed-speed-counts",
+      "id": "d7522ce7-68b1-4f93-991a-0eb2f9ec7de5",
+      "title": "School Safety Zone Watch Your Speed Program – Detailed Speed Counts",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T15:01:08+00:00",
+      "resources": {
+        "93cadb4c-2201-4b6b-816a-d1025ce4bc3f": "2026-07-16T12:27:48",
+        "063984f2-8277-4232-887d-9a2c49553f4c": "2026-07-15T22:19:49",
+        "a6a13f2c-875b-4138-a5b0-e5cf82c27a4e": "2026-07-15T21:37:11",
+        "128c54b4-843b-446a-950d-ee19b32a2e7b": "2026-09-18T19:37:10"
+      }
+    },
+    {
+      "name": "school-safety-zone-watch-your-speed-program-locations",
+      "id": "642efeca-1258-4c23-8e86-d9affca26001",
+      "title": "School Safety Zone Watch Your Speed Program – Locations",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T15:01:11+00:00",
+      "resources": {
+        "866701b9-9e1f-4c39-92df-e1ec9e20cbbe": "2026-07-05T12:00:31.856435",
+        "a91535fb-0e39-419d-b793-f150fc15c833": "2022-04-05T10:00:07.704256",
+        "188deaf4-a32e-4d6e-ad2b-d0076887663e": "2026-07-05T12:00:36.314800",
+        "bd66c4c7-6c39-4df6-924f-5de2d54ee47b": null,
+        "51e4b8ab-4773-41b2-95c8-399c8ff13c84": "2026-09-03T05:18:50.248318",
+        "d3675b0a-53a7-40f2-8d3d-f71afd7b7e2f": "2026-09-03T05:18:55.212146"
+      }
+    },
+    {
+      "name": "secondary-plans",
+      "id": "70a544e9-ee83-43a4-b0be-0dc973627ad7",
+      "title": "Secondary Plans",
+      "owner": "City Planning",
+      "downloaded_at": "2026-09-27T15:01:13+00:00",
+      "resources": {
+        "5306b618-92f6-4f1b-8ada-f455ee4c48a7": "2025-03-27T15:34:17.280619",
+        "8b78aa91-7df4-4fcb-9078-de897eeb9b44": "2022-04-18T10:55:13.193952",
+        "a28ebb6d-c53c-42ce-8ecc-a6527f65c747": "2025-03-27T15:34:22.429406",
+        "4f625425-47f8-4fab-a9bd-fc266296920c": "2026-03-16T19:05:45.435687",
+        "50a62488-b460-4b11-9099-1a4c5ff9d2c0": "2026-03-16T19:05:50.949754"
+      }
+    },
+    {
+      "name": "section-37",
+      "id": "8c0b0109-73fc-4eb5-b849-337db81aadc1",
+      "title": "Community Benefits Secured (Planning Act Sections 37 and 45)",
+      "owner": "City Planning",
+      "downloaded_at": "2026-09-27T15:01:14+00:00",
+      "resources": {
+        "29d82a21-7cd4-4d13-be23-6712fd8e465f": null,
+        "d52af681-04b2-4b26-9c51-6682e59499b7": "2026-02-20T21:36:28.561164"
+      }
+    },
+    {
+      "name": "sewer-gravity-mains",
+      "id": "71a2da32-2a26-4343-bcaf-8ca63a696060",
+      "title": "Sewer Gravity Mains",
+      "owner": "Toronto Water",
+      "downloaded_at": "2026-09-27T15:01:17+00:00",
+      "resources": {
+        "c47974cc-05a1-4547-924c-224305393c80": "2026-09-26T16:38:52.728794",
+        "99c89fd6-3a1d-4bb2-8bd8-4c90afa5e639": "2026-09-26T16:39:00.689525",
+        "726c6642-ed34-411e-b24b-be4b01db90ea": "2026-09-26T16:24:50.977232",
+        "634724f0-818e-4e48-976f-09fe9a3d1266": "2026-09-26T16:24:55.350200"
+      }
+    },
+    {
+      "name": "sewer-inlets",
+      "id": "ff052918-aa4b-4349-bbc8-af0a88c09df3",
+      "title": "Sewer Inlets",
+      "owner": "Toronto Water",
+      "downloaded_at": "2026-09-27T15:01:18+00:00",
+      "resources": {
+        "7547f8c3-2752-4445-bc7f-b956d03b9f71": "2026-09-25T16:33:34.048676",
+        "3688307e-c30a-40d9-99fd-fd91556afdcb": "2026-09-25T16:33:39.997708"
+      }
+    },
+    {
+      "name": "sewer-junctions",
+      "id": "46963264-25cf-4e33-94c5-afe4c3334ef3",
+      "title": "Sewer Junctions",
+      "owner": "Toronto Water",
+      "downloaded_at": "2026-09-27T15:01:19+00:00",
+      "resources": {
+        "b96517a9-ed9c-439d-a872-46dc34af3d9f": "2026-09-26T16:33:49.355576",
+        "e285099b-91b5-4b9e-8316-bde8271839a6": "2026-09-26T16:33:53.844998"
+      }
+    },
+    {
+      "name": "sewer-manholes",
+      "id": "1cb13e9b-ab58-4263-97fa-b0311d43230e",
+      "title": "Sewer Maintenance Holes",
+      "owner": "Toronto Water",
+      "downloaded_at": "2026-09-27T15:01:20+00:00",
+      "resources": {
+        "d695faf8-6360-48f0-8c50-0447fd8e0bd0": "2026-09-26T16:40:55.681281",
+        "8fb6bd15-ad37-4e65-a908-fd859f56c8dc": "2026-09-26T16:41:00.432223"
+      }
+    },
+    {
+      "name": "sewer-outfalls",
+      "id": "0f3bb832-e4f1-44dc-b01e-da14b4afc1cd",
+      "title": "Sewer Outfalls",
+      "owner": "Toronto Water",
+      "downloaded_at": "2026-09-27T15:01:21+00:00",
+      "resources": {
+        "d56dff5b-6ad4-418f-af49-6441a676b261": "2026-09-22T16:35:32.639094",
+        "12cc6216-f03d-4d79-879b-c0cf7f9b3e0e": "2026-09-22T16:35:38.524808"
+      }
+    },
+    {
+      "name": "sewer-pressurized-mains",
+      "id": "209b035f-93fa-4f72-827c-17495d75ed99",
+      "title": "Sewer Pressurized Mains",
+      "owner": "Toronto Water",
+      "downloaded_at": "2026-09-27T15:01:22+00:00",
+      "resources": {
+        "c2face06-6d83-4f8f-b34d-b5decbcec62c": "2026-07-09T16:37:19.494055",
+        "19971b18-e834-4932-8efc-54699f8de101": "2026-07-09T16:37:24.037286"
+      }
+    },
+    {
+      "name": "shootings-firearm-discharges",
+      "id": "4bc5511d-0ecf-487a-9214-7b2359ad8f61",
+      "title": "Shootings & Firearm Discharges",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T15:01:24+00:00",
+      "resources": {
+        "c3083641-5f52-4d92-a68c-b5e67a77710f": "2026-07-20T13:03:55.691080",
+        "a8a110a4-84a4-4569-b616-92baaf954580": "2022-03-10T20:52:05.376889",
+        "68722095-dbb3-4b6f-8407-467a8f05ac07": "2026-07-20T13:04:00.641241"
+      }
+    },
+    {
+      "name": "short-term-rental-program-data",
+      "id": "602f7450-23be-467b-8832-a768918c8dc0",
+      "title": "Short Term Rental Registration & Enforcement overview",
+      "owner": "Municipal Licensing & Standards",
+      "downloaded_at": "2026-09-27T15:01:25+00:00",
+      "resources": {
+        "00949cfb-85a6-4db5-ae67-43273167bde9": null,
+        "918ffe2b-a263-4286-93a5-8c9be1d814a4": "2026-09-22T02:05:14.765768"
+      }
+    },
+    {
+      "name": "short-term-rentals-registration",
+      "id": "2ab20f80-3599-486a-8f8a-9cb59117977c",
+      "title": "Short Term Rentals Registration",
+      "owner": "Municipal Licensing & Standards",
+      "downloaded_at": "2026-09-27T15:01:26+00:00",
+      "resources": {
+        "f4659cc1-8985-4e4a-a702-ae24352271e0": "2026-09-27T11:03:20.000335",
+        "9c235257-b09f-441e-bcad-1495607f9a82": "2026-09-27T12:00:14.547721"
+      }
+    },
+    {
+      "name": "sidewalk-construction-program",
+      "id": "b72ef02d-5a78-4ad4-bf07-53c1160f19ad",
+      "title": "Sidewalk Construction Program",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T15:01:27+00:00",
+      "resources": {
+        "f81e02cc-1811-4b22-aa0a-1120639135f7": "2026-09-25T14:49:04.800435",
+        "0880bcbd-08a6-418d-905b-042aeda5b9d6": "2026-09-25T14:49:08.436616"
+      }
+    },
+    {
+      "name": "sign-bylaw-districts",
+      "id": "81b501ed-8827-4641-b739-35659a2e5d86",
+      "title": "Sign Bylaw Districts",
+      "owner": "Toronto Building",
+      "downloaded_at": "2026-09-27T15:01:28+00:00",
+      "resources": {
+        "43d0edd1-7318-4da6-aff7-ee169d6ffa32": "2026-02-20T21:07:26.407424",
+        "e94cae2f-05a0-49b9-8a49-72a999896d86": "2022-03-10T20:54:04.828487",
+        "3471da90-57cc-40f2-a12e-9e9aa435f259": "2026-02-20T21:07:31.772551"
+      }
+    },
+    {
+      "name": "site-and-area-specific-policies",
+      "id": "d610b767-1523-41ea-84df-b97a172416a9",
+      "title": "Site and area Specific policies",
+      "owner": "City Planning",
+      "downloaded_at": "2026-09-27T15:01:30+00:00",
+      "resources": {
+        "cc7e3cc7-aeaa-42c0-b754-48893c0010c6": "2026-03-16T20:30:29.119969",
+        "ef4f2373-08e9-4cc9-9a45-ae12b6262b21": "2022-04-18T10:55:15.329081",
+        "2d83629a-8f1e-4d2f-9589-f912de801d6e": "2026-03-16T20:30:34.628752"
+      }
+    },
+    {
+      "name": "small-business-property-tax-subclass-eligible-properties",
+      "id": "d5c9eb90-ccb5-4567-9f5c-32913c1fda7b",
+      "title": "Small Business Property Tax Subclass: Eligible Properties",
+      "owner": "Revenue Services",
+      "downloaded_at": "2026-09-27T15:01:31+00:00",
+      "resources": {
+        "5ec37615-d9ba-49de-92b2-684885806bb2": null,
+        "6c7895ee-5d6d-445f-a8ee-5cb5da98d673": "2026-03-06T19:29:06.798995"
+      }
+    },
+    {
+      "name": "solarto",
+      "id": "304aaee3-11cb-41c4-96a3-adef31f63ed5",
+      "title": "SolarTO",
+      "owner": "Environment & Energy",
+      "downloaded_at": "2026-09-27T15:01:38+00:00",
+      "resources": {
+        "f5f37d23-85c9-4af8-b8a5-369523778f93": "2026-02-20T21:47:23.711485",
+        "738a0eba-b51f-4524-ae5c-a5354e06587a": "2026-02-20T21:47:43.678427"
+      }
+    },
+    {
+      "name": "solid-waste-pickup-schedule",
+      "id": "7b70189a-aede-42f1-b092-8708fa4f5fc3",
+      "title": "Solid Waste Collection Schedule",
+      "owner": "Solid Waste Management Services",
+      "downloaded_at": "2026-09-27T15:01:50+00:00",
+      "resources": {
+        "47416395-fb31-4252-9737-2367f5a56953": null,
+        "c801b084-b3c4-43a8-ba25-b94531e75863": null,
+        "9e816039-8fd8-41e6-b21b-da6334b2389f": null,
+        "80c9e528-fac7-41a7-9d65-1300a702b720": null,
+        "c2cecd44-a9a2-4451-9410-8ac7465b75a0": null,
+        "dcfb9064-1b94-4431-bc81-afb908aa2633": null,
+        "bbc06e3e-f97e-4b78-9280-b3bd76103f6e": null,
+        "95f6991e-dbe7-4ef6-a49a-4dddeee49074": null,
+        "469cda47-be9a-47ed-afd0-be96f8346e5c": null,
+        "1c9c972a-3ef5-43db-b229-bf3951e80554": null,
+        "0cfce5af-c0b9-461b-9659-039713899172": null,
+        "f5aa0496-08e5-4941-8775-58cdd7862c6a": null,
+        "1b534424-6052-4ecb-a154-01351ab64d60": "2026-02-20T18:47:45.961316",
+        "580a5c33-59b6-4b4a-8596-5cd24c17b888": "2026-02-20T18:47:39.066693",
+        "b5dbe99b-a5fa-43c7-a5b4-25cd71cc7d04": "2026-02-20T18:47:32.422983",
+        "5251d8e8-bd32-483b-9738-09e5555b4f7f": "2026-02-20T18:47:25.663670",
+        "500da430-38cd-462d-a4d1-b0095ffd212c": "2026-02-20T18:47:18.882019",
+        "2054ec4c-d769-403e-819a-d434b326902e": "2026-02-20T18:47:12.019554",
+        "db0166d3-4f35-4ac2-b4fc-2a63321c8c8c": "2026-02-20T18:47:05.540159",
+        "4a00da64-f9f1-4ac5-9960-5a41818b2701": "2026-02-20T18:46:52.311415",
+        "3e407dba-18ec-41e2-8845-d803609a7e10": "2026-02-20T18:46:58.913604",
+        "52b7be29-46f3-4eb4-9050-337f42a5b6bd": "2026-02-20T18:46:45.731608",
+        "d78c77fe-6055-44d1-836b-e2d36722b3ce": "2026-02-20T18:46:38.730579",
+        "fe6f168c-4d5e-4b62-856b-3306a0fe56dd": "2026-03-05T17:19:46.880865"
+      }
+    },
+    {
+      "name": "stillbirth-registration-statistics",
+      "id": "93b2ff8c-989b-49cd-8597-5286c95a287e",
+      "title": "Stillbirth Registration Statistics",
+      "owner": "City Clerk's Office",
+      "downloaded_at": "2026-09-27T15:01:52+00:00",
+      "resources": {
+        "093e260c-3dde-4b97-b0b1-f4411b02afba": "2026-07-01T10:05:09.000621",
+        "8cc6ee47-0a13-4776-b733-49e98586b9df": "2026-07-01T12:00:26.646588",
+        "21cc7d59-ce56-4634-a546-e1adb9642379": null,
+        "3911f144-8fe2-4438-861e-b58da83828ff": "2026-09-05T00:53:45.888611"
+      }
+    },
+    {
+      "name": "street-furniture-bench",
+      "id": "20e06199-c6a6-4846-9a0c-2b6375283a0c",
+      "title": "Street Furniture - Bench",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T15:01:53+00:00",
+      "resources": {
+        "cdb49196-0d6a-466a-8ec8-88336a102778": "2026-06-01T13:39:22.490822",
+        "990216c2-2700-47c4-a4d3-64accb59fe8b": "2022-04-22T12:03:17.996548",
+        "d3189dcb-9c88-4544-8e63-0666f7e11f39": "2026-06-01T13:39:30.765151"
+      }
+    },
+    {
+      "name": "street-furniture-bicycle-parking",
+      "id": "71e6c206-96e1-48f1-8f6f-0e804687e3be",
+      "title": "Street Furniture - Bicycle Parking - Bicycle Locking Ring",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T15:01:56+00:00",
+      "resources": {
+        "f8b62a45-b4ef-4273-ac0a-5d4c95dcf554": "2026-09-27T03:05:54.330292",
+        "e0ccb505-6c6a-4250-8cf0-04316b1eb220": "2022-03-10T20:57:23.519662",
+        "d6eff9e5-80ae-4e3f-b6d1-604bc292c8fd": "2025-03-27T13:47:13.256986",
+        "58277ead-69eb-43ce-b56f-1dac6a1d0cdd": "2022-04-22T12:04:16.234186",
+        "d9494358-355b-4e9b-baf4-740753928acb": "2026-09-27T03:06:00.204020",
+        "7ebda880-3560-4533-80f5-f4ae539f88eb": "2025-03-27T13:47:19.546022"
+      }
+    },
+    {
+      "name": "street-furniture-information-pillar-wayfinding-structure",
+      "id": "99b1f313-7df8-4327-a0c4-1ba9cd262238",
+      "title": "Street Furniture - Information Pillar-Wayfinding Structure",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T15:01:58+00:00",
+      "resources": {
+        "ffd53cc3-8093-4c62-9fc3-685d7f40009f": "2026-06-01T13:52:36.124233",
+        "a2a2d5f2-fd01-4b9d-8c0b-4f3046b88316": "2022-04-22T12:35:10.498042",
+        "0d982baf-d9e7-4fd3-8438-cc474b67e13b": "2026-06-01T13:52:40.675285"
+      }
+    },
+    {
+      "name": "street-furniture-litter-receptacle",
+      "id": "394435b5-e408-45f0-8ec7-43b14252d0a1",
+      "title": "Street Furniture - Litter Receptacle",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T15:01:59+00:00",
+      "resources": {
+        "94b21ed8-1a5a-4f51-810f-d8a4664dd89a": "2026-02-20T18:43:22.105774",
+        "b86c7792-3c01-408c-9a1f-b6baedc385b0": "2022-04-22T12:07:49.059405",
+        "f21297d0-fceb-4151-b803-3a23dfa3c1e1": "2026-02-20T18:43:26.214779"
+      }
+    },
+    {
+      "name": "street-furniture-poster-board",
+      "id": "cf706a1d-ef97-4865-b55a-e52432615ba6",
+      "title": "Street Furniture - Poster Board",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T15:02:01+00:00",
+      "resources": {
+        "b6696467-54d4-4b5b-acff-5b9085d94ff9": "2026-02-20T18:43:34.215477",
+        "e760d951-d1f2-4768-923c-0683a532cc9e": "2022-04-22T12:09:22.838188",
+        "7408ade1-5b69-45ac-bee8-636dde55b1e6": "2026-02-20T18:43:38.105745"
+      }
+    },
+    {
+      "name": "street-furniture-poster-structure",
+      "id": "ccfdb139-b54f-44f9-a1d7-2dde870baaaa",
+      "title": "Street Furniture - Poster Structure",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T15:02:02+00:00",
+      "resources": {
+        "18937890-dcdb-4e04-b341-b16c553d4c46": "2026-02-20T18:43:03.881804",
+        "1dfb4017-8ca5-4201-9cba-4724cc29e4c2": "2022-04-22T12:10:13.846819",
+        "34ca26ee-f681-4b78-8902-3004bce83c88": "2026-02-20T18:43:08.366090"
+      }
+    },
+    {
+      "name": "street-furniture-public-washroom",
+      "id": "821fed42-92e5-4a49-8684-394c1423b78a",
+      "title": "Street Furniture - Automated Public Washroom",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T15:02:04+00:00",
+      "resources": {
+        "78cab83f-3bda-47b1-a2df-cf01f3e8628f": "2026-02-20T21:30:42.243723",
+        "9cdb66f6-5235-4546-85df-426cd366bfb2": "2022-04-22T12:12:09.842759",
+        "7cb4ca1c-a86a-4363-99f9-e31f78776c2e": "2026-02-20T21:30:47.102454"
+      }
+    },
+    {
+      "name": "street-furniture-publication-structure",
+      "id": "74f6369f-a987-4f83-bab1-df66bacc82d7",
+      "title": "Street Furniture - Publication Structure",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T15:02:05+00:00",
+      "resources": {
+        "b8ac9622-3807-4fed-a881-ab4d860c49d6": "2026-02-20T18:42:37.426972",
+        "6e83067e-9dcb-4900-982c-6a2c57216a4f": "2022-04-22T12:15:12.228025",
+        "d943161d-d4c9-42ad-a29c-07813e0cb718": "2026-02-20T18:42:41.859104"
+      }
+    },
+    {
+      "name": "street-furniture-transit-shelter",
+      "id": "1db34737-ffad-489d-a590-9171d500d453",
+      "title": "Street Furniture - Transit Shelter",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T15:02:07+00:00",
+      "resources": {
+        "ecf41899-aed0-405e-aa76-118600f3a303": "2026-02-20T18:42:24.840406",
+        "5a1bc1c9-7784-4392-919c-65eddbe14f05": "2022-04-22T12:17:33.687178",
+        "fbdf81d6-8f40-4781-87a1-c83eed9f18e9": "2026-02-20T18:42:29.184716"
+      }
+    },
+    {
+      "name": "street-tree-data",
+      "id": "6ac4569e-fd37-4cbc-ac63-db3624c5f6a2",
+      "title": "Street Tree Data",
+      "owner": "Parks, Forestry & Recreation",
+      "downloaded_at": "2026-09-27T15:02:14+00:00",
+      "resources": {
+        "b65cd31d-fabc-4222-83ef-8ddd11295d2b": "2026-06-04T20:41:13.862146",
+        "01c48a42-9905-4984-9389-f5bb06a3a90e": "2022-04-04T14:41:13.982926",
+        "5930412c-408e-4ee3-b473-56a790c9dfb7": "2021-09-10T17:44:29.733330",
+        "802aa822-13e1-4bbf-af9c-406ee56be44d": "2026-06-04T20:41:32.708017"
+      }
+    },
+    {
+      "name": "strollto",
+      "id": "f87fbe88-f9d1-432d-a482-b7044b32d587",
+      "title": "StrollTO",
+      "owner": "Economic Development & Culture",
+      "downloaded_at": "2026-09-27T15:02:16+00:00",
+      "resources": {
+        "b30cc1eb-6385-4bf4-8231-20d3e9ec4021": "2026-09-20T00:06:21.670495",
+        "4cf7a58d-68eb-4544-9a02-cfb828e17482": "2026-09-20T00:06:26.826004",
+        "cce04dc9-79cd-4e49-91ab-9ce6bb249d98": "2026-09-20T00:05:40.334904",
+        "6785dcac-d02e-4f62-9e62-e899426e5e19": "2026-09-20T00:05:44.711666"
+      }
+    },
+    {
+      "name": "subsidized-housing-listings",
+      "id": "153ea449-b7f4-4c4d-889a-ec0f89b3bbc9",
+      "title": "Subsidized Housing Listings",
+      "owner": "Housing Secretariat",
+      "downloaded_at": "2026-09-27T15:02:18+00:00",
+      "resources": {
+        "449a5cf0-af7d-43cc-bff9-4330008f1bd4": null,
+        "feef5b9e-06f6-4f25-ab4a-8d7a1176c555": null,
+        "a2588523-7605-4a3d-9cdf-041b9e8e4bb8": "2026-02-20T21:36:33.496055",
+        "2668e0d2-8883-4048-abce-1c2b6fe12668": "2026-02-20T21:36:37.863565"
+      }
+    },
+    {
+      "name": "summer-safety-plan",
+      "id": "6ea967e9-31a1-4139-a6f0-2fb6d0d9f5bf",
+      "title": "Summer Safety Plan",
+      "owner": "Social Development, Finance & Administration",
+      "downloaded_at": "2026-09-27T15:02:18+00:00",
+      "resources": {
+        "f4ee9f01-9996-4672-9743-b495c2e44dcc": null,
+        "4a9048ab-efc1-4c7b-a43f-1403d42f70a5": "2026-08-25T17:00:38.237037"
+      }
+    },
+    {
+      "name": "swimsafe",
+      "id": "e36df4b9-f772-49ab-a87b-f90b869b7a44",
+      "title": "SwimSafe™",
+      "owner": "Toronto Public Health",
+      "downloaded_at": "2026-09-27T15:02:21+00:00",
+      "resources": {
+        "9be01364-7bd8-4be1-9398-54c1fac53ec8": "2026-09-27T09:05:45.351321",
+        "4027427f-3ec1-4277-a008-63de2b9a5cbb": "2026-09-27T09:05:51.031720",
+        "21883e1e-d0cd-4f15-ab76-a999414c0a00": "2026-07-08T21:00:49.926790",
+        "3cd60112-8db3-422c-ba3b-5ebc0e2abb77": "2026-07-08T21:00:53.585521"
+      }
+    },
+    {
+      "name": "tcdsb-schools",
+      "id": "578ae988-04a7-4583-a1db-4a5bcac4128f",
+      "title": "TCDSB - Schools",
+      "owner": "Toronto Catholic District School Board",
+      "downloaded_at": "2026-09-27T15:02:22+00:00",
+      "resources": {
+        "71ebbfc2-4642-47b5-a249-03d06ee6b8a1": "2026-02-20T17:59:21.334768",
+        "fd4c3af9-8136-4a43-b86e-39b0dd9b001c": "2022-03-10T21:43:59.732626",
+        "1bcbf690-42ec-4179-801d-f9c4a6f1d216": "2026-02-20T17:59:25.295886"
+      }
+    },
+    {
+      "name": "temporary-extension-and-special-occasion-permit-endorsements-for-liquor-licences",
+      "id": "f0b60227-d356-47f3-93b9-c6439be4223c",
+      "title": "Temporary Extension and Special Occasion Permit Endorsements for Liquor Licences",
+      "owner": "City Clerk's Office",
+      "downloaded_at": "2026-09-27T15:02:23+00:00",
+      "resources": {
+        "f6a2256d-fc5e-4c67-8777-1645aa749486": "2026-09-26T15:22:50.684925",
+        "dcd46975-1644-42bd-bab7-936905fb8b03": "2026-09-26T15:22:55.796821"
+      }
+    },
+    {
+      "name": "tenant-notification-for-rent-reduction",
+      "id": "26cbd79d-e548-4280-bc2c-a923bdfcadad",
+      "title": "Tenant Notification for Rent Reduction",
+      "owner": "Revenue Services",
+      "downloaded_at": "2026-09-27T15:02:37+00:00",
+      "resources": {
+        "8c286198-ab8a-47d3-bd82-c0e156656435": null,
+        "72b8c96d-692a-4989-9201-965db0925b2a": null,
+        "cc110675-82db-4151-bc82-b5466182a243": null,
+        "36756912-ce65-4a83-bb6c-4b1eee53768f": null,
+        "07031a7b-f4c1-4b77-a0fd-c0d248ef8f66": null,
+        "8e8b189c-1c9b-4674-a26a-f9525a3e5905": null,
+        "4cef1c3e-69ba-4316-9cd7-36905e78b8e7": null,
+        "c6b08a06-9efc-47e6-b29b-fed5a6d567c1": null,
+        "8b2dcddc-2bc5-4807-9804-3f1e5a8f29ce": null,
+        "7e50ed34-6525-4990-b5a3-33e5c910c5eb": null,
+        "d61655bb-6ee9-4c2f-bcb2-7e5c92ea3b7b": "2026-02-20T18:57:25.529215",
+        "6e209dae-d951-4acd-9221-07b29137e83d": "2026-02-20T18:56:41.383438",
+        "442750b3-73c7-437b-9cd3-2304113114c0": "2026-02-20T18:57:04.073500",
+        "2dc563ff-d1e9-4485-917a-1049d3557624": "2026-02-20T18:56:19.847864",
+        "f4ec45a4-2e63-4a46-909a-da7fd72cb4c2": "2026-02-20T18:55:58.400978",
+        "a8ab9a48-963f-454b-b5fa-c2dd7c6a5d75": "2026-02-20T18:55:33.892127",
+        "d98d5703-0775-45db-b95d-8ad21dd56d46": "2026-02-20T18:55:10.902581",
+        "3b1f8b1d-ddc8-4f82-b23b-e702970978ff": "2026-02-20T18:54:48.427710",
+        "38b3e2e3-0510-475c-af3e-dbec9493c90a": "2026-02-20T18:57:47.245119",
+        "46acac73-f670-47a6-9240-57f12b81eb1a": "2026-02-20T18:54:26.044767",
+        "8e257b6f-6dd6-4e77-9533-2b567a641c46": "2026-02-20T18:54:02.911871",
+        "c4418369-9554-49a1-ae32-66145f962300": "2026-02-20T18:53:39.170554"
+      }
+    },
+    {
+      "name": "tennis-courts-facilities",
+      "id": "409119c3-65d7-4688-bcb7-5f74f6fb8415",
+      "title": "Tennis Courts Facilities",
+      "owner": "Parks, Forestry & Recreation",
+      "downloaded_at": "2026-09-27T15:02:38+00:00",
+      "resources": {
+        "48f078e1-1aba-4ed6-8952-53391b11c5c2": "2026-09-24T04:08:57.389922",
+        "53970e08-fccf-43af-bfa2-c3a11efeb6f1": "2026-09-24T04:09:01.600887"
+      }
+    },
+    {
+      "name": "theft-from-motor-vehicle",
+      "id": "1fc65d1e-7dae-4766-98dd-3b172e40a089",
+      "title": "Theft from Motor Vehicle",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T15:02:39+00:00",
+      "resources": {
+        "a8b3ec01-2c82-41b8-81f3-eec5758e519f": "2026-07-20T13:30:18.420732",
+        "ff35e5ec-c730-4e61-9f22-13865d36e697": "2026-07-20T13:30:25.462533"
+      }
+    },
+    {
+      "name": "tobids-all-open-solicitations",
+      "id": "434c2d91-1736-432a-a69f-d5b3890f239f",
+      "title": "Toronto Bids Solicitations",
+      "owner": "Purchasing & Materials Management",
+      "downloaded_at": "2026-09-27T15:02:40+00:00",
+      "resources": {
+        "f676f46c-de76-4e94-bba7-0a3951aa0603": null,
+        "5e88e4e1-5df0-4733-bd97-fa06a89e69ca": "2026-09-26T15:58:55.257189"
+      }
+    },
+    {
+      "name": "tobids-awarded-contracts",
+      "id": "f78fe449-53f4-4962-9ec8-8f7eeece1072",
+      "title": "Toronto Bids Awarded Contracts",
+      "owner": "Purchasing & Materials Management",
+      "downloaded_at": "2026-09-27T15:02:41+00:00",
+      "resources": {
+        "e211f003-5909-4bea-bd96-d75899d8e612": null,
+        "81be799c-0fae-4a29-9458-0dc3ef471ca5": "2026-09-25T16:06:03.854117"
+      }
+    },
+    {
+      "name": "tobids-non-competitive-contracts",
+      "id": "70509567-870b-4170-99a6-8f520c60051e",
+      "title": "Toronto Bids Non-Competitive Contracts",
+      "owner": "Purchasing & Materials Management",
+      "downloaded_at": "2026-09-27T15:02:42+00:00",
+      "resources": {
+        "a11b18b4-72e6-47e3-a4e9-05dcc8abd697": null,
+        "56938e5b-f17c-4b10-a4e8-360164f35a99": "2026-09-21T16:11:24.044024"
+      }
+    },
+    {
+      "name": "topographic-mapping-building-outlines",
+      "id": "09a930cc-2a52-49b2-866d-52ac7f769a73",
+      "title": "Topographic Mapping – Building Outlines",
+      "owner": "Information & Technology",
+      "downloaded_at": "2026-09-27T15:02:49+00:00",
+      "resources": {
+        "41372651-b2eb-4f1e-91d9-b5280b2f0ccd": "2026-04-05T00:36:40.486303",
+        "1e613126-4eca-43e6-9cb6-2100c83f4a24": "2026-04-05T00:36:54.352175"
+      }
+    },
+    {
+      "name": "topographic-mapping-edge-of-road",
+      "id": "21545630-0c50-4235-bcd4-276910a0643f",
+      "title": "Topographic Mapping – Edge of Road",
+      "owner": "Information & Technology",
+      "downloaded_at": "2026-09-27T15:02:56+00:00",
+      "resources": {
+        "55e23bab-d838-4192-8275-e3cf914de905": "2026-02-20T21:05:22.626880",
+        "9709ff00-a1b4-4d5e-9de8-9d591ee7cfe4": "2026-02-20T21:05:32.704382"
+      }
+    },
+    {
+      "name": "topographic-mapping-physical-area-of-parking-lots",
+      "id": "bb408f36-6824-4158-8a12-d4efe6465959",
+      "title": "Topographic Mapping – Physical area of parking lots",
+      "owner": "Information & Technology",
+      "downloaded_at": "2026-09-27T15:03:00+00:00",
+      "resources": {
+        "810f620d-2492-4458-829b-927597792223": "2026-02-20T20:48:17.759242",
+        "9f507990-84bc-4b58-ba4a-fa8846a227a1": "2026-02-20T20:48:25.328256"
+      }
+    },
+    {
+      "name": "topographic-mapping-physical-area-of-sidewalks",
+      "id": "02e9d0b9-a7c8-45e6-9200-ba17decf65c6",
+      "title": "Topographic Mapping – Physical area of sidewalks",
+      "owner": "Information & Technology",
+      "downloaded_at": "2026-09-27T15:03:05+00:00",
+      "resources": {
+        "7feb1b8d-24ed-4f1c-9892-88cd2f73ef58": "2026-02-20T21:02:13.197804",
+        "f18a2505-701f-456a-ae02-15ba69c2ff7b": "2026-02-20T21:02:21.622146"
+      }
+    },
+    {
+      "name": "topographic-mapping-poles",
+      "id": "cdf46145-7a91-4f1c-9dd1-91cd58338238",
+      "title": "Topographic Mapping - Poles",
+      "owner": "Information & Technology",
+      "downloaded_at": "2026-09-27T15:03:07+00:00",
+      "resources": {
+        "5ce5f150-f0be-4417-af94-d531594d61f4": "2026-02-20T20:59:36.156967",
+        "767a30fb-a335-4140-bf3b-b44639ecfc20": "2026-02-20T20:59:43.511452"
+      }
+    },
+    {
+      "name": "topographic-mapping-railway",
+      "id": "fde8eacd-9c79-459e-b917-6b80ca34b28a",
+      "title": "Topographic Mapping - Railway",
+      "owner": "Information & Technology",
+      "downloaded_at": "2026-09-27T15:03:08+00:00",
+      "resources": {
+        "0bac9aa2-b216-40ce-b2f8-904d78653193": "2026-02-20T21:33:43.190582",
+        "1d6f5de8-8185-4678-80ac-63edf18ab3df": "2026-02-20T21:33:46.993000"
+      }
+    },
+    {
+      "name": "topographic-mapping-water-line",
+      "id": "0ffda5f7-bd56-464c-803e-5c844f24c870",
+      "title": "Topographic Mapping - Water Line",
+      "owner": "Information & Technology",
+      "downloaded_at": "2026-09-27T15:03:09+00:00",
+      "resources": {
+        "5f5dd47d-659e-43f3-bdb8-2f4d96403b55": "2026-02-20T21:33:55.105811",
+        "07361ba5-d3bb-4f81-bddd-e3d2c4fb3cfd": "2026-02-20T21:33:58.874386"
+      }
+    },
+    {
+      "name": "topographic-mapping-waterbodies-and-rivers",
+      "id": "f352a9e9-4077-4c59-b0a9-f35a56fb24be",
+      "title": "Topographic Mapping – Waterbodies & Rivers",
+      "owner": "Information & Technology",
+      "downloaded_at": "2026-09-27T15:03:10+00:00",
+      "resources": {
+        "cd0d2ba7-8eb2-464f-8483-d5b80897b9d5": "2026-09-22T19:08:20.669854",
+        "c682f01c-4106-4108-b300-ced4749697c5": "2026-09-22T19:08:24.568107"
+      }
+    },
+    {
+      "name": "toronto-animal-services-service-requests-complaints",
+      "id": "694b6a00-7850-4d2b-a2f4-0d6ab93f8883",
+      "title": "Toronto Animal Services - Service Requests & Complaints",
+      "owner": "Municipal Licensing & Standards",
+      "downloaded_at": "2026-09-27T15:03:11+00:00",
+      "resources": {
+        "6fd2bca4-9f36-4d2d-b713-376e2386d199": null,
+        "432cc813-6339-4b37-bb6c-a6b199e05289": "2026-09-01T20:30:43.930480"
+      }
+    },
+    {
+      "name": "toronto-beaches-observations",
+      "id": "c8ce3e2f-935d-4ef6-ade2-27e08df239f2",
+      "title": "Toronto Beaches Observations",
+      "owner": "Parks, Forestry & Recreation",
+      "downloaded_at": "2026-09-27T15:03:12+00:00",
+      "resources": {
+        "b1b87de1-e021-43c2-a80e-69028fe9fafa": null,
+        "42551dd8-a3c1-45fa-9e8b-674c43b4d3b7": "2026-09-07T21:05:25.543370"
+      }
+    },
+    {
+      "name": "toronto-beaches-water-quality",
+      "id": "92b0de8f-1ada-44a7-84cf-adc04868e990",
+      "title": "Toronto Beaches Water Quality",
+      "owner": "Toronto Public Health",
+      "downloaded_at": "2026-09-27T15:03:14+00:00",
+      "resources": {
+        "fa96223e-ccf8-4c0a-817b-6f5039311287": "2026-09-24T21:07:31.074748",
+        "80362166-3868-42e1-978c-0df3f8cb11e5": "2026-09-24T21:07:35.854190"
+      }
+    },
+    {
+      "name": "toronto-centreline-tcl",
+      "id": "1d079757-377b-4564-82df-eb5638583bfb",
+      "title": "Toronto Centreline (TCL)",
+      "owner": "Information & Technology",
+      "downloaded_at": "2026-09-27T15:03:15+00:00",
+      "resources": {
+        "4dec5884-a5cf-49e7-b562-f835150dc0b1": "2026-09-25T18:14:53.581221",
+        "d562d003-d8eb-4b4b-bbdc-8fe694299a21": "2026-09-25T18:14:58.930462"
+      }
+    },
+    {
+      "name": "toronto-community-housing-data",
+      "id": "55076653-defc-44c8-8384-9db130337438",
+      "title": "Toronto Community Housing Data",
+      "owner": "Housing Secretariat",
+      "downloaded_at": "2026-09-27T15:03:16+00:00",
+      "resources": {
+        "31f70a35-4901-409a-90a4-1a5fef74575c": "2026-02-20T19:04:08.939565",
+        "a75e6b58-c045-4cfe-bf81-1af6c756fbab": "2022-03-10T21:59:18.513640",
+        "81fc03e9-f99f-463a-83ed-4c85f1ecc9cb": "2026-02-20T19:04:13.562717"
+      }
+    },
+    {
+      "name": "toronto-district-school-board-locations",
+      "id": "ebe78837-cdbc-48d8-b061-3ce3ff7a67ef",
+      "title": "Toronto District School Board Locations",
+      "owner": "Information & Technology",
+      "downloaded_at": "2026-09-27T15:03:17+00:00",
+      "resources": {
+        "6d1fcabd-a353-44e5-a81a-0640237d1853": "2026-02-20T17:59:32.353371",
+        "52625699-b1e3-4604-bc9a-fe466768b006": "2026-02-20T17:59:36.665003"
+      }
+    },
+    {
+      "name": "toronto-fire-services-run-areas",
+      "id": "800dc3a3-3ffd-4de7-a3a6-5064104cdf88",
+      "title": "Toronto Fire Services Run Areas",
+      "owner": "Fire Services",
+      "downloaded_at": "2026-09-27T15:03:18+00:00",
+      "resources": {
+        "c5dcb036-9e50-45ad-ac78-6eaede8ed56e": "2026-02-20T21:07:41.949582",
+        "9bab46dc-1c16-4831-8caa-b386ba1df0a3": "2026-02-20T21:07:45.819416"
+      }
+    },
+    {
+      "name": "toronto-island-ferry-ticket-counts",
+      "id": "000ec8ae-1231-49ca-b6f8-6eb35b74a7ee",
+      "title": "Toronto Island Ferry Ticket Counts",
+      "owner": "Fleet Services",
+      "downloaded_at": "2026-09-27T15:03:20+00:00",
+      "resources": {
+        "0da005de-270d-49d1-b45b-32e2e777a381": null,
+        "6c8e7ce0-1961-4c11-ba89-9db5deda88c0": "2026-09-25T21:17:49.068366"
+      }
+    },
+    {
+      "name": "toronto-office-of-recovery-and-rebuild-group-discussion-vulnerable-populations",
+      "id": "bb69e37b-20ee-413c-8d16-9ec3eb43f9d9",
+      "title": "Toronto Office of Recovery and Rebuild Group Discussion - Vulnerable Populations",
+      "owner": "Toronto Office of Recovery and Rebuild",
+      "downloaded_at": "2026-09-27T15:03:20+00:00",
+      "resources": {
+        "9e6ccc4e-c8f5-451d-b527-a70742a6d6cd": "2020-10-14T13:38:28.049055"
+      }
+    },
+    {
+      "name": "toronto-office-of-recovery-and-rebuild-public-survey-results",
+      "id": "5f7364b4-623f-4e3a-a404-3d5f417fccaf",
+      "title": "Toronto Office of Recovery and Rebuild – Public Survey Results",
+      "owner": "Toronto Office of Recovery and Rebuild",
+      "downloaded_at": "2026-09-27T15:03:21+00:00",
+      "resources": {
+        "bcf60fd0-5859-467e-bca3-958e6ff6a6e6": "2020-10-14T13:41:31.922946"
+      }
+    },
+    {
+      "name": "toronto-office-of-recovery-and-rebuild-story-form-vulnerable-populations",
+      "id": "a3129a14-3c42-4c9d-a7c9-b4bb20a4dc00",
+      "title": "Toronto Office of Recovery and Rebuild Story Form – Vulnerable Populations",
+      "owner": "Toronto Office of Recovery and Rebuild",
+      "downloaded_at": "2026-09-27T15:03:21+00:00",
+      "resources": {
+        "bda994e4-f9ea-4468-9ca2-20598839917d": "2020-10-14T13:39:33.539980"
+      }
+    },
+    {
+      "name": "toronto-office-of-recovery-and-rebuild-survey-for-individuals-vulnerable-populations",
+      "id": "5a846190-2d28-49da-a1ef-adbff4d16a6e",
+      "title": "Toronto Office of Recovery and Rebuild Survey for Individuals - Vulnerable Populations",
+      "owner": "Toronto Office of Recovery and Rebuild",
+      "downloaded_at": "2026-09-27T15:03:22+00:00",
+      "resources": {
+        "b03f8ae1-c9d6-4186-8231-4ae682599141": "2020-10-14T13:37:46.819481"
+      }
+    },
+    {
+      "name": "toronto-police-budget",
+      "id": "668434ee-9541-40a8-adb6-0ad805fcc9b6",
+      "title": "Toronto Police Budget",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T15:03:28+00:00",
+      "resources": {
+        "c243b6f5-a6f0-4b22-b4f1-1aa2f9ff0d3e": null,
+        "324e38b8-25ac-44f4-a097-fe951fa11742": null,
+        "48b38501-a8e8-483a-97ea-8c012d24dc8e": null,
+        "b0df1f22-262f-4cd0-bc6d-0c42149ae3b0": null,
+        "ebcffad1-71da-4e0d-bd1a-9c19f1d9ff2f": null,
+        "689ff786-788e-45de-a6d9-8720d48d720e": null,
+        "5348f406-8824-477e-9eb6-4d52cd355490": "2026-02-20T18:45:47.959254",
+        "6db9ded4-04ee-42ef-bc54-4b0a795ffc8a": "2026-02-20T18:45:41.730031",
+        "da1853dc-aa4a-4a8d-8610-cba63e3a3e11": "2026-02-20T18:46:01.458314",
+        "5aa80739-3ea4-42db-9df8-b21ad590a7fb": "2026-02-20T18:46:07.677973",
+        "ff0c38b7-5958-427c-9fd2-33e5085094a0": "2026-02-20T18:45:54.376102",
+        "1096a60e-1a72-40d8-b0ba-3e772f3545aa": "2026-02-20T18:46:13.963048",
+        "de165e1c-7113-4945-be83-267e34c5e68f": "2026-02-20T18:46:20.354530"
+      }
+    },
+    {
+      "name": "toronto-police-budget-by-command",
+      "id": "21669291-90d8-4b7f-ab4a-ae9c02eaab7e",
+      "title": "Toronto Police Budget By Command",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T15:03:29+00:00",
+      "resources": {
+        "79405f18-e0f6-4fda-9183-c83b34ce9992": null,
+        "a6b8d36a-2bce-4260-b99b-852d2258504f": "2026-02-20T20:48:42.756999"
+      }
+    },
+    {
+      "name": "toronto-police-staffing-by-command",
+      "id": "a6c63920-58d5-4183-912b-5b9c490b681b",
+      "title": "Toronto Police Staffing by Command",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T15:03:30+00:00",
+      "resources": {
+        "ff9cfd19-db4e-4640-a39d-f35a27ef27cd": null,
+        "ec24e8cb-e727-459d-a2f1-f2e7d2206e2a": "2026-02-20T20:48:47.527482"
+      }
+    },
+    {
+      "name": "toronto-population-health-status-indicators",
+      "id": "1f67990f-21b0-4058-b84a-1ba9ba0a2575",
+      "title": "Population Health Status Indicators",
+      "owner": "Toronto Public Health",
+      "downloaded_at": "2026-09-27T15:03:34+00:00",
+      "resources": {
+        "9055ed0c-ac81-44d6-a19e-1b3b28dea96b": "2026-09-14T21:03:34.421390",
+        "c95412a5-b091-4e85-8cfb-88e91f664e4a": "2026-09-14T21:03:43.072590",
+        "0aa7bf2e-351d-4a55-8da1-98cea53ee553": "2026-09-14T21:03:38.801676",
+        "dbf56d3f-54b7-4d67-a0bd-4637d2444716": "2026-09-14T21:03:30.171248",
+        "4dcf831c-bce3-4324-9dad-88834b493099": "2026-09-14T21:12:19.316071",
+        "7896bc91-a8bd-4034-bb39-0c31df8197b7": "2026-09-14T21:12:58.344327",
+        "d56558f9-b044-42f2-818a-e48f44893438": "2026-09-14T21:13:38.930298"
+      }
+    },
+    {
+      "name": "toronto-raccoon-activity-index",
+      "id": "932c7dc1-d5c3-4740-995b-b5565d482584",
+      "title": "Toronto Raccoon Activity Index",
+      "owner": "Information & Technology",
+      "downloaded_at": "2026-09-27T15:03:34+00:00",
+      "resources": {
+        "c6fcedc6-eb24-408e-930a-25723d00bade": "2026-04-01T11:35:49.793632"
+      }
+    },
+    {
+      "name": "toronto-s-dashboard-key-indicators",
+      "id": "c6d64e9b-f85a-4084-be14-60cf18509203",
+      "title": "Toronto's Dashboard Key Indicators",
+      "owner": "City Manager's Office",
+      "downloaded_at": "2026-09-27T15:03:36+00:00",
+      "resources": {
+        "2350d71a-31d1-4387-9e29-4c1cfc866894": "2026-09-25T22:01:22",
+        "44a83fd9-1ecc-4853-95c3-174f765e903e": "2023-05-08T00:18:29.720307",
+        "d4c2d841-2d74-466c-89a8-d8f7eba17050": "2026-09-26T00:00:24.097537"
+      }
+    },
+    {
+      "name": "toronto-shelter-system-flow",
+      "id": "ac77f532-f18b-427c-905c-4ae87ce69c93",
+      "title": "Toronto Shelter System Flow",
+      "owner": "Toronto Shelter & Support Services",
+      "downloaded_at": "2026-09-27T15:03:37+00:00",
+      "resources": {
+        "fb32967d-ee16-4d46-a880-0614c18f2137": "2022-03-24T13:48:48",
+        "237d5eff-ba47-46c4-8717-a92a802abdf7": "2026-09-15T20:09:24.139154"
+      }
+    },
+    {
+      "name": "toronto-signature-sites",
+      "id": "37e9a731-02c8-44c4-9877-20d9bfdff9ca",
+      "title": "Toronto Signature Sites",
+      "owner": "Economic Development & Culture",
+      "downloaded_at": "2026-09-27T15:03:38+00:00",
+      "resources": {
+        "d49c36b9-d204-4b95-a7f0-f950e81144c9": "2026-09-01T12:04:58.289246",
+        "ceb2cfd3-edcf-413d-80dd-da91f100cc5d": "2026-09-01T12:05:02.801508"
+      }
+    },
+    {
+      "name": "tps-police-divisions",
+      "id": "1f736bc6-a4be-4b78-95a4-19c74c8663dc",
+      "title": "TPS Police Divisions",
+      "owner": "Toronto Police Services",
+      "downloaded_at": "2026-09-27T15:03:39+00:00",
+      "resources": {
+        "6dd8eaff-d37b-40ec-8edb-3bdd0a666f27": "2024-10-15T17:33:13.930833",
+        "dd6f8fc7-9f87-47b3-8fc9-941926c5d190": "2022-04-03T00:00:53.915367",
+        "21958f31-086f-44fb-b483-8aaba206251c": "2023-05-03T18:01:28.452089"
+      }
+    },
+    {
+      "name": "traffic-calming-database",
+      "id": "2d80fcf3-e2f3-42b5-ae4f-bd9327034edb",
+      "title": "Traffic Calming Database",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T15:03:40+00:00",
+      "resources": {
+        "7b29adfb-1873-4aee-bb9e-d1e1eca38a6c": "2026-07-26T03:23:46.905061"
+      }
+    },
+    {
+      "name": "traffic-cameras",
+      "id": "a3309088-5fd4-4d34-8297-77c8301840ac",
+      "title": "Traffic Cameras",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T15:03:41+00:00",
+      "resources": {
+        "8f9d6db7-faa0-405c-9627-b0298489cf9f": "2026-02-20T18:57:56.368740",
+        "48f4bb6a-49b1-45d0-852b-6a8ebfd4981a": "2026-02-20T18:57:59.972153"
+      }
+    },
+    {
+      "name": "traffic-control-devices",
+      "id": "ea1854d7-8b0b-4d8d-838e-752cf274c019",
+      "title": "Traffic Control Devices",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T15:03:42+00:00",
+      "resources": {
+        "f61a0e2d-d14a-4896-a794-2658f82bed82": "2026-02-20T21:06:00.948088",
+        "80153833-de76-4587-8c49-e7c44c4160ee": "2026-02-20T21:06:05.499490"
+      }
+    },
+    {
+      "name": "traffic-signals-tabular",
+      "id": "1a106e88-f734-4179-b3fe-d690a6187a71",
+      "title": "Traffic Signals Tabular",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T15:03:45+00:00",
+      "resources": {
+        "3daea1c8-40c4-45bc-98a5-00ae033ad59d": "2026-09-26T00:08:30.950407",
+        "e40ad092-49ce-4e6c-9997-bb95d13d4cce": "2026-09-26T00:06:58.414861",
+        "eba0c5ab-9089-4ee8-a51a-f85b4e17297a": "2026-09-26T00:07:04.201018",
+        "aeda8fd7-e1d6-4d34-b62a-a7d6be10cc96": "2026-09-26T00:09:23.278104",
+        "9f5c257a-cb10-43cc-bab6-d71ba9f108dc": "2026-09-26T00:09:28.281574",
+        "cd681297-48cd-442b-93a3-0ec11711a67d": "2026-09-26T00:08:37.584262"
+      }
+    },
+    {
+      "name": "traffic-volumes-at-intersections-for-all-modes",
+      "id": "811c4c10-7e5d-4c76-8d42-dab4e31c8265",
+      "title": "Traffic Volumes - Multimodal Intersection Turning Movement Counts",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T15:04:10+00:00",
+      "resources": {
+        "6afa3b1f-f6a5-4235-8bd6-7568411c19f4": null,
+        "1364bffa-29a3-4c39-af8a-925d8ca7bf1f": null,
+        "4402bb65-3936-49db-bf51-ec973381a5a3": null,
+        "ce5ea7df-ee82-450e-aceb-2977ceeef66a": null,
+        "01aee77d-6c1a-4836-8fe7-b66d93b70ebb": null,
+        "ae400fe2-98ce-4e73-8a94-024b22e29a22": null,
+        "262469c2-abfe-4756-9068-4ea5c7ba1af7": null,
+        "96672ddd-387a-4686-bf2a-2e8d7e146a31": "2026-09-26T22:29:33.556863",
+        "88ea1329-1da3-4992-bae6-a821d609d45d": "2026-09-26T22:43:52.098854",
+        "d5999173-dd33-4156-a5c7-bbbf2d2763b8": "2026-09-26T22:09:34.647372",
+        "b7ff9375-e215-408f-80a5-ec9e55246e19": "2026-09-26T22:11:11.632148",
+        "507f5499-47fc-43ab-89e8-2f07416a5e89": "2026-09-26T22:18:55.291765",
+        "2d9d26f4-d7c3-4a07-b239-1b9ff9acd18e": "2026-09-26T22:24:32.084426",
+        "c3f12672-cd7e-41ec-ae77-79a363183009": "2026-09-26T22:33:54.577727"
+      }
+    },
+    {
+      "name": "traffic-volumes-midblock-vehicle-speed-volume-and-classification-counts",
+      "id": "7a0ac637-43da-4e42-a79c-6d8279e21d85",
+      "title": "Traffic Volumes - Midblock Vehicle Speed, Volume and Classification Counts",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T15:04:45+00:00",
+      "resources": {
+        "e90038e7-ccb9-4bd2-af3e-696adc904c18": null,
+        "b72cca3a-8190-47f7-8761-98f0b49bafc7": null,
+        "728fcee1-af2d-4141-aee0-47a6b5cf2721": "2025-06-25T14:44:33.605516",
+        "43abcbf0-c66c-46c3-994b-2763c281dbb9": "2025-06-25T14:45:36.546920",
+        "e319078f-8a6e-4fda-ae27-8d3c3badd0e8": "2025-06-25T14:46:00.163154",
+        "4a86322b-4eb1-4d28-9680-a7fbc84aff0e": "2025-06-25T14:46:14.352069",
+        "a423c9ad-5820-47f7-8c5c-de2b5919cb9c": "2026-09-27T05:59:45",
+        "68c727f5-fd14-46e1-9023-1cd002ab7294": "2026-09-27T04:35:13.756377",
+        "af1ccce4-d978-4a6d-9dc3-3fb33b1cc349": "2026-09-27T04:36:28.371251",
+        "6e86adff-ad13-40d4-8eb9-aad76d15916c": "2025-08-29T19:32:29.990558",
+        "31fed30f-4d1f-4434-b6d7-c672ccc6e39f": "2025-08-29T19:32:45.844300",
+        "b37aeed9-215a-48f4-bc3b-39c3da564764": "2025-08-29T19:39:23.236176",
+        "a06bff30-ec94-4800-b7b5-b61cdc76405f": "2025-08-29T19:45:01.681011",
+        "d340ed54-2280-4b59-bba3-b789cd0435df": "2025-08-29T19:53:19.291062",
+        "b71e1ac3-f924-4049-bee5-4fd5b1e38ec4": "2025-08-29T20:11:34.021486",
+        "305156b5-6e7d-44ea-b4bd-5814dce0f128": "2026-09-27T06:00:49",
+        "25a7459e-b3ac-46f1-9b76-393be209b02c": "2026-09-27T06:00:57",
+        "48d704d1-7b0c-4f45-9a9b-91070dbed939": "2025-08-29T20:43:03.857463",
+        "73cb2759-23ed-45aa-bca6-6fbd87a6d3a1": "2025-08-29T20:51:28.928692",
+        "26d88d9d-f465-451c-8ce2-1dc99581db3c": "2025-08-29T21:04:40.550474",
+        "db9b8add-db91-454d-9471-609d9c71904b": "2025-08-29T21:24:09.980212",
+        "4c158320-70fe-4313-9c98-83db07293c79": "2025-08-29T21:35:52.568746",
+        "3b7b04b1-9981-4a73-bb37-3f690a633b8b": "2025-08-29T21:23:39.496124",
+        "2aef8448-455c-4d61-8480-4fa38b5acf9a": "2026-09-27T05:59:38"
+      }
+    },
+    {
+      "name": "transformto-net-zero-strategy-public-consultation-resident-survey",
+      "id": "77e593cf-877b-4bcc-bfdf-0b99e2935e5f",
+      "title": "TransformTO Net Zero Strategy Public Consultation – Resident Survey",
+      "owner": "Environment & Energy",
+      "downloaded_at": "2026-09-27T15:04:46+00:00",
+      "resources": {
+        "cd92b939-f618-49db-b497-b6daf06ecf02": "2022-01-05T16:11:53.357223"
+      }
+    },
+    {
+      "name": "transit-oriented-communities",
+      "id": "45dfcb47-6d90-4a94-9844-9a67341ebe71",
+      "title": "Transit Oriented Communities",
+      "owner": "City Planning",
+      "downloaded_at": "2026-09-27T15:04:48+00:00",
+      "resources": {
+        "ea7fea56-fa5e-4df3-82ed-e7b63a477db8": "2026-05-22T15:54:13.129812",
+        "ca570b76-2b19-4932-b8fc-4ccebd649cda": "2026-05-22T15:54:16.600149",
+        "ca25a782-4a9a-4a5a-8d0b-5a639e0b86da": "2026-05-22T15:54:49.058350",
+        "fdbb0e93-efb1-46de-9241-81a6acbb5c5b": "2026-05-22T15:54:52.528570"
+      }
+    },
+    {
+      "name": "transport-bus-initiative-usage",
+      "id": "d5f521ac-5ba1-4dd0-8144-cdbcd7d899db",
+      "title": "Transport Bus Initiative Usage",
+      "owner": "Toronto Shelter & Support Services",
+      "downloaded_at": "2026-09-27T15:04:49+00:00",
+      "resources": {
+        "98087109-6156-4d5e-8bdf-2268979d8873": null,
+        "3b430675-803b-4c5e-b7e5-ea48bb7522eb": "2026-02-20T21:36:42.596651"
+      }
+    },
+    {
+      "name": "transportation-innovation-zones-stakeholder-workshops-results",
+      "id": "36c3b932-4a9c-422a-b187-a3d96037572b",
+      "title": "Transportation Innovation Zones - Stakeholder Workshops Results",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T15:04:50+00:00",
+      "resources": {
+        "80d5e73e-4c16-485d-ad09-191127b0bf33": null,
+        "725d32c5-6ce2-44e9-915e-38baa6135ad5": "2026-02-20T20:46:09.419907"
+      }
+    },
+    {
+      "name": "ttc-bus-delay-data",
+      "id": "e271cdae-8788-4980-96ce-6a5c95bc6618",
+      "title": "TTC Bus Delay Data",
+      "owner": "Toronto Transit Commission",
+      "downloaded_at": "2026-09-27T15:04:51+00:00",
+      "resources": {
+        "b5725365-9252-4bfe-b6f4-cda7ddf74341": "2026-09-21T12:32:37.710724",
+        "874ae66c-9f6f-443f-91e0-1d37d416e0d8": "2025-04-07T19:21:37.400182"
+      }
+    },
+    {
+      "name": "ttc-lrt-delay-data",
+      "id": "d4d64b0e-2945-4c92-960e-f0103ad48b02",
+      "title": "TTC LRT Delay Data",
+      "owner": "Toronto Transit Commission",
+      "downloaded_at": "2026-09-27T15:04:52+00:00",
+      "resources": {
+        "9a800c92-0362-4cee-8232-7374596b6a43": "2026-09-21T12:20:15.577596",
+        "662bc8f7-887f-4112-8b8d-dbc6bc4ebfb1": "2026-02-20T18:31:37.182708"
+      }
+    },
+    {
+      "name": "ttc-streetcar-delay-data",
+      "id": "b68cb71b-44a7-4394-97e2-5d2f41462a5d",
+      "title": "TTC Streetcar Delay Data",
+      "owner": "Toronto Transit Commission",
+      "downloaded_at": "2026-09-27T15:04:53+00:00",
+      "resources": {
+        "cf2fdd12-6f0e-4644-aae7-0bbfc31df031": "2026-09-21T12:39:55.662429",
+        "06d13be4-a8b7-4365-ac68-2169de8e0630": "2025-04-07T19:22:11.131875"
+      }
+    },
+    {
+      "name": "ttc-subway-delay-data",
+      "id": "996cfe8d-fb35-40ce-b569-698d51fc683b",
+      "title": "TTC Subway Delay Data",
+      "owner": "Toronto Transit Commission",
+      "downloaded_at": "2026-09-27T13:18:48+00:00",
+      "resources": {
+        "0b6e5c52-e993-46d6-8d74-8602ee224457": "2026-09-21T12:50:36.746003",
+        "b2d8f5e0-0997-46b5-8abd-caa685a0290b": "2025-04-07T19:22:45.345293"
+      }
+    },
+    {
+      "name": "upcoming-and-recently-completed-affordable-housing-units",
+      "id": "b5fa8322-6acf-410e-affd-b4916ae7a249",
+      "title": "Affordable Housing Pipeline",
+      "owner": "Housing Secretariat",
+      "downloaded_at": "2026-09-27T15:04:54+00:00",
+      "resources": {
+        "ff5e2790-ad8d-4082-bd58-029e0c2f626b": "2026-06-08T16:56:26.403113",
+        "f47a1e46-686f-4be8-817f-098a12e7ad9b": "2026-06-08T16:56:30.261630"
+      }
+    },
+    {
+      "name": "utility-cut-permits",
+      "id": "43cbc364-b673-49ca-b98b-8b99c5d5f6eb",
+      "title": "Utility Cut Permits",
+      "owner": "Transportation Services",
+      "downloaded_at": "2026-09-27T15:04:57+00:00",
+      "resources": {
+        "ebdec599-4522-4473-b276-fa07d8638248": "2026-07-10T21:03:38.000760",
+        "0178185e-6549-44da-9e1e-db67a2ae0709": "2026-07-11T00:00:29.979662",
+        "2ed91301-a4d6-4082-9164-e82917b9e5fc": null,
+        "e2d3c583-efeb-43e7-aeb1-273f4055847d": "2026-09-25T03:37:57.935976"
+      }
+    },
+    {
+      "name": "wards-and-elected-councillors",
+      "id": "a2a33cd7-877e-4b68-af54-dfe8a6b53170",
+      "title": "Wards and Elected Councillors",
+      "owner": "City Clerk's Office",
+      "downloaded_at": "2026-09-27T15:04:58+00:00",
+      "resources": {
+        "f35ce3bc-8457-4311-a377-83890813d308": "2026-02-20T18:59:46.508496",
+        "2329963f-9c58-4224-a9b6-1d74c943f5f4": "2026-02-20T18:59:50.669226"
+      }
+    },
+    {
+      "name": "washroom-facilities",
+      "id": "394b9f09-d5d6-43dc-a7a0-660c99fc2318",
+      "title": "Park Washroom Facilities",
+      "owner": "Parks, Forestry & Recreation",
+      "downloaded_at": "2026-09-27T15:05:00+00:00",
+      "resources": {
+        "1c7d1063-2562-4de3-8cd3-4cef48419f6f": null,
+        "59489229-bb39-4218-833b-34b9de07833e": "2026-09-24T18:28:56.191821",
+        "6b217d05-cead-40a8-a0f2-ad99664ebeb4": "2026-09-24T18:28:59.841800"
+      }
+    },
+    {
+      "name": "water-fittings",
+      "id": "f9fe55f5-b191-47f6-a5e9-fca20314c979",
+      "title": "Water Fittings",
+      "owner": "Toronto Water",
+      "downloaded_at": "2026-09-27T15:05:01+00:00",
+      "resources": {
+        "c24b58c4-3559-4c3c-a998-0fc66e89cbf0": "2026-09-25T15:24:42.395574",
+        "66a085df-5893-4a75-bce1-8ef8d752bfa9": "2026-09-25T15:24:47.305539"
+      }
+    },
+    {
+      "name": "water-hydrants",
+      "id": "27541197-21d8-4577-94ea-a391c44f68a6",
+      "title": "Water Hydrants",
+      "owner": "Toronto Water",
+      "downloaded_at": "2026-09-27T15:05:02+00:00",
+      "resources": {
+        "94f95439-3432-4725-a514-8624f367015c": "2026-09-24T15:26:32.647283",
+        "713a62a2-bac0-40e4-ae7f-996e10b8577c": "2026-09-24T15:26:36.800395"
+      }
+    },
+    {
+      "name": "water-pressure-districts",
+      "id": "21c12868-438a-4d5a-9de6-fa4f38ba1eda",
+      "title": "Water Pressure Districts",
+      "owner": "Toronto Water",
+      "downloaded_at": "2026-09-27T15:05:03+00:00",
+      "resources": {
+        "291a36e1-ce66-4eaa-994a-3e4340b869a3": "2026-08-13T15:25:41.682274",
+        "7e216623-352c-46c5-9bc3-eea79642aed2": "2026-08-13T15:25:45.453975"
+      }
+    },
+    {
+      "name": "water-valves",
+      "id": "690dd056-e4f8-42d7-99ec-d3f4b89f8860",
+      "title": "Water Valves",
+      "owner": "Toronto Water",
+      "downloaded_at": "2026-09-27T15:05:05+00:00",
+      "resources": {
+        "434e472f-c3af-4532-bcd8-c5051fc6c2ad": "2026-09-25T15:26:47.907962",
+        "64442ac2-6619-40ea-b984-2efb1826903f": "2026-09-25T15:26:52.650304"
+      }
+    },
+    {
+      "name": "watermains",
+      "id": "4e0989b8-57b9-4629-a5bd-cc672f537593",
+      "title": "Watermains",
+      "owner": "Toronto Water",
+      "downloaded_at": "2026-09-27T15:05:07+00:00",
+      "resources": {
+        "d9d97d68-72e8-4774-ace2-026da37e8da8": "2026-09-11T16:20:31.020948",
+        "2d03558b-ac2a-41a4-9b7d-ff132a61ef8e": "2026-09-11T16:20:36.599519",
+        "35b22f1c-6684-43ac-9101-0087f601d80b": "2026-09-25T16:22:51.230739",
+        "3c473a42-82a7-4a55-aea7-cfba1cde8fb5": "2026-09-25T16:22:56.480219"
+      }
+    },
+    {
+      "name": "wellbeing-youth-aboriginal-youth-services",
+      "id": "ee43541f-220c-41f1-af52-cadf5de1dd9b",
+      "title": "Wellbeing Youth- Aboriginal Youth Services",
+      "owner": "Social Development, Finance & Administration",
+      "downloaded_at": "2026-09-27T15:05:08+00:00",
+      "resources": {
+        "7ddd8870-7f55-4428-a231-082003d8f857": "2026-05-27T20:37:42.791916",
+        "ed6297c5-cdbc-42ce-a52b-02a3c91a1875": "2022-03-10T22:24:23.250320",
+        "67898c84-3b98-451f-be0e-4088961dfcd3": "2026-05-27T20:37:46.476482"
+      }
+    },
+    {
+      "name": "wellbeing-youth-adult-education-upgrading",
+      "id": "c01b9ad1-0720-4f4c-ab35-743f55756b85",
+      "title": "Wellbeing Youth - Adult Education Upgrading",
+      "owner": "Social Development, Finance & Administration",
+      "downloaded_at": "2026-09-27T15:05:09+00:00",
+      "resources": {
+        "7140f7d3-a714-4109-912f-59e188001f00": "2026-02-20T21:08:54.027000",
+        "fd73f818-959e-4dfe-89f5-3980afe5d845": "2022-03-10T22:24:31.145460",
+        "698805b6-7acb-4643-85fa-24c5a3c120e9": "2026-02-20T21:08:58.790737"
+      }
+    },
+    {
+      "name": "wellbeing-youth-affordable-housing-access",
+      "id": "763d1caf-91d5-488b-900f-3303e51f7897",
+      "title": "Wellbeing Youth - Affordable Housing Access",
+      "owner": "Social Development, Finance & Administration",
+      "downloaded_at": "2026-09-27T15:05:11+00:00",
+      "resources": {
+        "ea32c251-845e-49fc-8fc2-35dd697887d4": "2026-02-20T21:09:06.078745",
+        "601dec84-9bb2-4cba-a5a1-16452e1518ae": "2022-03-10T22:24:38.730443",
+        "1e115862-2f23-489b-b021-135f7aeb5613": "2026-02-20T21:09:10.473013"
+      }
+    },
+    {
+      "name": "wellbeing-youth-alternative-adult-education",
+      "id": "9308a7e1-3781-45fd-95c7-582b2030f2c1",
+      "title": "Wellbeing Youth - Alternative Adult Education",
+      "owner": "Social Development, Finance & Administration",
+      "downloaded_at": "2026-09-27T15:05:12+00:00",
+      "resources": {
+        "d68d11d8-afa8-438d-9fb0-34ffca71134d": "2026-02-20T21:09:17.772134",
+        "8d7ad7db-a4fd-41a1-81e5-420c154d2024": "2022-03-10T22:24:46.560232",
+        "fdde275d-c2d6-4570-9ccb-3199ba9bed1a": "2026-02-20T21:09:22.385718"
+      }
+    },
+    {
+      "name": "wellbeing-youth-concurrent-disorder-programs",
+      "id": "96b7bba1-fe9d-4482-b0d3-f23decd79bc4",
+      "title": "Wellbeing Youth - Concurrent Disorder Programs",
+      "owner": "Social Development, Finance & Administration",
+      "downloaded_at": "2026-09-27T15:05:14+00:00",
+      "resources": {
+        "f4544fdb-63f2-459c-bbfe-52097a153f87": "2026-02-20T21:09:29.807017",
+        "9e6a2d90-2c72-4f25-9311-11a28fb43bfe": "2022-03-10T22:24:54.114445",
+        "ee8e7ee1-beae-46c0-85b0-a1cb7963dfd0": "2026-02-20T21:09:33.949156"
+      }
+    },
+    {
+      "name": "wellbeing-youth-disability-supports-services",
+      "id": "f5b27e55-e0b9-4a9a-b322-8132c7b65f0a",
+      "title": "Wellbeing Youth - Disability Supports Services",
+      "owner": "Social Development, Finance & Administration",
+      "downloaded_at": "2026-09-27T15:05:16+00:00",
+      "resources": {
+        "00bdc10a-e129-4053-9f90-0c7ecd79e772": "2026-02-20T21:09:41.708406",
+        "2c810a8d-e8f2-4eb2-9587-8ed42771742a": "2022-03-10T22:25:03.634579",
+        "ba5a90c8-9b7d-49d4-a5e1-c9882a7fcd8e": "2026-02-20T21:09:46.157953"
+      }
+    },
+    {
+      "name": "wellbeing-youth-educational-support",
+      "id": "201e6e21-ce90-41ff-94a0-d3758fe12bd3",
+      "title": "Wellbeing Youth - Educational Support",
+      "owner": "Social Development, Finance & Administration",
+      "downloaded_at": "2026-09-27T15:05:17+00:00",
+      "resources": {
+        "3106b01e-df96-4ff4-9200-2f80f18d3192": "2026-02-20T21:09:54.242424",
+        "ffa53a18-5c8a-496e-9a6d-f55c08095589": "2022-03-10T22:25:12.586526",
+        "5a078227-1e9d-4221-beff-160dc6d626e2": "2026-02-20T21:09:58.908454"
+      }
+    },
+    {
+      "name": "wellbeing-youth-employment-resources",
+      "id": "764c1564-0761-44b0-9b3a-5b2e914e66fb",
+      "title": "Wellbeing Youth - Employment Resources",
+      "owner": "Social Development, Finance & Administration",
+      "downloaded_at": "2026-09-27T15:05:19+00:00",
+      "resources": {
+        "78f7714c-4fcf-4892-9700-839faa532947": "2026-02-20T21:19:56.249693",
+        "433e2b92-36e8-4fed-8b67-ecf696fa3db3": "2022-03-10T22:25:21.546755",
+        "3d898d40-4a88-4021-9f34-0141e6070408": "2026-02-20T21:20:01.132227"
+      }
+    },
+    {
+      "name": "wellbeing-youth-financial-services",
+      "id": "8dbb3143-416c-4f2e-ab67-c4af7d2d5edf",
+      "title": "Wellbeing Youth - Financial Services",
+      "owner": "Social Development, Finance & Administration",
+      "downloaded_at": "2026-09-27T15:05:20+00:00",
+      "resources": {
+        "867186db-926e-4007-b1bd-d7de63ddc88e": "2026-02-20T21:20:08.549299",
+        "855ff69f-6d2f-4650-8038-05bf6efefc11": "2022-03-10T22:25:29.384617",
+        "2930e156-c222-4f8b-b1d4-83a60ed99eda": "2026-02-20T21:20:13.339810"
+      }
+    },
+    {
+      "name": "wellbeing-youth-health-services",
+      "id": "77525db1-7108-425c-b17c-a18d620396b8",
+      "title": "Wellbeing Youth - Health Services",
+      "owner": "Social Development, Finance & Administration",
+      "downloaded_at": "2026-09-27T15:05:21+00:00",
+      "resources": {
+        "06dbedc6-2182-4118-9e05-a2fb08ba0b75": "2026-02-20T21:20:20.949084",
+        "93193afe-5a27-417b-b0ab-f5d1d68cc5c1": "2022-03-10T22:25:37.401584",
+        "c708cb58-49ff-4fec-815e-554a4b08c531": "2026-02-20T21:20:26.307260"
+      }
+    },
+    {
+      "name": "wellbeing-youth-housing-eviction-help",
+      "id": "279f11b4-aaf8-4275-b6af-fdcf679ecc2f",
+      "title": "Wellbeing Youth - Housing Eviction Help",
+      "owner": "Social Development, Finance & Administration",
+      "downloaded_at": "2026-09-27T15:05:23+00:00",
+      "resources": {
+        "cc45e02e-999c-4f4a-a940-c1b64ceb22b2": "2026-02-20T21:20:44.737871",
+        "94087e5f-5521-43d2-b065-b1c5a4b8eb05": "2022-03-10T22:25:44.942256",
+        "981ac04c-3d91-4e85-843c-cdd4c579d01a": "2026-02-20T21:20:48.960013"
+      }
+    },
+    {
+      "name": "wellbeing-youth-legal-justice-support",
+      "id": "ca757aba-734e-4a4f-8c63-07396abcb1fd",
+      "title": "Wellbeing Youth - Legal Justice Support",
+      "owner": "Social Development, Finance & Administration",
+      "downloaded_at": "2026-09-27T15:05:24+00:00",
+      "resources": {
+        "7ed55e60-7788-499f-905b-15097c6ec008": "2026-02-20T21:20:55.939649",
+        "bd3a14c2-404f-4bab-9b40-4a9704b25852": "2022-03-10T22:25:52.485466",
+        "83e05067-cc4f-4604-a2cd-f1492b6c1808": "2026-02-20T21:21:00.635726"
+      }
+    },
+    {
+      "name": "wellbeing-youth-legal-support-advocacy",
+      "id": "886955a9-fafc-479a-b3a1-f97935e1f2c7",
+      "title": "Wellbeing Youth - Legal Support Advocacy",
+      "owner": "Social Development, Finance & Administration",
+      "downloaded_at": "2026-09-27T15:05:26+00:00",
+      "resources": {
+        "2d624fec-290d-4232-99ca-6626c68804cc": "2026-02-20T21:21:07.888139",
+        "16863dbc-66cf-4395-a695-80aaa40c3bb8": "2022-03-10T22:26:00.265058",
+        "f73e3999-e42b-43d3-99b6-666fbbe56b8a": "2026-02-20T21:21:11.583362"
+      }
+    },
+    {
+      "name": "wellbeing-youth-lgbtq-resources",
+      "id": "bb40b7c9-a37d-46be-a89b-c23273d86c85",
+      "title": "Wellbeing Youth - LGBTQ Resources",
+      "owner": "Social Development, Finance & Administration",
+      "downloaded_at": "2026-09-27T15:05:27+00:00",
+      "resources": {
+        "bda8b9c8-57a5-44f8-bc7d-d99561bdd411": "2026-02-20T21:21:18.198248",
+        "97df23b2-2e87-41dd-a13f-b0ed8a5875b7": "2022-03-10T22:26:07.747775",
+        "93dac3bc-af78-48b4-abb1-cdf40335de1f": "2026-02-20T21:21:22.031681"
+      }
+    },
+    {
+      "name": "wellbeing-youth-life-skills-training",
+      "id": "f9e44aac-a8ee-449c-971e-b8e38f850688",
+      "title": "Wellbeing Youth - Life Skills Training",
+      "owner": "Social Development, Finance & Administration",
+      "downloaded_at": "2026-09-27T15:05:29+00:00",
+      "resources": {
+        "2d871a67-3c4c-4004-be0d-c9fede4eb9b4": "2026-02-20T21:21:29.014815",
+        "6cd569f5-47b6-4493-a213-c8c8c5ded645": "2022-03-10T22:26:15.257809",
+        "a703c182-cf42-416e-aeda-529ab0e38603": "2026-02-20T21:21:33.989204"
+      }
+    },
+    {
+      "name": "wellbeing-youth-mental-health",
+      "id": "c9f4bc42-32b0-4198-a2a0-abd26a5f2a6b",
+      "title": "Wellbeing Youth - Mental Health",
+      "owner": "Social Development, Finance & Administration",
+      "downloaded_at": "2026-09-27T15:05:30+00:00",
+      "resources": {
+        "a154960c-4415-4f53-9915-61db8a32929b": "2026-02-20T21:21:42.196619",
+        "f69eae60-a119-407e-964a-a35b6095b78b": "2022-03-10T22:26:23.149947",
+        "9dffe46a-9d06-4db2-9f4e-722f421cfb41": "2026-02-20T21:21:47.111828"
+      }
+    },
+    {
+      "name": "wellbeing-youth-newcomer-settlement-services",
+      "id": "9c3270e0-7824-461d-add7-ef425f41a26f",
+      "title": "Wellbeing Youth - Newcomer Settlement Services",
+      "owner": "Social Development, Finance & Administration",
+      "downloaded_at": "2026-09-27T15:05:32+00:00",
+      "resources": {
+        "d54f3c02-3f16-4a18-b0ce-61b46a5660bd": "2026-02-20T21:21:54.885956",
+        "cfadf5df-d6b4-4f92-a295-fb371d620ab7": "2022-03-10T22:26:30.786489",
+        "c691b881-cc50-4530-a3ff-fb6f9d56691d": "2026-02-20T21:21:59.609565"
+      }
+    },
+    {
+      "name": "wellbeing-youth-parenting-programs",
+      "id": "63ac32c7-ba82-45fb-8b6f-83a77113d726",
+      "title": "Wellbeing Youth - Parenting Programs",
+      "owner": "Social Development, Finance & Administration",
+      "downloaded_at": "2026-09-27T15:05:33+00:00",
+      "resources": {
+        "0c062a15-3c99-436a-8e84-4e682314a8c9": "2026-02-20T21:22:07.609627",
+        "c8642c48-e59d-4801-b0b3-b75c7c685e64": "2022-03-10T22:26:38.358152",
+        "3f95b128-7ea0-4440-b6b0-50cc149f4c73": "2026-02-20T21:22:12.212273"
+      }
+    },
+    {
+      "name": "wellbeing-youth-recreation",
+      "id": "7ccef51e-5e1c-43ca-8f1a-ff26e4323d43",
+      "title": "Wellbeing Youth - Recreation",
+      "owner": "Social Development, Finance & Administration",
+      "downloaded_at": "2026-09-27T15:05:35+00:00",
+      "resources": {
+        "515333c0-4a1e-4f5b-b6b7-8e34858af268": "2026-02-20T21:22:20.388472",
+        "83ba38e3-90cd-441d-adaf-6239b74e4f09": "2022-03-10T22:26:46.533125",
+        "8da603aa-af7d-4438-bd66-a353e5f1b1e8": "2026-02-20T21:22:25.516678"
+      }
+    },
+    {
+      "name": "wellbeing-youth-refugee-housing",
+      "id": "afa9b3d1-c082-4876-bc91-787e8821bd0a",
+      "title": "Wellbeing Youth - Refugee Housing",
+      "owner": "Social Development, Finance & Administration",
+      "downloaded_at": "2026-09-27T15:05:36+00:00",
+      "resources": {
+        "5f316214-c5e6-404d-a46f-75742acd02fd": "2026-02-20T21:22:32.866959",
+        "7ec3d08a-f3a1-457c-86d5-9e072db351a0": "2022-03-10T22:26:54.077270",
+        "07ea2bd4-bffc-4374-91dd-3a554c79b8f5": "2026-02-20T21:22:36.640372"
+      }
+    },
+    {
+      "name": "wellbeing-youth-sexual-health-services",
+      "id": "0edbbd59-37e4-4d43-9d79-ac7b5d24db3d",
+      "title": "Wellbeing Youth - Sexual Health Services",
+      "owner": "Social Development, Finance & Administration",
+      "downloaded_at": "2026-09-27T15:05:38+00:00",
+      "resources": {
+        "a8e25d94-5f4a-4c3a-9f1e-541df174fb6f": "2026-02-20T21:20:33.732692",
+        "e261a21c-73f2-4097-b9b0-f791b4040863": "2022-03-10T22:27:01.926107",
+        "dbca2d7f-0cb4-4cb6-af64-787e92b08c7d": "2026-02-20T21:20:37.720787"
+      }
+    },
+    {
+      "name": "wellbeing-youth-substance-use-treatment",
+      "id": "4db2d9d9-6590-41e6-bf2b-b9188436d044",
+      "title": "Wellbeing Youth - Substance Use Treatment",
+      "owner": "Social Development, Finance & Administration",
+      "downloaded_at": "2026-09-27T15:05:39+00:00",
+      "resources": {
+        "0b2f590d-6287-41f3-ba40-ba9c01a692f1": "2026-02-20T21:22:43.620044",
+        "e22da215-f23d-427b-b5e4-76fa2640b236": "2022-03-10T22:27:09.705887",
+        "00a52864-5ca8-4f75-83ba-9b91ca2485ce": "2026-02-20T21:22:48.321276"
+      }
+    },
+    {
+      "name": "wellbeing-youth-transitional-housing",
+      "id": "cefad70f-2deb-425f-81d1-7d56cf682e65",
+      "title": "Wellbeing Youth - Transitional Housing",
+      "owner": "Social Development, Finance & Administration",
+      "downloaded_at": "2026-09-27T15:05:41+00:00",
+      "resources": {
+        "929e514c-574a-4de3-9191-55f5da9288f1": "2026-02-20T21:22:55.330060",
+        "74930d01-9ac9-45ec-af95-6f1f72f01d28": "2022-03-10T22:27:17.151230",
+        "8628da4e-04dc-4f0e-8e7b-32b58a716e84": "2026-02-20T21:22:59.260875"
+      }
+    },
+    {
+      "name": "youth-employment-programs",
+      "id": "9cb3584d-98d2-4db8-a73b-4a96de916fd7",
+      "title": "City Youth Employment Programs",
+      "owner": "Social Development, Finance & Administration",
+      "downloaded_at": "2026-09-27T15:05:42+00:00",
+      "resources": {
+        "042eb67c-e2fb-4586-b88e-916d13213de2": null,
+        "934e2665-82d1-424b-843e-770da883de20": "2026-07-16T20:30:07.528778"
+      }
+    },
+    {
+      "name": "zoning-by-law",
+      "id": "34927e44-fc11-4336-a8aa-a0dfb27658b7",
+      "title": "Zoning By-law",
+      "owner": "City Planning",
+      "downloaded_at": "2026-09-27T15:05:52+00:00",
+      "resources": {
+        "15048cc4-bdcf-4bcd-907b-5ce57c3493c6": "2026-02-20T21:26:28.746893",
+        "131f1334-911a-4bc0-84e8-3cd1ec8f8f5d": "2026-02-20T21:26:39.126141",
+        "f5e30fa7-b0ca-408e-b5cc-f60473b58831": "2026-02-20T21:28:10.869292",
+        "73e95a54-2cc0-4969-aed0-132435562c9a": "2026-02-20T21:26:12.027521",
+        "b95cf89f-4809-43f6-9875-cb505d357d9b": "2026-02-20T21:26:53.744049",
+        "fdfbae5a-c176-449b-bd5e-03379e626bf5": "2026-02-20T21:27:05.092976",
+        "1928218c-ac65-4186-8006-bb227d3f4375": "2026-02-20T21:27:29.783532",
+        "dec4715d-7393-413b-9f31-28cfec1590fd": "2026-02-20T21:27:40.640525",
+        "3a9b8a1d-f3ce-46fd-90d7-224d9f6b30d4": "2026-02-20T21:26:03.419649",
+        "d6811005-04f5-4ddb-9d48-d9a658c2f435": "2026-02-20T21:28:01.770804",
+        "71fb679a-92a9-454a-bdb1-8ce8d7c47c58": "2026-02-20T21:25:36.194683",
+        "8f41a588-6d2f-49c4-8b2c-5c1171c5745d": "2026-02-20T21:25:46.369898",
+        "3ad6ddcf-3855-439f-8120-bfa2bac31c49": "2026-02-20T21:28:47.500271",
+        "95263078-db1e-4828-9a9e-1cbaa0ce04c2": "2026-02-20T21:28:56.370118",
+        "4a19b56b-b819-40d0-9bb9-51ffc5f7a19d": "2026-02-20T21:29:26.631313",
+        "5788c2f7-c465-4a02-9084-f1213c29ef8b": "2026-02-20T21:29:35.309760",
+        "bf9b3487-4bd8-4b32-8d57-1997a0c38456": "2026-02-20T21:29:08.027556",
+        "97c3a744-69fe-48ac-afa7-ee27a940151b": "2026-02-20T21:29:16.130845",
+        "29a9575d-66c7-4885-8b73-db6e0c9d4682": "2026-02-20T21:28:26.562477",
+        "8f5262bb-2bd2-4c29-a00c-db2f59b3f459": "2026-02-20T21:28:35.875478"
+      }
+    }
+  ],
+  "counts": {
+    "columns": 9334,
+    "joins": 264621
+  }
+}
