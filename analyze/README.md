@@ -42,8 +42,8 @@ Scores, for a pair sharing `shared` distinct values:
 
 With `run --idf` (experimental), shared values are weighted by rarity across datasets,
 `log((1 + N) / (1 + df)) + 1`, and the containments and Jaccard use those weights. It is off by default:
-on Toronto's data the most widespread values are ward names, so it mostly lowered good joins and raised
-weak ones (dates).
+on Toronto's data it barely changed anything (median score change -0.02, same ranking), because
+containment compares a column's values with each other and the weights mostly cancel out.
 
 There is no score threshold: every candidate pair is kept, sorted by score. To find a column's joins,
 take the rows where `id_a` or `id_b` is its `id`; they are already in order.
