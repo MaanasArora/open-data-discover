@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Open Data Discover: Toronto</title>
+  <meta name="description" content="Select a column from a City of Toronto Open Data dataset to find other potentially joinable columns.">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body class="home">
+  <header class="site-header wrap">
+    <h1><a href="#">Open Data Discover: Toronto</a></h1>
+    <p class="tagline">Select a column to find other potentially joinable columns.</p>
+    <form class="picker" id="picker">
+      <label>
+        <span class="visually-hidden">Dataset</span>
+        <input id="dataset" type="search" list="datasets" placeholder="Loading datasets…"
+               autocomplete="off" spellcheck="false" disabled>
+        <datalist id="datasets"></datalist>
+      </label>
+      <label>
+        <span class="visually-hidden">Column</span>
+        <select id="column" disabled><option value="">Choose a column</option></select>
+      </label>
+    </form>
+  </header>
+  <main id="main" class="wrap" aria-live="polite"></main>
+  <footer class="wrap dim">
+    <p>Made at Civic Tech Toronto · Data sourced from
+      <a href="https://open.toronto.ca/" target="_blank" rel="noopener">Open Data Toronto</a></p>
+  </footer>
+</body>
+</html>

@@ -1,11 +1,27 @@
-"""Steps 3-5: score how well each pair of profiled columns joins.
+"""Steps 3-5: find joinable pairs of profiled columns and score them.
 
 3. Build a presence matrix: one row per column, one entry per distinct value.
-4. Find candidate pairs: columns that share at least one *informative* value,
+4. Find candidate pairs: columns from different files that each have at least
+   ``min_distinct`` distinct values and share at least one *informative* value,
    i.e. one found in at least ``min_df`` and at most
    ``max(max_df_floor, max_df_fraction * n_columns)`` columns.
-5. Count the shared values of each candidate pair exactly and score it:
-   ``max(shared / distinct_1, shared / distinct_2)``.
+5. Count each candidate pair's shared values exactly and score it:
+
+       containment_a_in_b = weight of shared values / weight of a's values   (and the reverse)
+       jaccard            = weight of shared values / weight of a's and b's values together
+       score              = max(containment_a_in_b, containment_b_in_a)
+
+   Every value weighs 1 by default. With ``idf=True`` values are weighted by how rare
+   they are across datasets (N datasets, df(v) of them containing v):
+
+       weight(v) = log((1 + N) / (1 + df(v))) + 1
+
+   Datasets, not columns, are counted, so a dataset shipping the same table in several
+   files doesn't make its values look common. IDF is off by default: on Toronto's data
+   the most widespread values are ward names, i.e. real join keys, so it mostly lowered
+   good joins (wards) and raised weak ones (dates).
+
+No score threshold is applied: every candidate pair is kept, best first.
 """
 
 from __future__ import annotations
@@ -15,15 +31,7 @@ import pandas as pd
 from scipy import sparse
 from tqdm import tqdm
 
-from columns import ColumnRef
-
-REF_FIELDS = list(ColumnRef._fields)  # package, resource, file, column
-JOIN_COLUMNS = [
-    *(f"{f}_1" for f in REF_FIELDS),
-    *(f"{f}_2" for f in REF_FIELDS),
-    "intersection", "distinct_1", "distinct_2",
-    "containment_1_in_2", "containment_2_in_1", "score",
-]
+JOIN_FIELDS = ["id_a", "id_b", "shared", "containment_a_in_b", "containment_b_in_a", "jaccard", "score"]
 
 
 def presence_matrix(profiles) -> sparse.csr_matrix:
@@ -45,39 +53,59 @@ def informative_values(matrix, *, min_df=2, max_df_fraction=0.005, max_df_floor=
     return matrix[:, (df >= min_df) & (df <= max_df)]
 
 
-def shared_counts(matrix, rows, cols, *, progress=False) -> np.ndarray:
-    """Exact number of values shared by each (row, col) pair of the matrix."""
-    counts = np.empty(len(rows), dtype=np.int64)
+def value_weights(matrix, packages, *, idf=True) -> np.ndarray:
+    """IDF weight of each value (matrix column), counting datasets rather than columns."""
+    if not idf:
+        return np.ones(matrix.shape[1])
+    ids, names = pd.factorize(pd.Series(packages))
+    column_to_package = sparse.csr_matrix(
+        (np.ones(len(ids)), (ids, np.arange(len(ids)))), shape=(len(names), len(ids))
+    )
+    df = np.asarray(((column_to_package @ matrix) > 0).sum(axis=0)).ravel()
+    return np.log((1 + len(names)) / (1 + df)) + 1
+
+
+def shared_values(matrix, weights, rows, cols, *, progress=False):
+    """Number and total weight of the values shared by each (row, col) pair of the matrix."""
+    counts, totals = np.empty(len(rows), dtype=np.int64), np.empty(len(rows))
     ptr, idx = matrix.indptr, matrix.indices
-    for k in tqdm(range(len(rows)), desc="Counting overlaps", unit="pair", disable=not progress):
+    for k in tqdm(range(len(rows)), desc="Counting shared values", unit="pair", disable=not progress):
         i, j = rows[k], cols[k]
-        counts[k] = len(np.intersect1d(idx[ptr[i]:ptr[i + 1]], idx[ptr[j]:ptr[j + 1]], assume_unique=True))
-    return counts
+        common = np.intersect1d(idx[ptr[i]:ptr[i + 1]], idx[ptr[j]:ptr[j + 1]], assume_unique=True)
+        counts[k], totals[k] = len(common), weights[common].sum()
+    return counts, totals
 
 
-def find_joins(profiles, *, threshold=0.1, min_distinct=8, min_df=2, max_df_fraction=0.005,
-               max_df_floor=5, progress=False) -> pd.DataFrame:
-    """Joinable column pairs from different files, best first (columns: ``JOIN_COLUMNS``)."""
+def find_joins(profiles, *, idf=False, min_distinct=8, min_df=2, max_df_fraction=0.005, max_df_floor=5,
+               progress=False) -> pd.DataFrame:
+    """Scored candidate pairs (columns: ``JOIN_FIELDS``), best first.
+
+    ``id_a`` and ``id_b`` are indices into ``profiles`` with ``id_a < id_b``.
+    """
     if len(profiles) < 2:
-        return pd.DataFrame(columns=JOIN_COLUMNS)
+        return pd.DataFrame(columns=JOIN_FIELDS)
 
     presence = presence_matrix(profiles)
-    sizes = np.diff(presence.indptr)
     informative = informative_values(presence, min_df=min_df, max_df_fraction=max_df_fraction,
                                      max_df_floor=max_df_floor)
     candidates = sparse.triu(informative @ informative.T, k=1).tocoo()
-    rows, cols = candidates.row, candidates.col
+    a, b = candidates.row, candidates.col
 
-    shared = shared_counts(presence, rows, cols, progress=progress)
-    c12, c21 = shared / sizes[rows], shared / sizes[cols]
-    score = np.maximum(c12, c21)
-    keep = (score > threshold) & (np.minimum(sizes[rows], sizes[cols]) >= min_distinct)
+    n = np.diff(presence.indptr)
+    file_ids, _ = pd.factorize(pd.Series([f"{p.package}/{p.file}" for p in profiles]))
+    keep = (file_ids[a] != file_ids[b]) & (np.minimum(n[a], n[b]) >= min_distinct)
+    a, b = a[keep], b[keep]
 
-    records = []
-    for i, j, n, a, b, s in zip(rows[keep], cols[keep], shared[keep], c12[keep], c21[keep], score[keep], strict=True):
-        ref1, ref2 = profiles[i].ref, profiles[j].ref
-        if (ref1.package, ref1.file) != (ref2.package, ref2.file):
-            records.append((*ref1, *ref2, n, sizes[i], sizes[j], a, b, s))
-
-    joins = pd.DataFrame.from_records(records, columns=JOIN_COLUMNS)
-    return joins.sort_values("score", ascending=False, kind="stable", ignore_index=True)
+    weights = value_weights(presence, [p.package for p in profiles], idf=idf)
+    total = presence @ weights  # weight of each column's values
+    shared, shared_weight = shared_values(presence, weights, a, b, progress=progress)
+    joins = pd.DataFrame({
+        "id_a": a.astype(np.int32),
+        "id_b": b.astype(np.int32),
+        "shared": shared.astype(np.int32),
+        "containment_a_in_b": shared_weight / total[a],
+        "containment_b_in_a": shared_weight / total[b],
+        "jaccard": shared_weight / (total[a] + total[b] - shared_weight),
+    })
+    joins["score"] = joins[["containment_a_in_b", "containment_b_in_a"]].max(axis=1)
+    return joins.sort_values(["score", "id_a", "id_b"], ascending=[False, True, True], ignore_index=True)

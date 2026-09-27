@@ -26,6 +26,7 @@ class Package:
     path: Path
     metadata: dict  # the CKAN package_show result
     files: dict  # resource id -> Path of the downloaded file
+    downloaded_at: str | None = None
 
     @property
     def id(self) -> str:
@@ -59,7 +60,7 @@ def load_package(folder: Path) -> Package | None:
         if not path.is_file() or entry.get("bytes") not in (None, path.stat().st_size):
             return None
         files[resource_id] = path
-    return Package(folder.name, folder, state["package"], files)
+    return Package(folder.name, folder, state["package"], files, state.get("downloaded_at"))
 
 
 @dataclass
