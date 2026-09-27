@@ -1,0 +1,27 @@
+[project]
+name = "open-toronto-analyze"
+version = "0.1.0"
+description = "Find joinable columns across City of Toronto Open Data packages downloaded with open-toronto-dl"
+readme = "README.md"
+authors = [
+    { name = "Maanas", email = "maanasarora23@gmail.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "open-toronto-dl",
+    "pandas>=2.0",
+    "rich>=13.0",
+    "scipy>=1.10",
+    "tqdm>=4.0",
+]
+
+[project.scripts]
+open-toronto-analyze = "open_toronto_analyze.cli:main"
+
+[tool.uv.sources]
+open-toronto-dl = { path = "../download", editable = true }
+
+[build-system]
+requires = ["uv_build>=0.8.17,<0.10.0"]
+build-backend = "uv_build"
