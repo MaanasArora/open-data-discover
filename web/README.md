@@ -17,13 +17,13 @@ e.g. GitHub Pages; commit `data/` if the host serves from the repository.
 ## Pages
 
 Type to find a dataset (the box suggests titles), then pick one of its columns, to see the columns in
-other datasets that share its values. Only joins scoring at least 0.3 are shown (`MIN_SCORE` in
-`data.js`), and the picker lists only datasets and columns with such a join to another dataset.
-A dataset's columns are grouped by resource (file).
+other datasets that share its values. The picker lists only datasets and columns with a join to
+another dataset. A dataset's columns are grouped by resource (file).
 
 The URL hash holds the chosen column (`#column=<key>`), so every column page can be linked and
-bookmarked. Joins are listed in score order, 25 at a time, as `Dataset › COLUMN` with the resource
-underneath and a few example values; hovering a score shows the containment in both directions.
+bookmarked. Joins are listed by score, 25 at a time, as `Dataset › COLUMN` with the resource
+underneath and a few example values. Each join shows its match strength (the score; see
+`analyze/README.md`); hovering it shows the values in common and the share found in each direction.
 Joins within the same dataset (often the same data in another map projection) are hidden by default,
 with a checkbox to include them.
 

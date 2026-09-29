@@ -1,6 +1,6 @@
 {
-  "format_version": 2,
-  "created_at": "2026-09-27T15:15:30+00:00",
+  "format_version": 3,
+  "created_at": "2026-09-29T16:45:29+00:00",
   "data_folder": "../download/data",
   "selection": {
     "owners": null,
@@ -11,11 +11,7 @@
   "parameters": {
     "min_avg_length": 6,
     "max_rows": null,
-    "idf": false,
-    "min_distinct": 8,
-    "min_df": 2,
-    "max_df_fraction": 0.005,
-    "max_df_floor": 5
+    "min_evidence": 10
   },
   "packages": [
     {
@@ -4151,6 +4147,6 @@
   ],
   "counts": {
     "columns": 9334,
-    "joins": 264621
+    "joins": 156118
   }
 }

@@ -57,13 +57,14 @@ export function columnPage(data, column, { includeSamePackage, shown }) {
             Include ${number(samePackage)} from the same dataset
           </label>`}
       </div>
+      <p class="joins-label">Match strength</p>
       <ol class="joins">
         ${joins.slice(0, shown).map(j => {
           const other = data.columns[j.other]
           return html`
             <li class="join">
-              <div class="score" title="${percent(j.contained)} of this column’s values appear there; ${percent(j.contains)} of its values appear here">
-                <span class="value">${j.score.toFixed(2)}</span>
+              <div class="score" title="${percent(j.score)} match strength: ${plural(j.shared, 'value')} in common.">
+                <span class="value">${percent(j.score)}</span>
                 <span class="bar"><span style="width: ${percent(j.score)}"></span></span>
               </div>
               <div>

@@ -30,23 +30,31 @@ Filters work with `owners`, `list` and `run`. Different filters combine with AND
 
 | File | Contents |
 | --- | --- |
-| `columns.parquet` | One row per profiled column: `id` (row number), `key` (`resource_id::column`), `package`, `resource_id`, `resource`, `file`, `column`, `n_values`, `n_distinct`, `avg_length`, `samples` |
-| `joins.parquet` | One row per candidate pair of columns from different files, best first: `id_a`, `id_b` (column ids, a < b), `shared` (distinct values in common), `containment_a_in_b`, `containment_b_in_a`, `jaccard`, `score` |
+| `columns.parquet` | One row per profiled column: `id` (row number), `key` (`resource_id::column`), `package`, `resource_id`, `resource`, `file`, `column`, `n_values`, `n_distinct`, `avg_length`, `kind` (`number`, `date` or empty), `samples` |
+| `joins.parquet` | One row per pair of columns from different files with enough evidence, best first: `id_a`, `id_b` (column ids, a < b), `shared` (distinct values in common), `containment_a_in_b`, `containment_b_in_a`, `jaccard`, `expected_a_in_b`, `expected_b_in_a` (containment expected by chance), `evidence_a_in_b`, `evidence_b_in_a`, `evidence`, `score` |
 | `manifest.json` | Selection, parameters, packages analyzed with each resource's `last_modified`, counts. Written last: no manifest means an incomplete run. |
 
-Scores, for a pair sharing `shared` distinct values:
+The **score** (0-100%) is the share of one column's values found in the other beyond what chance
+explains, `(containment - expected) / (1 - expected)`, for the direction where it is larger. 100% means
+every value is found; 0% means no more than chance would put there.
 
-- `containment_a_in_b = shared / n_distinct(a)` (and the reverse)
-- `jaccard = shared / (n_distinct(a) + n_distinct(b) - shared)`
-- `score = max(containment_a_in_b, containment_b_in_a)`
+It is only reported when it is trustworthy: pairs need at least `--min-evidence` (10 nats) of
+**evidence** that the overlap is not chance. Each of A's n distinct values is a trial, "is it in B?";
+under the null B holds value v with probability p0(v), if linked at rate c = k / n (the containment).
+The evidence is the log-likelihood ratio (10 nats: about 22,000 times likelier linked than by chance):
 
-With `run --idf` (experimental), shared values are weighted by rarity across datasets,
-`log((1 + N) / (1 + df)) + 1`, and the containments and Jaccard use those weights. It is off by default:
-on Toronto's data it barely changed anything (median score change -0.02, same ranking), because
-containment compares a column's values with each other and the weights mostly cancel out.
+    evidence_a_in_b = sum over the k shared values: ln(c / p0(v)) + sum over the others: ln((1 - c) / (1 - p0(v)))
 
-There is no score threshold: every candidate pair is kept, sorted by score. To find a column's joins,
-take the rows where `id_a` or `id_b` is its `id`; they are already in order.
+It is 0 unless c beats the average p0 (`expected_a_in_b`); `evidence` is the larger direction.
+
+p0(v) is the larger of:
+
+- co-occurrence: the share of other columns holding v, counting only columns unrelated to A (a column
+  weighs 1 minus its overlap with A's other values). Ward names found in 30 ward columns stay rare;
+  "toronto" found in 30 unrelated columns is common. A and B are left out; one pseudo-column keeps p0 > 0.
+- density, when B holds numbers or dates: the share of the lattice points around v that B fills
+  (`ordered.py`), for the shared values. Every id from 1 to 800, or every day of 2023, holds any
+  value in range, so sharing one says nothing.
 
 `export` writes the same joins as a readable CSV (`joins.csv`), with package, resource, file and column
 names for both sides. `show COLUMN` lists the joins of one column. COLUMN is `[PACKAGE/]RESOURCE::COLUMN`,
@@ -61,7 +69,8 @@ The Parquet files use Snappy compression and 32-bit integers, so JavaScript read
 | --- | --- |
 | `packages.py` | 1. Find complete packages in the download folder; select by owner / name / limit |
 | `columns.py` | 2. Read CSVs and profile each column: distinct values, stats, samples |
-| `joins.py` | 3-5. Presence matrix, candidate pairs, exact shared counts, scores |
+| `ordered.py` | 2. For number and date columns, the density of each value |
+| `joins.py` | 3-5. Pairs sharing a value, the null, evidence |
 | `results.py` | Write / read a results folder |
 | `views.py` | Readable views: the join table, one column's joins, column lookup |
 | `analyze.py` | The command line |
@@ -70,9 +79,7 @@ The Parquet files use Snappy compression and 32-bit integers, so JavaScript read
 
 1. Select complete packages (see above) and their CSV files.
 2. Profile every CSV column whose average value length exceeds `--min-avg-length` (6), skipping `_id`:
-   its distinct values after `strip().lower()`.
-3. Build a columns × values presence matrix.
-4. Candidate pairs are columns from different files, each with at least `--min-distinct` (8) distinct
-   values, that share a value found in at least `--min-df` (2) and at most
-   `max(--max-df-floor, --max-df-fraction × columns)` columns.
-5. Count exact shared values for each candidate pair and score it.
+   its distinct values after `strip().lower()`, and for numbers and dates the density at each value.
+3. Build a columns × values presence matrix; every pair of columns sharing a value is a candidate.
+4. Estimate p0 for each shared value (above), and score both directions of each pair.
+5. Keep pairs with at least `--min-evidence` nats; sort by score, then evidence.

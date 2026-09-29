@@ -59,10 +59,10 @@ def new_table(*columns) -> Table:
 
 
 def print_joins(joins) -> None:
-    table = new_table("Score", "Column", "Joins with", "Shared")
+    table = new_table("Match", "Column", "Joins with", "Shared")
     for row in joins.itertuples():
         table.add_row(
-            f"[green]{row.score:.3f}[/green]",
+            f"[green]{row.score:.0%}[/green]",
             f"[bold]{row.column_a}[/bold]\n[dim]{row.package_a} · {row.resource_a}[/dim]",
             f"[bold]{row.column_b}[/bold]\n[dim]{row.package_b} · {row.resource_b}[/dim]",
             str(row.shared),
@@ -103,13 +103,10 @@ def cmd_run(args) -> int:
         return 1
 
     progress = not args.no_progress and sys.stderr.isatty()
-    parameters = {"min_avg_length": args.min_avg_length, "max_rows": args.max_rows, "idf": args.idf,
-                  "min_distinct": args.min_distinct, "min_df": args.min_df, "max_df_fraction": args.max_df_fraction,
-                  "max_df_floor": args.max_df_floor}
+    parameters = {"min_avg_length": args.min_avg_length, "max_rows": args.max_rows, "min_evidence": args.min_evidence}
     profiles = profile_columns(files, min_avg_length=args.min_avg_length, max_rows=args.max_rows, progress=progress)
     out.print(f"{len(profiles)} column(s) passed the length filter")
-    joins = find_joins(profiles, idf=args.idf, min_distinct=args.min_distinct, min_df=args.min_df,
-                       max_df_fraction=args.max_df_fraction, max_df_floor=args.max_df_floor, progress=progress)
+    joins = find_joins(profiles, min_evidence=args.min_evidence, progress=progress)
 
     write_results(args.results, columns=columns_frame(profiles), joins=joins, manifest={
         "data_folder": str(args.data),
@@ -146,21 +143,25 @@ def cmd_show(args) -> int:
         return 1 if matches.empty else 2
 
     column = matches.iloc[0]
+    kind = f", {column['kind']}s" if column["kind"] else ""
     out.print(Panel("\n".join(f"· {v}" for v in column["samples"]) or "[dim]no values[/dim]",
                     title=f"[bold]{column['column']}[/bold]  [dim]{column['package']} · {column['resource']}[/dim]",
-                    subtitle=f"[dim]{column['n_distinct']} distinct[/dim]", border_style="cyan", expand=False))
+                    subtitle=f"[dim]{column['n_distinct']} distinct{kind}[/dim]", border_style="cyan", expand=False))
     out.print(f"[dim]{label(column)}[/dim]")
+    out.print("[dim]Match: match strength. Found: share of this column's values found in the other.[/dim]")
 
     joins = joins_of(results, int(column["id"]))
     table = Table(box=box.HORIZONTALS, show_lines=True, padding=(0, 2), pad_edge=False,
                   header_style="bold", border_style="grey30")
-    table.add_column("Score", justify="right", style="green", width=6)
+    table.add_column("Match", justify="right", style="green", width=6)
+    table.add_column("Found", justify="right", width=12)
     table.add_column("Column", style="bold")
     table.add_column("Dataset", style="dim", max_width=34, overflow="ellipsis")
     table.add_column("Shared", justify="right")
-    table.add_column("Sample values", max_width=52, overflow="fold")
+    table.add_column("Sample values", max_width=44, overflow="fold")
     for row in joins.head(args.top or None).itertuples(index=False):
-        table.add_row(f"{row.score:.3f}", row.column, f"{row.package} · {row.resource}", str(row.shared),
+        table.add_row(f"{row.score:.0%}", f"{row.contained:.0%} [dim]({row.expected:.0%})[/dim]", row.column,
+                      f"{row.package} · {row.resource}", str(row.shared),
                       " [dim]·[/dim] ".join(list(row.samples)[:3]) or "[dim]—[/dim]")
     out.print(table if table.row_count else "[dim]No joinable columns found.[/dim]")
     return 0
@@ -203,14 +204,8 @@ def build_parser() -> argparse.ArgumentParser:
     group = p.add_argument_group("algorithm")
     group.add_argument("--min-avg-length", type=float, default=6,
                        help="skip columns with average value length <= this (default: 6)")
-    group.add_argument("--idf", action="store_true",
-                       help="weight shared values by how rare they are across datasets (experimental)")
-    group.add_argument("--min-distinct", type=int, default=8,
-                       help="only join columns with at least N distinct values (default: 8)")
-    group.add_argument("--min-df", type=int, default=2, help="pair on values in at least N columns (default: 2)")
-    group.add_argument("--max-df-fraction", type=float, default=0.005,
-                       help="...and in at most this fraction of columns (default: 0.005)")
-    group.add_argument("--max-df-floor", type=int, default=5, help="...but never fewer than N columns (default: 5)")
+    group.add_argument("--min-evidence", type=float, default=10,
+                       help="keep pairs with at least this much evidence, in nats (default: 10)")
     group.add_argument("--max-rows", type=int, help="read at most N rows per CSV")
     p.set_defaults(func=cmd_run)
 

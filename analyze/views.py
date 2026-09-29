@@ -29,14 +29,17 @@ def join_table(results: Results) -> pd.DataFrame:
 
 def joins_of(results: Results, column_id: int) -> pd.DataFrame:
     """The columns that join with one column, best first: each other column's row
-    from ``columns`` plus ``shared``, ``score``, ``jaccard`` and ``contained``
-    (the share of the chosen column's values found in the other column)."""
-    joins = results.joins
+    from ``columns`` plus ``shared``, ``score``, ``jaccard``, ``contained`` (the share
+    of the chosen column's values found in the other column), ``expected`` (the share
+    expected by chance) and ``evidence`` (that the other column contains them)."""
+    joins = results.joins.drop(columns="evidence")  # replaced by this column's direction below
     as_a, as_b = joins[joins["id_a"] == column_id], joins[joins["id_b"] == column_id]
     matches = pd.concat([
-        as_a.rename(columns={"id_b": "id", "containment_a_in_b": "contained"}),
-        as_b.rename(columns={"id_a": "id", "containment_b_in_a": "contained"}),
-    ])[["id", "contained", "shared", "jaccard", "score"]]
+        as_a.rename(columns={"id_b": "id", "containment_a_in_b": "contained", "expected_a_in_b": "expected",
+                             "evidence_a_in_b": "evidence"}),
+        as_b.rename(columns={"id_a": "id", "containment_b_in_a": "contained", "expected_b_in_a": "expected",
+                             "evidence_b_in_a": "evidence"}),
+    ])[["id", "contained", "expected", "evidence", "shared", "jaccard", "score"]]
     others = matches.merge(results.columns, on="id")
     return others.sort_values("score", ascending=False, kind="stable", ignore_index=True)
 
