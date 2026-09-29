@@ -1,8 +1,10 @@
 """Step 2: read the CSV files of the selected packages and profile their columns.
 
 A column's profile is its set of distinct values after ``strip().lower()``,
-plus a few statistics and sample values. Columns whose values are short on
-average (IDs, counts, codes) are skipped, since they overlap with almost everything.
+plus a few statistics and sample values. Columns of numbers or dates also get the
+density of each value (see ordered.py), which joins.py uses as part of the null.
+Columns whose values are short on average (counts, small ids, codes) are skipped
+to keep the number of pairs manageable; they would mostly score low anyway.
 """
 
 from __future__ import annotations
@@ -14,6 +16,8 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 from tqdm import tqdm
+
+from ordered import Order, order
 
 log = logging.getLogger(__name__)
 
@@ -39,6 +43,13 @@ class ColumnProfile:
     n_values: int  # non-empty cells
     avg_length: float  # average length of the raw values
     samples: list  # a few distinct values, for display
+    order: Order | None = None  # for numbers and dates; see ordered.py
+    density: np.ndarray | None = None  # for numbers and dates: the density at each value
+
+    @property
+    def kind(self) -> str:
+        """"number", "date", or "" for other values."""
+        return self.order.kind if self.order else ""
 
     @property
     def key(self) -> str:
@@ -92,6 +103,9 @@ def profile_columns(files, *, min_avg_length=6, max_rows=None, n_samples=5, seed
                 continue
             distinct = normalize(values).unique()
             samples = rng.choice(distinct, size=min(n_samples, len(distinct)), replace=False).tolist()
+            ordered = order(distinct)
+            density = ordered.density(ordered.positions, own=True) if ordered else None
             profiles.append(ColumnProfile(file.package, file.resource_id, file.resource, file.path.name,
-                                          str(column), distinct, len(values), float(avg_length), samples))
+                                          str(column), distinct, len(values), float(avg_length), samples,
+                                          ordered, density))
     return profiles

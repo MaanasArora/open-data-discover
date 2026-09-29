@@ -155,6 +155,7 @@ footer p { margin: 0; }
 .column-name { font-weight: 600; }
 .resource { display: block; font-size: 0.85rem; overflow-wrap: anywhere; }
 
+.joins-label { margin: 0.5rem 0 0; font-size: 0.75rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--dim); }
 .score { font-variant-numeric: tabular-nums; cursor: help; }
 .score .value { font-weight: 600; }
 .score .bar { display: block; height: 0.3rem; margin-top: 0.3rem; background: var(--line); border-radius: 1rem; overflow: hidden; }

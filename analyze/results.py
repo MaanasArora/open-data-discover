@@ -19,7 +19,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-FORMAT_VERSION = 2
+FORMAT_VERSION = 3
 MANIFEST = "manifest.json"
 COLUMNS = "columns.parquet"
 JOINS = "joins.parquet"
@@ -48,6 +48,7 @@ def columns_frame(profiles) -> pd.DataFrame:
         "n_values": np.array([p.n_values for p in profiles], dtype=np.int32),
         "n_distinct": np.array([len(p.values) for p in profiles], dtype=np.int32),
         "avg_length": np.array([p.avg_length for p in profiles], dtype=np.float64),
+        "kind": [p.kind for p in profiles],
         "samples": [[str(s) for s in p.samples] for p in profiles],
     })
 
