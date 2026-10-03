@@ -136,7 +136,10 @@ def _formats_list(fmts: Optional[frozenset]) -> list:
 
 
 def matches_format(resource: dict, fmts: Optional[frozenset]) -> bool:
-    return fmts is None or (resource.get("format") or "").strip().upper() in fmts
+    fmt = (resource.get("format") or "").strip().upper()
+    if fmts is None:
+        return fmt != "WEB"
+    return fmt in fmts
 
 
 def package_ref(text: str) -> str:
@@ -185,7 +188,7 @@ class CKANError(RuntimeError):
     """The CKAN API returned an error (e.g. package not found)."""
 
 
-class _Retryable(Exception):
+class _Retryable(CKANError):
     def __init__(self, message: str, response: Optional[httpx.Response] = None):
         super().__init__(message)
         self.response = response

@@ -1,0 +1,17 @@
+[project]
+name = "opendata-duckdb"
+version = "0.1.0"
+description = "DuckDB database instance for City of Toronto Open Data"
+requires-python = ">=3.10"
+dependencies = [
+    "duckdb>=1.1.0",
+    "rich>=13.0",
+]
+
+[project.scripts]
+duckdb-build = "db.build:main"
+duckdb-cli = "db.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.8.17"]
+build-backend = "uv_build"
