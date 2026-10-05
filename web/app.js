@@ -14,11 +14,40 @@ const columnSelect = document.querySelector('#column')
 const state = { key: null, includeSamePackage: false, shown: PAGE_SIZE }
 let data
 
-// The dataset box suggests titles as you type; typing or picking a full title selects it.
-function fillDatasets() {
-  document.querySelector('#datasets').innerHTML = html`${data.datasets.map(d => html`<option value="${d.title}">`)}`
-  datasetInput.placeholder = 'Type to find a dataset'
-  datasetInput.disabled = false
+// The dataset box opens a list of every dataset, filtered by title or publisher as you type.
+const datasetList = document.querySelector('#datasets')
+let matches = []
+let active = -1
+
+function showDatasets() {
+  // A dataset already picked shows the whole list, so the user can browse to another.
+  const query = datasetNamed(datasetInput.value) ? '' : datasetInput.value.trim().toLowerCase()
+  matches = data.datasets.filter(d => `${d.title} ${d.publisher}`.toLowerCase().includes(query))
+  datasetList.innerHTML = matches.length
+    ? html`${matches.map((d, i) => html`
+        <li role="option" id="dataset-option-${i}" aria-selected="${String(i === active)}">
+          ${d.title} <span class="publisher">${d.publisher}</span>
+        </li>`)}`
+    : html`<li class="empty">No matching datasets</li>`
+  datasetList.hidden = false
+  datasetInput.setAttribute('aria-expanded', 'true')
+  if (active < 0) return datasetInput.removeAttribute('aria-activedescendant')
+  datasetInput.setAttribute('aria-activedescendant', `dataset-option-${active}`)
+  document.getElementById(`dataset-option-${active}`).scrollIntoView({ block: 'nearest' })
+}
+
+function hideDatasets() {
+  active = -1
+  datasetList.hidden = true
+  datasetInput.setAttribute('aria-expanded', 'false')
+  datasetInput.removeAttribute('aria-activedescendant')
+}
+
+function pickDataset(dataset) {
+  datasetInput.value = dataset.title
+  fillColumns(dataset)
+  hideDatasets()
+  columnSelect.focus()
 }
 
 function datasetNamed(title) {
@@ -70,12 +99,33 @@ function render() {
   document.title = `${column.column} · ${TITLE}`
 }
 
+datasetInput.addEventListener('focus', showDatasets)
+datasetInput.addEventListener('click', showDatasets)
+datasetInput.addEventListener('blur', hideDatasets)
 datasetInput.addEventListener('input', () => {
-  const dataset = datasetNamed(datasetInput.value)
-  fillColumns(dataset)
-  if (!dataset) return
-  datasetInput.value = dataset.title
-  columnSelect.focus()
+  active = -1
+  fillColumns(datasetNamed(datasetInput.value))
+  showDatasets()
+})
+datasetInput.addEventListener('keydown', event => {
+  if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
+    event.preventDefault()
+    const n = matches.length
+    if (!datasetList.hidden && n) active = event.key === 'ArrowDown' ? (active + 1) % n : (active < 1 ? n : active) - 1
+    showDatasets()
+  } else if (event.key === 'Enter' && matches[active]) {
+    event.preventDefault()
+    pickDataset(matches[active])
+  } else if (event.key === 'Escape') {
+    hideDatasets()
+  }
+})
+// Keep focus in the box while clicking the list; preventDefault on click stops the label refocusing it.
+datasetList.addEventListener('mousedown', event => event.preventDefault())
+datasetList.addEventListener('click', event => {
+  event.preventDefault()
+  const option = event.target.closest('[role=option]')
+  if (option) pickDataset(matches[option.id.split('-').pop()])
 })
 columnSelect.addEventListener('change', () => {
   if (columnSelect.value) location.hash = `column=${encodeURIComponent(columnSelect.value)}`
@@ -98,7 +148,8 @@ window.addEventListener('hashchange', render)
 
 try {
   data = await loadData()
-  fillDatasets()
+  datasetInput.placeholder = 'Search datasets or publishers'
+  datasetInput.disabled = false
   render()
 } catch (error) {
   console.error(error)

@@ -47,7 +47,7 @@ export async function loadData(base = 'data') {
   const datasets = new Map()
   for (const column of columns) {
     if (!joinsOf[column.id].some(j => columns[j.other].package !== column.package)) continue
-    if (!datasets.has(column.package)) datasets.set(column.package, { name: column.package, title: title(column.package), columns: [] })
+    if (!datasets.has(column.package)) datasets.set(column.package, { name: column.package, title: title(column.package), publisher: packages.get(column.package)?.owner ?? '', columns: [] })
     datasets.get(column.package).columns.push(column)
   }
 
