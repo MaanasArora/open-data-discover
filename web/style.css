@@ -65,6 +65,29 @@ h1, h2, h3 { line-height: 1.25; }
 .picker input:focus,
 .picker select:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
 .picker select:disabled { color: var(--dim); }
+.picker label { position: relative; }
+
+.dropdown {
+  position: absolute;
+  top: calc(100% + 0.25rem);
+  left: 0;
+  right: 0;
+  z-index: 1;
+  max-height: 20rem;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0.25rem 0;
+  list-style: none;
+  text-align: left;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+}
+.dropdown li { padding: 0.4rem 0.7rem; cursor: pointer; }
+.dropdown li:hover,
+.dropdown li[aria-selected="true"] { background: var(--accent-soft); }
+.dropdown .publisher { display: block; font-size: 0.85rem; color: var(--dim); }
+.dropdown .empty { color: var(--dim); cursor: default; }
 .picker input::placeholder { color: var(--dim); }
 
 /* Home: the picker, front and center */
