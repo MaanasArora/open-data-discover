@@ -26,6 +26,26 @@
     </form>
   </header>
   <main id="main" class="wrap" aria-live="polite"></main>
+  <dialog id="report" class="report-dialog" aria-labelledby="report-title">
+    <form>
+      <h2 id="report-title">Report this join</h2>
+      <p class="dim">With <span class="which"></span></p>
+      <fieldset>
+        <legend>What’s wrong with it?</legend>
+        <label><input type="radio" name="reason" value="unrelated" required> The columns are unrelated</label>
+        <label><input type="radio" name="reason" value="coincidental"> The values overlap by coincidence (IDs, years, small numbers)</label>
+        <label><input type="radio" name="reason" value="wrong-entity"> They describe different kinds of thing</label>
+        <label><input type="radio" name="reason" value="other"> Something else</label>
+      </fieldset>
+      <label class="note">Note <span class="dim">(optional)</span>
+        <textarea name="note" rows="3" maxlength="1000"></textarea></label>
+      <p class="status" role="status"></p>
+      <div class="actions">
+        <button type="button" class="cancel">Cancel</button>
+        <button type="submit">Send report</button>
+      </div>
+    </form>
+  </dialog>
   <footer class="wrap dim">
     <p>Made at Civic Tech Toronto · Data sourced from
       <a href="https://open.toronto.ca/" target="_blank" rel="noopener">Open Data Toronto</a></p>

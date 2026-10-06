@@ -3,7 +3,8 @@
 //   (empty)         home: pick a dataset, then a column
 
 import { loadData } from './data.js'
-import { columnPage, html, message } from './views.js'
+import { openReport, wasReported } from './report.js'
+import { columnPage, datasetTitle, html, message } from './views.js'
 
 const TITLE = 'Open Data Discover: Toronto'
 const PAGE_SIZE = 25
@@ -95,7 +96,7 @@ function render() {
     fillColumns(dataset)
   }
   columnSelect.value = key
-  main.innerHTML = columnPage(data, column, state)
+  main.innerHTML = columnPage(data, column, { ...state, wasReported })
   document.title = `${column.column} · ${TITLE}`
 }
 
@@ -143,6 +144,20 @@ main.addEventListener('click', event => {
   state.shown += PAGE_SIZE
   render()
   main.querySelector('#show-more')?.focus()
+})
+main.addEventListener('click', event => {
+  const button = event.target.closest('.report-join:not([aria-disabled=true])')
+  if (!button) return
+  const column = data.byKey.get(state.key)
+  const other = data.columns[button.dataset.other]
+  const label = c => `${datasetTitle(data, c)} › ${c.column} (${c.resource})`
+  openReport(button, {
+    column_a: column.key,
+    column_b: other.key,
+    label_a: label(column),
+    label_b: label(other),
+    score: data.joinsOf[column.id].find(j => j.other === other.id).score,
+  })
 })
 window.addEventListener('hashchange', render)
 
