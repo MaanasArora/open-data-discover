@@ -63,15 +63,13 @@ export function columnPage(data, column, { includeSamePackage, shown, wasReporte
           const reported = wasReported(column.key, other.key)
           return html`
             <li class="join">
-              <div class="join-side">
-                <div class="score" title="${percent(j.contained)} of this column’s values appear there; ${percent(j.contains)} of its values appear here">
-                  <span class="value">${j.score.toFixed(2)}</span>
-                  <span class="bar"><span style="width: ${percent(j.score)}"></span></span>
-                </div>
-                <button type="button" class="report-join" data-other="${other.id}" ${reported && html`aria-disabled="true"`}>
-                  <span>${reported ? 'Reported' : 'Report'}</span><span class="visually-hidden"> the join with ${other.column} in ${datasetTitle(data, other)}</span>
-                </button>
+              <div class="score" title="${percent(j.contained)} of this column’s values appear there; ${percent(j.contains)} of its values appear here">
+                <span class="value">${j.score.toFixed(2)}</span>
+                <span class="bar"><span style="width: ${percent(j.score)}"></span></span>
               </div>
+              <button type="button" class="report-join" data-other="${other.id}" ${reported && html`aria-disabled="true"`}>
+                <span>${reported ? 'Reported' : 'Report'}</span><span class="visually-hidden"> the join with ${other.column} in ${datasetTitle(data, other)}</span>
+              </button>
               <div>
                 <a class="column-link" href="${columnHref(other)}">
                   <span class="dataset">${datasetTitle(data, other)}</span>

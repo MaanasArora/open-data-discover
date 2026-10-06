@@ -13,7 +13,7 @@ let current             // { button, report } for the open dialog
 const pairKey = (a, b) => [a, b].sort().join('|')
 export const wasReported = (a, b) => sent.has(pairKey(a, b))
 
-// Opens the dialog beside `button` for a report of { column_a, column_b, label_a, label_b, score }.
+// Opens the dialog below `button` for a report of { column_a, column_b, label_a, label_b, score }.
 export function openReport(button, report) {
   current = { button, report }
   form.reset()
@@ -24,15 +24,14 @@ export function openReport(button, report) {
   place()
 }
 
-// Beside the button, over the join it reports, and inside the window.
+// Below the button, right edges aligned, over the join it reports, and inside the window.
 function place() {
-  const { button } = current
-  const join = button.closest('.join').getBoundingClientRect()
+  const anchor = current.button.getBoundingClientRect()
   const { width, height } = dialog.getBoundingClientRect()
   const { clientWidth, clientHeight } = document.documentElement  // the window without its scrollbars
   const gap = 8
-  dialog.style.left = `${Math.max(gap, Math.min(button.getBoundingClientRect().right + 2 * gap, clientWidth - width - gap))}px`
-  dialog.style.top = `${Math.max(gap, Math.min(join.top, clientHeight - height - gap))}px`
+  dialog.style.left = `${Math.max(gap, Math.min(anchor.right - width, clientWidth - width - gap))}px`
+  dialog.style.top = `${Math.max(gap, Math.min(anchor.bottom + gap / 2, clientHeight - height - gap))}px`
 }
 
 function showStatus(text) {

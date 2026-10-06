@@ -7,6 +7,7 @@
   --accent: #1f5fae;
   --accent-soft: #e6eef8;
   --bar: #2f7d5b;
+  --danger: #b42318;
   color-scheme: light;
 }
 
@@ -20,6 +21,7 @@
     --accent: #7fb0ec;
     --accent-soft: #1e2a38;
     --bar: #5cc39a;
+    --danger: #f97066;
     color-scheme: dark;
   }
 }
@@ -143,7 +145,8 @@ footer p { margin: 0; }
   display: grid;
   grid-template-columns: 4.5rem 1fr;
   gap: 1rem;
-  padding: 0.9rem 0;
+  position: relative;
+  padding: 0.9rem 4.5rem 0.9rem 0;  /* room for the Report button in the corner */
   border-bottom: 1px solid var(--line);
 }
 .column-link { overflow-wrap: anywhere; }
@@ -169,21 +172,22 @@ button {
 }
 button:hover { text-decoration: underline; }
 
-/* Reporting a join: the button under its score, and the dialog that opens beside it */
+/* Reporting a join: a quiet button in the row's top-right corner, and the dialog that opens below it */
 
 .report-join {
-  margin-top: 0.75rem;
-  padding: 0.15rem 0.6rem;
+  position: absolute;
+  top: 0.9rem;
+  right: 0;
+  margin: 0;
+  padding: 0.1rem 0;
   font-size: 0.8rem;
-  color: var(--dim);
+  color: var(--danger);
   background: none;
-  border: 1px solid var(--line);
 }
-.report-join:hover { color: var(--accent); border-color: var(--accent); text-decoration: none; }
-.report-join[aria-disabled="true"] { color: var(--dim); border-color: transparent; padding-inline: 0; cursor: default; }
+.report-join[aria-disabled="true"] { color: var(--dim); cursor: default; text-decoration: none; }
 
 .report-dialog {
-  inset: auto;  /* placed beside its button by report.js */
+  inset: auto;  /* placed below its button by report.js */
   width: min(24rem, calc(100vw - 1rem));
   max-width: calc(100% - 1rem);
   margin: 0;
@@ -195,7 +199,7 @@ button:hover { text-decoration: underline; }
   box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 0.15);
 }
 .report-dialog::backdrop { background: transparent; }
-html:has(.report-dialog[open]) { overflow: hidden; }  /* keep the dialog beside its join */
+html:has(.report-dialog[open]) { overflow: hidden; }  /* keep the dialog by its join */
 .report-dialog form { padding: 1rem 1.25rem; font-size: 0.95rem; }
 .report-dialog h2 { font-size: 1.05rem; margin: 0; }
 .report-dialog form > p { margin: 0.2rem 0 0; overflow-wrap: anywhere; }
@@ -226,9 +230,7 @@ html:has(.report-dialog[open]) { overflow: hidden; }  /* keep the dialog beside 
 .report-dialog [type="submit"]:disabled { opacity: 0.6; cursor: default; }
 
 @media (max-width: 40rem) {
-  .join { grid-template-columns: 1fr; gap: 0.35rem; }
-  .join-side { display: flex; align-items: center; gap: 1rem; }
+  .join { grid-template-columns: 1fr; gap: 0.35rem; padding-right: 0; }
   .score { display: flex; align-items: center; gap: 0.5rem; }
   .score .bar { width: 4rem; margin: 0; }
-  .report-join { margin: 0; }
 }
