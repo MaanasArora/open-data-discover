@@ -67,8 +67,8 @@ export function columnPage(data, column, { includeSamePackage, shown, wasReporte
                 <span class="value">${j.score.toFixed(2)}</span>
                 <span class="bar"><span style="width: ${percent(j.score)}"></span></span>
               </div>
-              <button type="button" class="report-join" data-other="${other.id}" ${reported && html`aria-disabled="true"`}>
-                <span>${reported ? 'Reported' : 'Report'}</span><span class="visually-hidden"> the join with ${other.column} in ${datasetTitle(data, other)}</span>
+              <button type="button" class="report-join" data-other="${other.id}" title="${reported ? 'Reported' : 'Report this join'}" ${reported && html`aria-disabled="true"`}>
+                <span class="visually-hidden">${reported ? 'Reported' : 'Report'}</span><span class="visually-hidden"> the join with ${other.column} in ${datasetTitle(data, other)}</span>
               </button>
               <div>
                 <a class="column-link" href="${columnHref(other)}">

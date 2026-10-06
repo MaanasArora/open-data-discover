@@ -27,7 +27,7 @@ underneath and a few example values; hovering a score shows the containment in b
 Joins within the same dataset (often the same data in another map projection) are hidden by default,
 with a checkbox to include them.
 
-Each join has a small red Report button in its top-right corner. It opens a dialog below it that asks what is
+Each join has a small red ! button (Report) in its top-right corner. It opens a dialog below it that asks what is
 wrong with it (plus an optional note) and sends the report to a Google Sheet; see `../reports/README.md`.
 
 ## Files

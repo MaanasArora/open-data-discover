@@ -52,7 +52,7 @@ form.addEventListener('submit', async event => {
     const result = await (await fetch(REPORTS_URL, { method: 'POST', body: JSON.stringify(report) })).json()
     if (!result.ok) throw new Error(result.error)
     sent.add(pairKey(report.column_a, report.column_b))
-    sending.button.firstElementChild.textContent = 'Reported'  // as views.js renders it after a re-render
+    sending.button.firstElementChild.textContent = sending.button.title = 'Reported'  // as views.js renders it
     sending.button.setAttribute('aria-disabled', 'true')
     if (current === sending) dialog.close()
   } catch (error) {
