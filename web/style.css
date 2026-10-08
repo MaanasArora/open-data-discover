@@ -26,65 +26,81 @@
   }
 }
 
+/* Inter (variable, Latin subset), self-hosted; see vendor/inter.LICENSE */
+@font-face {
+  font-family: "Inter";
+  src: url("vendor/inter.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
 * { box-sizing: border-box; }
 
 body {
+  display: flex;  /* so the footer sits at the bottom of short pages */
+  flex-direction: column;
+  min-height: 100vh;
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font: 16px/1.55 "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-feature-settings: "cv11";  /* Inter's single-storey a */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
-h1, h2, h3 { line-height: 1.25; }
+h1, h2, h3 { line-height: 1.25; letter-spacing: -0.015em; text-wrap: balance; }
+p { text-wrap: pretty; }
 
-.wrap { max-width: 56rem; margin: 0 auto; padding: 0 1rem; }
+.wrap { width: 100%; max-width: 56rem; margin-inline: auto; padding-inline: 1rem; }
 .dim { color: var(--dim); }
 .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
 
 /* Persistent Top Navigation Bar */
 
 .top-bar {
-  border-bottom: 1px solid #e2e8f0;
-  background-color: #ffffff;
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
   padding: 0.85rem 0;
-  margin-bottom: 1.5rem;
 }
 
 .top-bar-inner {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
+  gap: 0.35rem 1.5rem;
 }
 
 .brand-title {
   font-weight: 700;
-  font-size: 1.15rem;
-  color: #1a202c;
-  text-decoration: none;
+  font-size: 1.05rem;
+  letter-spacing: -0.015em;
+  color: var(--text);
 }
 
-.brand-title:hover { color: #2b6cb0; }
+.brand-title:hover { color: var(--accent); text-decoration: none; }
+
+.site-nav { display: flex; flex-wrap: wrap; gap: 0.25rem 1.25rem; }
 
 .site-nav a {
-  margin-left: 1.25rem;
-  color: #4a5568;
-  text-decoration: none;
-  font-size: 0.95rem;
+  color: var(--dim);
+  font-size: 0.925rem;
   font-weight: 500;
 }
 
-.site-nav a:hover {
-  color: #1a202c;
-  text-decoration: underline;
-}
+.site-nav a:hover,
+.site-nav a[aria-current="page"] { color: var(--text); }
+.site-nav a[aria-current="page"] { text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 0.35em; text-decoration-thickness: 2px; }
+
+.top-bar a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 0.2rem; }
 
 /* Header & Picker */
 
-.site-header { padding-block: 1.25rem; }
-.site-header h1 { font-size: 1.15rem; margin: 0 0 0.75rem; }
-.site-header h1 a { color: var(--text); }
+.site-header { padding-block: 1.5rem 1.25rem; }
+.site-header h1 { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }  /* only shown on the home page */
 .tagline { display: none; margin: 0 0 1.25rem; color: var(--dim); }
 
 .picker { display: flex; flex-wrap: wrap; gap: 0.5rem; }
@@ -93,6 +109,7 @@ h1, h2, h3 { line-height: 1.25; }
 .picker input,
 .picker select {
   width: 100%;
+  height: 2.875rem;  /* so the input and select match */
   padding: 0.6rem 0.7rem;
   font: inherit;
   color: inherit;
@@ -131,37 +148,48 @@ h1, h2, h3 { line-height: 1.25; }
 /* Home Page Specifics */
 
 .home .site-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  min-height: auto;
-  padding-top: 3.5rem;
-  padding-bottom: 2rem;
+  padding-top: clamp(3rem, 12vh, 6rem);
+  padding-bottom: 2.5rem;
   max-width: 44rem;
   text-align: center;
 }
 
-.home .site-header h1 { font-size: clamp(1.6rem, 5vw, 2.2rem); margin-bottom: 0.5rem; }
+.home .site-header h1 {
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: auto;
+  margin: 0 0 0.75rem;
+  font-size: clamp(2rem, 6vw, 2.9rem);
+  font-weight: 750;
+  line-height: 1.1;
+  letter-spacing: -0.035em;
+}
 
-.home .tagline { 
-  display: block; 
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: var(--text);
-  line-height: 1.4;
-  margin-bottom: 1.75rem;
+.home .tagline {
+  display: block;
+  max-width: 34rem;
+  margin: 0 auto 2rem;
+  font-size: clamp(1.05rem, 2.5vw, 1.2rem);
+  line-height: 1.5;
 }
 
 .home .picker input,
-.home .picker select { padding: 0.8rem 0.9rem; font-size: 1.05rem; }
+.home .picker select { height: 3.35rem; padding: 0.8rem 0.9rem; font-size: 1.05rem; }
 
-main { padding-bottom: 2rem; }
+main:not(:empty) { padding-bottom: 2rem; }
 .message { padding: 1rem 0; }
 .message p { margin: 0.25rem 0; }
 
-footer { border-top: 1px solid var(--line); padding-block: 1rem 2rem; font-size: 0.875rem; }
+footer {
+  margin-top: auto;  /* sits at the bottom of short pages */
+  padding-block: 1.25rem 2rem;
+  font-size: 0.875rem;
+  border-top: 1px solid var(--line);
+}
 footer p { margin: 0; }
-footer .data-date { margin-top: 0.25rem; font-size: 0.85rem; }
+footer .data-date { margin-top: 0.25rem; }
 
 /* Joins & Results List */
 
@@ -296,16 +324,16 @@ html:has(.report-dialog[open]) { overflow: hidden; }  /* keep the dialog by its 
 /* About Page Styles */
 
 .about-section {
-  padding-top: 2rem;
+  padding-top: 3rem;
   padding-bottom: 4rem;
 }
 
 .about-header { margin-bottom: 2rem; }
 
-.about-header h2 {
-  font-size: 1.8rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
+.about-header h1 {
+  font-size: clamp(1.8rem, 5vw, 2.25rem);
+  font-weight: 750;
+  letter-spacing: -0.03em;
   margin-top: 0;
   margin-bottom: 0.75rem;
   color: var(--text);
