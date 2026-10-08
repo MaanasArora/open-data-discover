@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Open Data Discover: Toronto</title>
+  <meta name="description"
+    content="Select a column from a City of Toronto Open Data dataset to find other potentially joinable columns.">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js"></script>
+</head>
+
+<body class="home">
+
+  <!-- Persistent Top Navigation Bar -->
+  <header class="top-bar">
+    <div class="wrap top-bar-inner">
+      <a href="index.html" class="brand-title" id="nav-home">Open Data Discover: Toronto</a>
+      <nav class="site-nav">
+        <a href="#" id="nav-about">About</a>
+        <a href="https://civictech.ca/" target="_blank" rel="noopener">Civic Tech Toronto</a>
+        <a href="https://github.com/MaanasArora/open-data-discover" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="about-section wrap">
+    <header class="about-header">
+      <h2>About Open Data Discover</h2>
+      <p class="lead-text">
+        The City of Toronto's <a href="https://open.toronto.ca/" target="_blank" rel="noopener">Open Data Portal</a>
+        contains hundreds of public datasets—tracking everything from neighborhood park locations and to transit
+        schedules. However, figuring out how different datasets can be connected or combined can be challenging.
+      </p>
+      <p class="lead-text">
+        <strong>Open Data Discover</strong> aims to improve the discoverability of Toronto's open datasets, by making it
+        easier to see the structure of each dataset's resources and showing possible joins across different sets.
+      </p>
+      <p class="lead-text">
+        Whether you are already using a dataset and want an easy way to see other datasets you can combine or
+        incorporate into your project, or are just getting started on a project and want to explore what public data the
+        city has to offer, this tool is designed to make Toronto's open data easier to explore and use.
+      </p>
+
+      <!-- Centered neutral navigation bar -->
+      <nav class="about-nav" aria-label="About page navigation">
+        <a href="#the-data">The Data</a>
+        <a href="#the-method">The Method</a>
+        <a href="#how-to-use">How to Use This Tool</a>
+      </nav>
+    </header>
+
+    <hr class="section-divider">
+
+    <!-- Section 1: The Data -->
+    <article id="the-data" class="about-block">
+      <header class="block-header">
+        <span class="section-number">01</span>
+        <h2>The Data</h2>
+      </header>
+
+      <section class="about-subblock">
+        <p>
+          <a href="https://open.toronto.ca/" target="_blank" rel="noopener">Open Data Toronto</a> is the official open
+          data portal maintained by the City of Toronto. Its core purpose is to make municipal government data freely
+          available to the public in open, machine-readable formats.
+        </p>
+        <p>
+          <strong>Goal:</strong> Promotes civic transparency, data-driven decision-making, municipal accountability, and
+          public innovation. It allows community members, developers, academics, journalists, and businesses to build
+          apps, analyze urban trends, or conduct research.
+        </p>
+        <p>
+          <strong>Licensing:</strong> All datasets are released under the Open Government Licence – Toronto. This
+          licence allows worldwide, royalty-free, perpetual use, modification, and redistribution for both commercial
+          and non-commercial purposes, provided appropriate attribution is given to the City.
+        </p>
+      </section>
+
+      <section class="about-subblock">
+        <h3>Available Datasets &amp; Formats</h3>
+        <p>The catalog contains hundreds of datasets spanning dozens of City divisions and agencies. Key categories
+          include:</p>
+        <ul>
+          <li><strong>Transportation &amp; Mobility:</strong> Road closures, traffic signals, cycling routes, TTC
+            transit schedules, parking locations, and collision statistics.</li>
+          <li><strong>Public Health &amp; Safety:</strong> Shelter occupancy and capacity, DineSafe restaurant
+            inspection records, paramedic response times, and Toronto Police Service event logs.</li>
+          <li><strong>Parks, Forestry &amp; Recreation:</strong> Urban tree canopy inventories, park facility locations,
+            trail networks, and recreational program listings.</li>
+          <li><strong>City Governance &amp; Finance:</strong> Approved municipal budgets, lobbyist registry data,
+            council votes, active business licenses, and short-term rental registrations.</li>
+          <li><strong>Environment &amp; Infrastructure:</strong> Garbage/recycling collection schedules, water meter
+            data, green roof locations, and energy consumption.</li>
+          <li><strong>Geospatial &amp; Mapping:</strong> City ward boundaries, property parcels, elevation data, and 3D
+            massing models.</li>
+        </ul>
+        <p>
+          <strong>Formats:</strong> Data can typically be downloaded in standard structured formats such as CSV,
+          GeoJSON, SHP (Shapefile), JSON, and XML, or queried directly via the portal's open API (CKAN API).
+        </p>
+      </section>
+
+      <section class="about-subblock">
+        <h3>How Current Is the Data?</h3>
+        <p>Data freshness varies depending on the specific dataset and its underlying operational source.</p>
+
+        <h4>Refresh Rates</h4>
+        <p>Each dataset on the portal lists an official "Refresh Rate" metadata field set by the publishing division:
+        </p>
+        <ul>
+          <li><strong>Daily / Real-Time:</strong> Frequently updated feeds (e.g., daily shelter occupancy, active
+            traffic events, dynamic transit schedules).</li>
+          <li><strong>As Available:</strong> Updated dynamically as new events or administrative changes occur.</li>
+          <li><strong>Monthly / Quarterly:</strong> Operational records updated on fixed cycles (e.g., DineSafe
+            inspection logs, housing statistics).</li>
+          <li><strong>Annually:</strong> Year-end or cycle-based datasets (e.g., annual municipal budgets, major
+            financial reports).</li>
+          <li><strong>Will Not Be Refreshed / Historical:</strong> One-off studies, legacy datasets, or archived
+            historical collections.</li>
+        </ul>
+
+        <h4>Timestamp</h4>
+        <p>Every dataset page includes a "Data Last Refreshed" timestamp. This field shows the date and time the
+          portal's automated pipeline last pulled data from the source department.</p>
+      </section>
+    </article>
+
+    <!-- Section 2: The Method -->
+    <!-- Section 2: The Method -->
+    <article id="the-method" class="about-block">
+      <header class="block-header">
+        <span class="section-number">02</span>
+        <h2>The Method</h2>
+      </header>
+
+      <section class="about-subblock">
+        <h3>Candidate Joins &amp; Profiling</h3>
+        <p>
+          A <strong>candidate join</strong> represents a pair of columns from two different <abbr
+            title="Comma-Separated Values">CSV</abbr> files in the Open Data catalog that share overlapping values. To
+          discover these connections, the analysis pipeline profiles every complete dataset in the catalog, building
+          unique value lists for each column after standardizing text (converting to lowercase and removing extra
+          spaces).
+        </p>
+      </section>
+
+      <section class="about-subblock">
+        <h3>Containment &amp; Score Calculation</h3>
+        <p>
+          To determine how strongly two columns relate, the algorithm evaluates set overlap based on shared unique
+          values:
+        </p>
+        <ul>
+          <li><strong>Shared Unique Values:</strong> The total number of distinct entries that appear in both Column A
+            and Column B.</li>
+          <li>
+            <strong>Containment Ratio:</strong> Measures what percentage of Column A's unique entries can be found
+            inside Column B:
+            <br>
+            <code aria-label="Containment ratio formula: Shared unique values divided by distinct values in Column A">
+              Containment (A to B) = Shared Unique Values ÷ Distinct Values in Column A
+            </code>
+          </li>
+          <li>
+            <strong>Overall Score:</strong> Takes the higher of the two directional containment ratios:
+            <br>
+            <code aria-label="Overall score formula: Maximum value of Containment A to B or Containment B to A">
+              Overall Score = Maximum of (Containment A to B, Containment B to A)
+            </code>
+          </li>
+        </ul>
+        <p>
+          Using the maximum directional containment score (ranging from <code>0.00</code> to <code>1.00</code>) ensures
+          that subset relationships stand out—such as a list of 20 neighborhood parks whose names are entirely contained
+          within a larger city-wide inventory of 1,000 parks.
+        </p>
+      </section>
+
+      <section class="about-subblock">
+        <h3>Algorithmic Scope &amp; Limitations</h3>
+        <p>
+          To maintain high performance across hundreds of datasets, the detection pipeline operates within defined
+          technical boundaries:
+        </p>
+        <ul>
+          <li><strong>Exact Text Matching:</strong> Comparisons require exact text matches. The algorithm does not use
+            <abbr title="Natural Language Processing">NLP</abbr> or fuzzy matching, so variations like "Avenue" versus
+            "Ave" are not counted as matching values.</li>
+          <li><strong>Skipped Short &amp; System Columns:</strong> System keys (such as <code>_id</code>), columns with
+            fewer than 8 unique entries, or columns averaging 6 characters or fewer per cell are excluded to filter out
+            generic identifiers, dates, and status codes.</li>
+          <li><strong>Common Value Filtering:</strong> Extremely frequent terms that appear across dozens of different
+            datasets are excluded to prevent cluttering results with trivial matches.</li>
+          <li><strong>Coincidental Overlaps:</strong> High scores reflect statistical string overlap rather than
+            guaranteed meaning. Unrelated datasets sharing identical code numbers or common names may occasionally yield
+            high scores by chance.</li>
+        </ul>
+      </section>
+    </article>
+
+    <!-- Section 3: How to Use -->
+    <article id="how-to-use" class="about-block">
+      <header class="block-header">
+        <span class="section-number">03</span>
+        <h2>How to Use This Tool</h2>
+      </header>
+
+      <section class="about-subblock">
+        <h3>Select a Dataset</h3>
+        <p>Search or use the drop-down in the Data section to select a dataset. Then select a column to view its join
+          results.</p>
+
+        <div class="screenshot-grid">
+          <figure class="screenshot">
+            <img src="images/image_a1.png" alt="Selecting a dataset and column">
+            <figcaption>Dataset Selection</figcaption>
+          </figure>
+          <figure class="screenshot">
+            <img src="images/image_a2.png" alt="Viewing join results and scores">
+            <figcaption>Columns</figcaption>
+          </figure>
+        </div>
+
+        <h3>View Results</h3>
+        <p>The score next to each result shows how strongly its values overlap with your selected column—a higher score means a higher likelihood that the two datasets can be connected or combined.</p>
+
+        <figure class="screenshot">
+          <img src="images/image_a3.png" alt="Viewing join results and scores">
+          <figcaption>Join Results & Scores</figcaption>
+        </figure>
+
+        <p>Clicking any result row opens that dataset and displays its matching columns, allowing you to follow connections and explore related data across the entire catalog.</p>
+
+      </section>
+    </article>
+  </section>
+
+  <footer class="wrap dim">
+    <p class="data-date">Made at Civic Tech Toronto · Data sourced from <a href="https://open.toronto.ca/"
+        target="_blank" rel="noopener">Open Data Toronto</a> on <span id="analyzed-date">Loading...</span></p>
+  </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      const dateElement = document.getElementById('analyzed-date');
+
+      try {
+        const response = await fetch('data/manifest.json');
+        if (!response.ok) throw new Error('Failed to load manifest');
+
+        const manifest = await response.json();
+
+        if (manifest.created_at) {
+          const date = new Date(manifest.created_at);
+
+          // Format options (e.g., "September 27, 2026")
+          dateElement.textContent = date.toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'short',
+            day: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit'
+          });
+        } else {
+          dateElement.textContent = 'Date unavailable';
+        }
+      } catch (error) {
+        console.error('Error fetching manifest:', error);
+        dateElement.textContent = 'Error loading date';
+      }
+    });
+  </script>
+
+</html>
