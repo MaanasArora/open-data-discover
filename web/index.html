@@ -9,8 +9,21 @@
   <script type="module" src="app.js"></script>
 </head>
 <body class="home">
-  <header class="site-header wrap">
-    <h1><a href="#">Open Data Discover: Toronto</a></h1>
+
+  <!-- Persistent Top Navigation Bar -->
+  <header class="top-bar">
+    <div class="wrap top-bar-inner">
+      <a href="#" class="brand-title" id="nav-home">Open Data Discover: Toronto</a>
+      <nav class="site-nav">
+        <a href="about.html" id="nav-about">About</a>
+        <a href="https://civictech.ca/" target="_blank" rel="noopener">Civic Tech Toronto</a>
+        <a href="https://github.com/MaanasArora/open-data-discover" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Search & Selection Header -->
+  <section id="hero" class="site-header wrap">
     <p class="tagline">Select a column to find other potentially joinable columns.</p>
     <form class="picker" id="picker">
       <label>
@@ -24,8 +37,10 @@
         <select id="column" disabled><option value="">Choose a column</option></select>
       </label>
     </form>
-  </header>
+  </section>
+
   <main id="main" class="wrap" aria-live="polite"></main>
+
   <footer class="wrap dim">
     <p>Made at Civic Tech Toronto · Data sourced from
       <a href="https://open.toronto.ca/" target="_blank" rel="noopener">Open Data Toronto</a></p>
