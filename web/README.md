@@ -27,6 +27,9 @@ underneath and a few example values; hovering a score shows the containment in b
 Joins within the same dataset (often the same data in another map projection) are hidden by default,
 with a checkbox to include them.
 
+Each join has a small red ! button (Report) in its top-right corner. It opens a dialog below it that asks what is
+wrong with it (plus an optional note) and sends the report to a Google Sheet; see `../reports/README.md`.
+
 ## Files
 
 | File | Contents |
@@ -35,6 +38,7 @@ with a checkbox to include them.
 | `app.js` | The picker, routing, page state and events |
 | `data.js` | Loading the results; per-column join lists; datasets for the picker |
 | `views.js` | HTML for each view (all data is escaped) |
+| `report.js` | The report dialog; sending reports to `REPORTS_URL` |
 | `vendor/hyparquet.js` | [hyparquet](https://github.com/hyparam/hyparquet) 1.31.2 (MIT), bundled into one file |
 
 The site does no scoring: joins arrive sorted from `analyze`, and each column's list keeps that order.

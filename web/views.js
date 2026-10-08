@@ -23,7 +23,7 @@ const percent = x => `${Math.round(x * 100)}%`
 const plural = (n, word) => `${n ? number(n) : 'no'} ${word}${n === 1 ? '' : 's'}`
 const columnHref = column => `#column=${encodeURIComponent(column.key)}`
 const portalHref = name => `https://open.toronto.ca/dataset/${encodeURIComponent(name)}/`
-const datasetTitle = (data, column) => data.packages.get(column.package)?.title || column.package
+export const datasetTitle = (data, column) => data.packages.get(column.package)?.title || column.package
 
 function examples(values) {
   return html`
@@ -35,7 +35,7 @@ export function message(text, detail = '') {
   return html`<section class="message"><p>${text}</p>${detail && html`<p class="dim">${detail}</p>`}</section>`
 }
 
-export function columnPage(data, column, { includeSamePackage, shown }) {
+export function columnPage(data, column, { includeSamePackage, shown, wasReported }) {
   const all = data.joinsOf[column.id]
   const samePackage = all.filter(j => data.columns[j.other].package === column.package).length
   const joins = includeSamePackage ? all : all.filter(j => data.columns[j.other].package !== column.package)
@@ -60,12 +60,16 @@ export function columnPage(data, column, { includeSamePackage, shown }) {
       <ol class="joins">
         ${joins.slice(0, shown).map(j => {
           const other = data.columns[j.other]
+          const reported = wasReported(column.key, other.key)
           return html`
             <li class="join">
               <div class="score" title="${percent(j.contained)} of this column’s values appear there; ${percent(j.contains)} of its values appear here">
                 <span class="value">${j.score.toFixed(2)}</span>
                 <span class="bar"><span style="width: ${percent(j.score)}"></span></span>
               </div>
+              <button type="button" class="report-join" data-other="${other.id}" title="${reported ? 'Reported' : 'Report this join'}" ${reported && html`aria-disabled="true"`}>
+                <span class="visually-hidden">${reported ? 'Reported' : 'Report'}</span><span class="visually-hidden"> the join with ${other.column} in ${datasetTitle(data, other)}</span>
+              </button>
               <div>
                 <a class="column-link" href="${columnHref(other)}">
                   <span class="dataset">${datasetTitle(data, other)}</span>
