@@ -4,21 +4,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Open Data Discover: Toronto</title>
+  <title>About · Open Data Discover: Toronto</title>
   <meta name="description"
     content="Select a column from a City of Toronto Open Data dataset to find other potentially joinable columns.">
+  <link rel="preload" href="vendor/inter.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
-  <script type="module" src="app.js"></script>
+  <script type="module" src="bg.js"></script>
 </head>
 
-<body class="home">
+<body class="about">
 
   <!-- Persistent Top Navigation Bar -->
   <header class="top-bar">
     <div class="wrap top-bar-inner">
       <a href="index.html" class="brand-title" id="nav-home">Open Data Discover: Toronto</a>
       <nav class="site-nav">
-        <a href="#" id="nav-about">About</a>
+        <a href="about.html" id="nav-about" aria-current="page">About</a>
         <a href="https://civictech.ca/" target="_blank" rel="noopener">Civic Tech Toronto</a>
         <a href="https://github.com/MaanasArora/open-data-discover" target="_blank" rel="noopener">GitHub</a>
       </nav>
@@ -27,7 +28,7 @@
 
   <section class="about-section wrap">
     <header class="about-header">
-      <h2>About Open Data Discover</h2>
+      <h1>About Open Data Discover</h1>
       <p class="lead-text">
         The City of Toronto's <a href="https://open.toronto.ca/" target="_blank" rel="noopener">Open Data Portal</a>
         contains hundreds of public datasets—tracking everything from neighborhood park locations and to transit
@@ -127,7 +128,6 @@
       </section>
     </article>
 
-    <!-- Section 2: The Method -->
     <!-- Section 2: The Method -->
     <article id="the-method" class="about-block">
       <header class="block-header">
@@ -271,5 +271,6 @@
       }
     });
   </script>
+</body>
 
 </html>

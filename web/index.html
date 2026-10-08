@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Open Data Discover: Toronto</title>
   <meta name="description" content="Select a column from a City of Toronto Open Data dataset to find other potentially joinable columns.">
+  <link rel="preload" href="vendor/inter.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
   <script type="module" src="app.js"></script>
   <script type="module" src="bg.js"></script>
@@ -25,7 +26,8 @@
 
   <!-- Search & Selection Header -->
   <section id="hero" class="site-header wrap">
-    <p class="tagline">Select a column to find other potentially joinable columns.</p>
+    <h1>Open Data Discover</h1>
+    <p class="tagline">Select a column from any City of Toronto open dataset to find columns in other datasets that share its values.</p>
     <form class="picker" id="picker">
       <label>
         <span class="visually-hidden">Dataset</span>

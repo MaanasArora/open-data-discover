@@ -40,6 +40,7 @@ wrong with it (plus an optional note) and sends the report to a Google Sheet; se
 | `views.js` | HTML for each view (all data is escaped) |
 | `report.js` | The report dialog; sending reports to `REPORTS_URL` |
 | `vendor/hyparquet.js` | [hyparquet](https://github.com/hyparam/hyparquet) 1.31.2 (MIT), bundled into one file |
+| `vendor/inter.woff2` | [Inter](https://rsms.me/inter/) variable font, Latin subset (OFL), from `@fontsource-variable/inter` 5.1.0 |
 
 The site does no scoring: joins arrive sorted from `analyze`, and each column's list keeps that order.
 
