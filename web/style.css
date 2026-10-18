@@ -273,7 +273,7 @@ button.score:hover, button.score[aria-expanded="true"] { border-color: var(--lin
 .overlap-direction p { margin: 0.25rem 0; font-size: 0.8rem; }
 .overlap-direction .overlap-sentence { font-size: 0.875rem; }
 .overlap-sentence strong { font-variant-numeric: tabular-nums; }
-.overlap-sentence code { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 0.95em; }
+.overlap-sentence code { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 0.95em; background: var(--line); padding: 0.1em 0.3em; border-radius: 0.25em; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
 .overlap-count { color: var(--dim); }
 .overlap-note { border-top: 1px solid var(--line); padding-top: 0.85rem; color: var(--dim); font-size: 0.8rem; }
 
