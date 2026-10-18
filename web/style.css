@@ -269,11 +269,12 @@ button.score:hover, button.score[aria-expanded="true"] { border-color: var(--lin
 .score-popover h2 { margin: 0; font-size: 1rem; }
 .score-popover .close-score { margin: 0; padding: 0; width: 2.75rem; height: 2.75rem; color: var(--dim); background: transparent; font-size: 1.5rem; flex-shrink: 0; }
 .overlap-direction { margin: 1rem 0 1.25rem; }
-.overlap-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
-.overlap-heading strong { flex-shrink: 0; font-variant-numeric: tabular-nums; }
 .overlap-bar { display: block; height: 0.45rem; margin: 0.5rem 0; background: var(--line); border-radius: 1rem; overflow: hidden; }
 .overlap-direction p { margin: 0.25rem 0; font-size: 0.8rem; }
-.overlap-context { color: var(--dim); }
+.overlap-direction .overlap-sentence { font-size: 0.875rem; }
+.overlap-sentence strong { font-variant-numeric: tabular-nums; }
+.overlap-sentence code { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 0.95em; }
+.overlap-count { color: var(--dim); }
 .overlap-note { border-top: 1px solid var(--line); padding-top: 0.85rem; color: var(--dim); font-size: 0.8rem; }
 
 /* Reporting a join: a red ! in the row's top-right corner, and the dialog that opens below it */

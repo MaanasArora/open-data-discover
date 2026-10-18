@@ -36,10 +36,9 @@ const overlapLevel = score => score >= 0.8 ? 'high' : score >= 0.5 ? 'medium' : 
 function overlapDirection(data, from, to, ratio, shared) {
   return html`
     <div class="overlap-direction">
-      <div class="overlap-heading"><span>${from.column} <span aria-hidden="true">→</span><span class="visually-hidden"> to </span> ${to.column}</span><strong>${percent(ratio)}</strong></div>
+      <p class="overlap-sentence"><strong>${percent(ratio)}</strong> of the distinct values in the <code>${from.column}</code> column in <code>${datasetTitle(data, from)}</code> – <code>${from.resource}</code> appear in the <code>${to.column}</code> column in <code>${datasetTitle(data, to)}</code> – <code>${to.resource}</code>.</p>
       <span class="overlap-bar ${overlapLevel(ratio)}" aria-hidden="true"><span style="width: ${percent(ratio)}"></span></span>
-      <p>${number(shared)} of ${number(from.n_distinct)} distinct values appear in ${to.column}.</p>
-      <p class="overlap-context">From ${datasetTitle(data, from)} · ${from.resource}</p>
+      <p class="overlap-count">${number(shared)} of ${number(from.n_distinct)} distinct values.</p>
     </div>`
 }
 
