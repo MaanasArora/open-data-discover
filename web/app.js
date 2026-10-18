@@ -5,6 +5,7 @@
 import { loadData } from './data.js'
 import { openReport, wasReported } from './report.js'
 import { columnPage, datasetTitle, html, message } from './views.js'
+import { closeScore } from './score-prototype.js'
 
 const TITLE = 'Open Data Discover: Toronto'
 const PAGE_SIZE = 25
@@ -70,6 +71,7 @@ function fillColumns(dataset) {
 }
 
 function render() {
+  closeScore()
   const key = new URLSearchParams(location.hash.slice(1)).get('column')
   document.body.classList.toggle('home', !key)
   if (!key) {

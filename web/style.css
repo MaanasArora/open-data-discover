@@ -7,6 +7,8 @@
   --accent: #1f5fae;
   --accent-soft: #e6eef8;
   --bar: #2f7d5b;
+  --overlap-medium: #a47510;
+  --overlap-low: #bd5252;
   --danger: #b42318;
   color-scheme: light;
 }
@@ -21,6 +23,8 @@
     --accent: #7fb0ec;
     --accent-soft: #1e2a38;
     --bar: #5cc39a;
+    --overlap-medium: #dfb74e;
+    --overlap-low: #ef9292;
     --danger: #f97066;
     color-scheme: dark;
   }
@@ -223,7 +227,7 @@ footer .data-date { margin-top: 0.25rem; }
 .joins { list-style: none; padding: 0; margin: 0; }
 .join {
   display: grid;
-  grid-template-columns: 4.5rem 1fr;
+  grid-template-columns: 6.5rem 1fr;
   gap: 1rem;
   position: relative;
   padding: 0.9rem 2.5rem 0.9rem 0;  /* room for the Report button in the corner */
@@ -235,10 +239,14 @@ footer .data-date { margin-top: 0.25rem; }
 .column-name { font-weight: 600; }
 .resource { display: block; font-size: 0.85rem; overflow-wrap: anywhere; }
 
-.score { font-variant-numeric: tabular-nums; cursor: help; }
-.score .value { font-weight: 600; }
+.score-control { align-self: start; }
+.score { font-variant-numeric: tabular-nums; }
+.score .value { font-weight: 600; font-size: 1.1rem; }
+.score-label { display: block; font-size: 0.7rem; color: var(--dim); white-space: nowrap; }
 .score .bar { display: block; height: 0.3rem; margin-top: 0.3rem; background: var(--line); border-radius: 1rem; overflow: hidden; }
-.score .bar span { display: block; height: 100%; background: var(--bar); }
+.score .bar span, .overlap-bar > span { display: block; height: 100%; background: var(--overlap-color, var(--bar)); }
+.medium { --overlap-color: var(--overlap-medium); }
+.low { --overlap-color: var(--overlap-low); }
 
 button {
   margin-top: 1rem;
@@ -251,6 +259,22 @@ button {
   cursor: pointer;
 }
 button:hover { text-decoration: underline; }
+
+/* Join score prototype: desktop popover, mobile bottom sheet. */
+button.score { margin: 0; padding: 0.35rem 0.45rem; width: 100%; text-align: left; color: var(--text); background: transparent; border: 1px solid transparent; }
+button.score:hover, button.score[aria-expanded="true"] { border-color: var(--line); background: var(--surface); text-decoration: none; }
+.score:focus-visible, .score-popover :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.score-popover { position: fixed; inset: auto; width: min(28rem, calc(100vw - 2rem)); max-height: calc(100dvh - 2rem); margin: 0; padding: 1.15rem; overflow-y: auto; color: var(--text); background: var(--surface); border: 1px solid var(--line); border-radius: 0.75rem; box-shadow: 0 0.75rem 2.5rem rgb(0 0 0 / 0.18); font-size: 0.875rem; overflow-wrap: anywhere; }
+.score-popover header { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+.score-popover h2 { margin: 0; font-size: 1rem; }
+.score-popover .close-score { margin: 0; padding: 0; width: 2.75rem; height: 2.75rem; color: var(--dim); background: transparent; font-size: 1.5rem; flex-shrink: 0; }
+.overlap-direction { margin: 1rem 0 1.25rem; }
+.overlap-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
+.overlap-heading strong { flex-shrink: 0; font-variant-numeric: tabular-nums; }
+.overlap-bar { display: block; height: 0.45rem; margin: 0.5rem 0; background: var(--line); border-radius: 1rem; overflow: hidden; }
+.overlap-direction p { margin: 0.25rem 0; font-size: 0.8rem; }
+.overlap-context { color: var(--dim); }
+.overlap-note { border-top: 1px solid var(--line); padding-top: 0.85rem; color: var(--dim); font-size: 0.8rem; }
 
 /* Reporting a join: a red ! in the row's top-right corner, and the dialog that opens below it */
 
@@ -319,8 +343,9 @@ html:has(.report-dialog[open]) { overflow: hidden; }  /* keep the dialog by its 
 
 @media (max-width: 40rem) {
   .join { grid-template-columns: 1fr; gap: 0.35rem; padding-right: 0; }
-  .score { display: flex; align-items: center; gap: 0.5rem; }
+  button.score { display: flex; align-items: center; gap: 0.5rem; width: auto; min-height: 2.75rem; padding-inline: 0; }
   .score .bar { width: 4rem; margin: 0; }
+  .score-popover { inset: auto 0 0; width: 100%; max-height: 85dvh; border-radius: 1rem 1rem 0 0; padding-bottom: max(1.15rem, env(safe-area-inset-bottom)); }
 }
 
 /* About Page Styles */
