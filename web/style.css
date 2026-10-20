@@ -265,16 +265,15 @@ button.score { margin: 0; padding: 0.35rem 0.45rem; width: 100%; text-align: lef
 button.score:hover, button.score[aria-expanded="true"] { border-color: var(--line); background: var(--surface); text-decoration: none; }
 .score:focus-visible, .score-popover :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 .score-popover { position: fixed; inset: auto; width: min(28rem, calc(100vw - 2rem)); max-height: calc(100dvh - 2rem); margin: 0; padding: 1.15rem; overflow-y: auto; color: var(--text); background: var(--surface); border: 1px solid var(--line); border-radius: 0.75rem; box-shadow: 0 0.75rem 2.5rem rgb(0 0 0 / 0.18); font-size: 0.875rem; overflow-wrap: anywhere; }
-.score-popover header { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
-.score-popover h2 { margin: 0; font-size: 1rem; }
+.score-popover header { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; }
+.score-popover h2 { margin: 0; font-size: 1.1rem; line-height: 1.4; text-wrap: pretty; }
+.overlap-summary { margin: 0.6rem 0 1.25rem; color: var(--dim); font-size: 0.85rem; }
 .score-popover .close-score { margin: 0; padding: 0; width: 2.75rem; height: 2.75rem; color: var(--dim); background: transparent; font-size: 1.5rem; flex-shrink: 0; }
 .overlap-direction { margin: 1rem 0 1.25rem; }
 .overlap-bar { display: block; height: 0.45rem; margin: 0.5rem 0; background: var(--line); border-radius: 1rem; overflow: hidden; }
 .overlap-direction p { margin: 0.25rem 0; font-size: 0.8rem; }
 .overlap-direction .overlap-sentence { font-size: 0.875rem; }
-.overlap-sentence strong { font-variant-numeric: tabular-nums; }
 .overlap-sentence code { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 0.95em; background: var(--line); padding: 0.1em 0.3em; border-radius: 0.25em; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
-.overlap-count { color: var(--dim); }
 .overlap-note { border-top: 1px solid var(--line); padding-top: 0.85rem; color: var(--dim); font-size: 0.8rem; }
 
 /* Reporting a join: a red ! in the row's top-right corner, and the dialog that opens below it */

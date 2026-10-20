@@ -33,12 +33,11 @@ function examples(values) {
 
 const overlapLevel = score => score >= 0.8 ? 'high' : score >= 0.5 ? 'medium' : 'low'
 
-function overlapDirection(data, from, to, ratio, shared) {
+function overlapDirection(sentence, ratio) {
   return html`
     <div class="overlap-direction">
-      <p class="overlap-sentence"><strong>${percent(ratio)}</strong> of the distinct values in the <code>${from.column}</code> column in <code>${datasetTitle(data, from)}</code> – <code>${from.resource}</code> appear in the <code>${to.column}</code> column in <code>${datasetTitle(data, to)}</code> – <code>${to.resource}</code>.</p>
+      <p class="overlap-sentence">${sentence}</p>
       <span class="overlap-bar ${overlapLevel(ratio)}" aria-hidden="true"><span style="width: ${percent(ratio)}"></span></span>
-      <p class="overlap-count">${number(shared)} of ${number(from.n_distinct)} distinct values.</p>
     </div>`
 }
 
@@ -53,10 +52,11 @@ function scoreExplanation(data, column, other, join) {
         <span class="visually-hidden"> with ${other.column} in ${datasetTitle(data, other)}. Show explanation.</span>
       </button>
       <div id="${id}" class="score-popover" popover="manual" role="dialog" aria-labelledby="${id}-title">
-        <header><h2 id="${id}-title">Why ${percent(join.score)}?</h2><button type="button" class="close-score" aria-label="Close explanation">×</button></header>
-        ${overlapDirection(data, column, other, join.contained, join.shared)}
-        ${overlapDirection(data, other, column, join.contains, join.shared)}
-        <p class="overlap-note">The score uses the higher percentage. Shared values do not guarantee the columns mean the same thing.</p>
+        <header><h2 id="${id}-title">This score shows how many values in one column appear in the other.</h2><button type="button" class="close-score" aria-label="Close explanation">×</button></header>
+        <p class="overlap-summary">The higher of the two percentages becomes the score.</p>
+        ${overlapDirection(html`${percent(join.contained)} of the selected column in your chosen dataset appear in <code>${other.column}</code> in <code>${datasetTitle(data, other)}</code>.`, join.contained)}
+        ${overlapDirection(html`${percent(join.contains)} of <code>${other.column}</code> appear in your selected column.`, join.contains)}
+        <p class="overlap-note">Shared values do not guarantee the columns mean the same thing.</p>
         <a href="about.html#the-method">How scores work →</a>
       </div>
     </div>`
