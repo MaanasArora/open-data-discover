@@ -23,7 +23,10 @@ A dataset's columns are grouped by resource (file).
 
 The URL hash holds the chosen column (`#column=<key>`), so every column page can be linked and
 bookmarked. Joins are listed in score order, 25 at a time, as `Dataset › COLUMN` with the resource
-underneath and a few example values; hovering a score shows the containment in both directions.
+underneath and a few example values. The join-score prototype displays percentages and colours
+(green at 80%+, amber at 50–79%, red below 50%). Hover or focus the score to preview both directions
+of overlap; click or tap to keep it open, with a bottom sheet on phones. Escape, a click outside,
+or the close button dismisses it. These colours describe overlap, not join confidence.
 Joins within the same dataset (often the same data in another map projection) are hidden by default,
 with a checkbox to include them.
 
@@ -39,6 +42,7 @@ wrong with it (plus an optional note) and sends the report to a Google Sheet; se
 | `data.js` | Loading the results; per-column join lists; datasets for the picker |
 | `views.js` | HTML for each view (all data is escaped) |
 | `report.js` | The report dialog; sending reports to `REPORTS_URL` |
+| `score-prototype.js` | Prototype score popover and mobile sheet interactions (#8, #35, #36) |
 | `vendor/hyparquet.js` | [hyparquet](https://github.com/hyparam/hyparquet) 1.31.2 (MIT), bundled into one file |
 | `vendor/inter.woff2` | [Inter](https://rsms.me/inter/) variable font, Latin subset (OFL), from `@fontsource-variable/inter` 5.1.0 |
 
